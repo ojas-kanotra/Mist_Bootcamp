@@ -1,0 +1,235 @@
+HTML, or HyperText Markup Language, is the foundational language of the web, serving as the backbone for creating and structuring content on webpages. It provides a systematic way to organize text, images, multimedia, and interactive elements so that web browsers can interpret and display them consistently across devices. Beyond mere presentation, HTML establishes the semantic structure of a webpage, enabling search engines, accessibility tools, and other technologies to understand the content meaningfully. As the cornerstone of web development, it works in tandem with CSS and JavaScript to deliver visually appealing, dynamic, and user-friendly online experiences, forming the essential framework on which the modern internet is built.
+===========================================================================
+
+BASIC HTML STRUCTURE
+====================
+<!DOCTYPE html>                                 Document type declaration - must be first line
+<html>                                          Root container element for entire webpage
+<head>                                          Metadata section - not displayed to users
+<title>Page Title</title>                       Title shown in browser tab and search results
+<body>                                          Main content area visible to users
+<body style="background-color: RGB(255,0,0);">  Inline CSS styling using RGB color values
+
+HEADINGS
+========
+<h1>Main Title</h1>                             Largest heading - main page title (SEO important)
+<h2>Section Title</h2>                          Major section heading - second most important
+<h3>Subsection</h3>                             Subsection within main sections
+<h4>Minor Heading</h4>                          Fourth level - detailed categorization
+<h5>Small Heading</h5>                          Fifth level - fine-grained organization
+<h6>Smallest</h6>                               Least important - rarely used in practice
+
+TEXT CONTENT
+============
+<p>This is a paragraph.</p>                     Block-level text container with automatic margins
+<br>                                            Self-closing line break - forces new line
+<hr>                                            Horizontal rule - creates visual section divider
+
+TEXT FORMATTING
+===============
+<b>Bold text</b>                                Visual bold formatting without semantic meaning
+<strong>Important</strong>                      Strong importance - bold with semantic value
+<i>Italic text</i>                              Visual italic formatting only
+<em>Emphasized</em>                             Emphasized text - italic with semantic meaning
+<u>Underlined</u>                               Underlined text (avoid - confuses with links)
+<mark>Highlighted</mark>                        Text highlighting - like yellow marker
+<small>Fine print</small>                       Smaller text - legal disclaimers, copyright
+<big>Bigger text</big>                          Deprecated HTML element - use CSS font-size
+<sub>H2O</sub>                                  Subscript - chemical formulas, footnotes
+<sup>E=mc2</sup>                                Superscript - mathematical expressions, ordinals
+<del>Deleted text</del>                         Strikethrough - shows removed content
+<ins>Inserted text</ins>                        Underlined - shows newly added content
+<span style="color: red;">Styled</span>         Inline styling container for custom formatting
+
+COMMENTS
+========
+<!-- This is a comment -->                      Developer notes - invisible to users but in source
+
+LINKS
+=====
+<a href="https://example.com">Link</a>          Hyperlink to external webpage or resource
+<a href="page.html" target="_blank">Link</a>    Opens destination in new browser tab/window
+<a href="page.html" target="_self">Link</a>     Opens in same tab (default browser behavior)
+<a href="#section1">Jump to section</a>         Internal anchor link to element with id="section1"
+<a href="mailto:user@email.com">Email</a>       Creates clickable email link using default client
+
+IMAGES
+======
+<img src="photo.jpg">                           Self-closing image element (no end tag needed)
+<img src="photo.jpg" alt="Person smiling">      Alt text for accessibility and SEO (required!)
+<img src="photo.jpg" width="300">               Fixed width in pixels (height auto-scales)
+<img src="photo.jpg" height="200">              Fixed height in pixels (width auto-scales)
+<img src="photo.jpg" title="My vacation">       Tooltip text displayed on mouse hover
+
+LISTS
+=====
+<ul>                                            Unordered list (bullet points)
+  <li>                                          List item
+</ul>
+
+<ol>                                            Ordered list (numbered)
+  <li>                                          List item
+</ol>
+<ol type="A">                                   Ordered list with letters (A, B, C...)
+<ol type="1">                                   Ordered list with numbers (default)
+<ol type="I">                                   Ordered list with Roman numerals
+
+<dl>                                            Description list
+  <dt>                                          Description term
+  <dd>                                          Description definition
+</dl>
+
+TABLES
+======
+<table>                                         Table container
+  <tr>                                          Table row
+    <th>                                        Table header cell
+    <td>                                        Table data cell
+  </tr>
+</table>
+<tr bgcolor="color">                            Table row with background color
+<table bgcolor="color">                         Table with background color
+<table align="center">                          Table alignment (left/center/right)
+<td colspan="2">                                Cell spans across 2 columns
+<td rowspan="2">                                Cell spans across 2 rows
+
+<thead>                                         Table header section
+<tbody>                                         Table body section
+<tfoot>                                         Table footer section
+
+FORMS
+=====
+<form>                                          Form container
+<form action="submit.php" method="POST">        Form with submission details
+
+INPUT TYPES:
+<input type="text">                             Text input field
+<input type="password">                         Password input field
+<input type="email">                            Email input field
+<input type="number">                           Number input field
+<input type="tel">                              Telephone number input
+<input type="url">                              URL input field
+<input type="date">                             Date picker
+<input type="time">                             Time picker
+<input type="color">                            Color picker
+<input type="file">                             File upload
+<input type="hidden">                           Hidden input (not visible to user)
+<input type="checkbox">                         Checkbox (can select multiple)
+<input type="radio">                            Radio button (select one from group)
+<input type="range">                            Slider input
+<input type="search">                           Search input field
+<input type="submit">                           Submit button
+<input type="button">                           Regular button
+<input type="reset">                            Reset form button
+
+INPUT ATTRIBUTES:
+<input id="unique-id">                          Unique identifier (links with label)
+<input name="username">                         Name for form data submission
+<input placeholder="Enter text here">           Hint text shown inside input field
+<input value="default text">                    Pre-filled default value
+<input required>                                Makes field mandatory to fill
+<input readonly>                                User cannot edit (but can select/copy)
+<input disabled>                                Field is completely disabled
+<input maxlength="50">                          Maximum characters allowed
+<input minlength="5">                           Minimum characters required
+<input size="30">                               Visual width of input field
+<input autocomplete="on">                       Browser suggests previous values
+<input autofocus>                               Auto-focuses on page load
+<input multiple>                                Allow multiple selections (file, email)
+<input step="0.1">                              Step value for number/range inputs
+<input min="0" max="100">                       Min/max values for number inputs
+
+OTHER FORM ELEMENTS:
+<textarea>                                      Multi-line text input
+<textarea rows="5" cols="30">                   Textarea with specific dimensions
+<select>                                        Dropdown menu
+  <option value="1">Option 1</option>           Dropdown option with value
+  <option selected>Default</option>             Pre-selected option
+</select>
+<select multiple>                               Multi-select dropdown
+<label>                                         Label for form elements
+<label for="input-id">Text</label>              Label linked to specific input
+<fieldset>                                      Groups related form elements
+<legend>                                        Title for fieldset group
+<button>                                        Clickable button
+
+BUTTONS
+=======
+<button>                                        Basic clickable button
+<button type="button">                          Regular button (default)
+<button type="submit">                          Submit form button
+<button type="reset">                           Reset form button
+<input type="button" value="Click Me">          Input button with text
+<input type="submit" value="Submit">            Input submit button
+<input type="reset" value="Reset">              Input reset button
+<button disabled>                               Disabled button (not clickable)
+<button onclick="function()">                   Button with JavaScript function
+<button name="btn1" value="data">               Button with name and value
+<button form="form1">                           Button linked to specific form
+<button formaction="page.html">                 Submit to different URL
+<button formmethod="POST">                      Override form method
+<button autofocus>                              Button focused on page load
+
+SEMANTIC ELEMENTS
+=================
+<header>                                        Page or section header
+<nav>                                           Navigation links
+<main>                                          Main content area
+<section>                                       Content section
+<article>                                       Independent content
+<aside>                                         Sidebar content
+<footer>                                        Page or section footer
+<div>                                           Generic container (no semantic meaning)
+<span>                                          Inline container (no semantic meaning)
+
+MEDIA
+=====
+<audio controls src="audio.mp3">                Audio player with controls
+<audio autoplay src="audio.mp3">                Auto-playing audio
+<audio muted src="audio.mp3">                   Muted audio
+<audio loop src="audio.mp3">                    Looping audio
+
+<video controls src="video.mp4">                Video player with controls
+<video autoplay src="video.mp4">                Auto-playing video
+<video muted src="video.mp4">                   Muted video
+<video loop src="video.mp4">                    Looping video
+<video width="400" height="300">                Video with specific dimensions
+
+ATTRIBUTES
+==========
+id="unique-name"                                Unique identifier for element
+class="class-name"                              CSS class for styling
+style="CSS-properties"                          Inline CSS styling
+title="tooltip-text"                            Tooltip on hover
+
+META TAGS (in <head>)
+====================
+<meta charset="UTF-8">                          Character encoding
+<meta name="viewport"content=width=device-width>Responsive design
+<meta name="description" content="text">        Page description for search engines
+<link rel="stylesheet" href="style.css">        Link to external CSS file
+<script src="script.js"></script>               Link to external JavaScript file
+<meta name="keywords" content="HTML tutorial">  Keywords for search engines
+<meta name="author" content="ojas">             Author of the webpage
+<meta http-equiv="refresh" content="30">        Auto-refresh page every 30 seconds
+
+SPECIAL CHARACTERS
+==================
+&lt;                                            Less than symbol (<)
+&gt;                                            Greater than symbol (>)
+&amp;                                           Ampersand symbol (&)
+&quot;                                          Quote symbol (")
+&copy;                                          Copyright symbol (©)
+&nbsp;                                          Non-breaking space
+
+IFRAME (EMBEDDED CONTENT)
+=========================
+<iframe src="URL">                              Embeds another webpage inside current page
+<iframe src="URL" width="600" height="400">     Iframe with specific dimensions
+<iframe src="URL" frameborder="0">              Iframe without border
+<iframe src="URL" scrolling="no">               Iframe without scrollbars
+<iframe src="URL" name="frame1">                Named iframe (can be targeted by links)
+<iframe src="URL" allowfullscreen>              Allows iframe content to go fullscreen
+<iframe src="URL" sandbox>                      Restricted iframe for security
+<iframe src="URL" loading="lazy">               Lazy loading iframe (loads when visible)
+

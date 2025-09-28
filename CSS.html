@@ -1,0 +1,291 @@
+
+    <!DOCTYPE html>
+    <head>
+        <title>WebDev</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Let us learn 'CSS'</h1>
+        <hr><hr><button class="topic"> CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation and visual formatting of HTML documents. CSS controls how elements are displayed on screen, in print, or in other media. The "cascading" nature means styles can be inherited and overridden in a hierarchical manner based on specificity and source order. CSS separates content from presentation, allowing developers to maintain consistent styling across multiple pages. Modern CSS includes powerful features like flexbox, grid layouts, animations, transitions, and responsive design capabilities. CSS works by selecting HTML elements and applying style rules that define properties like colors, fonts, spacing, positioning, and layout behavior. </button>
+<button class="topic"> BASIC CSS STRUCTURE </button>
+<button class="command" title="Basic CSS syntax - selects elements and applies styles
+"><pre><code> selector {property: value;} </code></pre></button>
+<button class="topic"> CSS IMPLEMENTATION </button>
+<button class="command" title="            Internal CSS embedded in HTML head section
+"><pre><code> &lt;style&gt; h1 { color: blue; } &lt;/style&gt; </code></pre></button>
+<button class="command" title="      External CSS file - best practice for maintainability
+"><pre><code> &lt;link rel="stylesheet" href="style.css"&gt; </code></pre></button>
+<button class="command" title="            Inline CSS - highest specificity but hard to maintain
+"><pre><code> &lt;h1 style="color: red;"&gt;Text&lt;/h1&gt; </code></pre></button>
+<button class="topic"> SELECTORS </button>
+<button class="command" title="Type selector - targets all h1 elements
+"><pre><code> h1 </code></pre></button>
+<button class="command" title="Class selector - targets elements with matching class
+"><pre><code> .class-name </code></pre></button>
+<button class="command" title="ID selector - targets single element with specific ID
+"><pre><code> #unique-id </code></pre></button>
+<button class="command" title="Universal selector - applies to all elements
+"><pre><code> * </code></pre></button>
+<button class="command" title="Group selector - comma-separated multiple targets
+"><pre><code> h1, h2, p </code></pre></button>
+<button class="command" title="Descendant selector - p anywhere inside div
+"><pre><code> div p </code></pre></button>
+<button class="command" title="   Child selector - direct p children of div only
+"><pre><code> div &gt; p </code></pre></button>
+<button class="command" title="Adjacent sibling - p immediately following h1
+"><pre><code> h1 + p </code></pre></button>
+<button class="command" title="Pseudo-class - element state (hover, focus, active)
+"><pre><code> a:hover </code></pre></button>
+<button class="command" title="Pseudo-element - specific part of element content
+"><pre><code> p::first-line </code></pre></button>
+<button class="topic"> COLORS </button>
+<button class="command" title="Named color - 147 predefined color names
+"><pre><code> color: red; </code></pre></button>
+<button class="command" title="Hexadecimal color - # RRGGBB format (0-F values)
+"><pre><code> color: # ff0000; </code></pre></button>
+<button class="command" title="RGB color function - red, green, blue (0-255)
+"><pre><code> color: RGB(255, 0, 0); </code></pre></button>
+<button class="command" title="RGBA with alpha transparency (0-1 opacity)
+"><pre><code> color: RGBA(255, 0, 0, 0.5); </code></pre></button>
+<button class="command" title="Background color of element content area
+"><pre><code> background-color: blue; </code></pre></button>
+<button class="command" title="Completely transparent background (default)
+"><pre><code> background-color: transparent; </code></pre></button>
+<button class="topic"> TEXT PROPERTIES </button>
+<button class="command" title="Font stack with fallbacks for cross-platform compatibility
+"><pre><code> font-family: Arial, sans-serif; </code></pre></button>
+<button class="command" title="Absolute font size in pixels (most common unit)
+"><pre><code> font-size: 16px; </code></pre></button>
+<button class="command" title="Relative to parent element's font size
+"><pre><code> font-size: 1.2em; </code></pre></button>
+<button class="command" title="Percentage relative to parent font size
+"><pre><code> font-size: 120%; </code></pre></button>
+<button class="command" title="Font thickness - normal, bold, or 100-900 numeric
+"><pre><code> font-weight: bold; </code></pre></button>
+<button class="command" title="Font style - normal, italic, or oblique
+"><pre><code> font-style: italic; </code></pre></button>
+<button class="command" title="Horizontal text alignment within container
+"><pre><code> text-align: center; </code></pre></button>
+<button class="command" title="Text decoration lines (none, underline, line-through)
+"><pre><code> text-decoration: underline; </code></pre></button>
+<button class="command" title="Text case transformation for display
+"><pre><code> text-transform: uppercase; </code></pre></button>
+<button class="command" title="Vertical spacing between text lines (readability)
+"><pre><code> line-height: 1.5; </code></pre></button>
+<button class="command" title="Horizontal spacing between individual characters
+"><pre><code> letter-spacing: 2px; </code></pre></button>
+<button class="topic"> BACKGROUNDS </button>
+<button class="command" title="Background color
+"><pre><code> background-color: # f0f0f0; </code></pre></button>
+<button class="command" title="Background image
+"><pre><code> background-image: url('image.jpg'); </code></pre></button>
+<button class="command" title="Image repetition (repeat, no-repeat, repeat-x, repeat-y)
+"><pre><code> background-repeat: no-repeat; </code></pre></button>
+<button class="command" title="Image position (top, center, bottom, left, right)
+"><pre><code> background-position: center; </code></pre></button>
+<button class="command" title="Image sizing (cover, contain, 100px, 50%)
+"><pre><code> background-size: cover; </code></pre></button>
+<button class="command" title="Shorthand background property
+"><pre><code> background: url('img.jpg') no-repeat center; </code></pre></button>
+<button class="topic"> BOX MODEL </button>
+<button class="command" title="Element content area width (excluding padding/border)
+"><pre><code> width: 200px; </code></pre></button>
+<button class="command" title="Element content area height (excluding padding/border)
+"><pre><code> height: 100px; </code></pre></button>
+<button class="command" title="Maximum width constraint for responsive design
+"><pre><code> max-width: 500px; </code></pre></button>
+<button class="command" title="Minimum height to prevent content overflow
+"><pre><code> min-height: 50px; </code></pre></button>
+<button class="command" title="Inner spacing between content and border (all sides)
+"><pre><code> padding: 10px; </code></pre></button>
+<button class="command" title="Vertical 10px, horizontal 20px padding
+"><pre><code> padding: 10px 20px; </code></pre></button>
+<button class="command" title="Clockwise: top, right, bottom, left padding
+"><pre><code> padding: 10px 15px 5px 20px; </code></pre></button>
+<button class="command" title="Outer spacing outside border (all sides)
+"><pre><code> margin: 10px; </code></pre></button>
+<button class="command" title="Zero top/bottom, auto left/right (centers block elements)
+"><pre><code> margin: 0 auto; </code></pre></button>
+<button class="command" title="Border shorthand: width style color
+"><pre><code> border: 2px solid black; </code></pre></button>
+<button class="command" title="Rounded corners with 10px radius curve
+"><pre><code> border-radius: 10px; </code></pre></button>
+<button class="command" title="Width includes padding and border (modern standard)
+"><pre><code> box-sizing: border-box; </code></pre></button>
+<button class="topic"> BORDERS </button>
+<button class="command" title="Border thickness
+"><pre><code> border-width: 2px; </code></pre></button>
+<button class="command" title="Border style (solid, dashed, dotted, none)
+"><pre><code> border-style: solid; </code></pre></button>
+<button class="command" title="Border color
+"><pre><code> border-color: red; </code></pre></button>
+<button class="command" title="Top border only
+"><pre><code> border-top: 1px solid # ccc; </code></pre></button>
+<button class="command" title="Rounded corners
+"><pre><code> border-radius: 5px; </code></pre></button>
+<button class="command" title="Different corner radii
+"><pre><code> border-radius: 10px 20px; </code></pre></button>
+<button class="topic"> POSITIONING </button>
+<button class="command" title="Default positioning
+"><pre><code> position: static; </code></pre></button>
+<button class="command" title="Relative to normal position
+"><pre><code> position: relative; </code></pre></button>
+<button class="command" title="Relative to positioned parent
+"><pre><code> position: absolute; </code></pre></button>
+<button class="command" title="Relative to viewport
+"><pre><code> position: fixed; </code></pre></button>
+<button class="command" title="Sticky positioning
+"><pre><code> position: sticky; </code></pre></button>
+<button class="command" title="Distance from top
+"><pre><code> top: 10px; </code></pre></button>
+<button class="command" title="Distance from left
+"><pre><code> left: 20px; </code></pre></button>
+<button class="command" title="Distance from right
+"><pre><code> right: 15px; </code></pre></button>
+<button class="command" title="Distance from bottom
+"><pre><code> bottom: 5px; </code></pre></button>
+<button class="command" title="Stacking order (higher = front)
+"><pre><code> z-index: 10; </code></pre></button>
+<button class="topic"> DISPLAY & VISIBILITY </button>
+<button class="command" title="Block element (full width)
+"><pre><code> display: block; </code></pre></button>
+<button class="command" title="Inline element (content width)
+"><pre><code> display: inline; </code></pre></button>
+<button class="command" title="Inline but with width/height
+"><pre><code> display: inline-block; </code></pre></button>
+<button class="command" title="Hide element completely
+"><pre><code> display: none; </code></pre></button>
+<button class="command" title="Flexbox container
+"><pre><code> display: flex; </code></pre></button>
+<button class="command" title="Grid container
+"><pre><code> display: grid; </code></pre></button>
+<button class="command" title="Hide but keep space
+"><pre><code> visibility: hidden; </code></pre></button>
+<button class="command" title="Show element
+"><pre><code> visibility: visible; </code></pre></button>
+<button class="command" title="Transparency (0-1)
+"><pre><code> opacity: 0.5; </code></pre></button>
+<button class="topic"> FLEXBOX </button>
+<button class="command" title="Create flex container
+"><pre><code> display: flex; </code></pre></button>
+<button class="command" title="Flex direction (row, column, row-reverse, column-reverse)
+"><pre><code> flex-direction: row; </code></pre></button>
+<button class="command" title="Horizontal alignment (flex-start, center, flex-end, space-between, space-around)
+"><pre><code> justify-content: center; </code></pre></button>
+<button class="command" title="Vertical alignment (flex-start, center, flex-end, stretch, baseline)
+"><pre><code> align-items: center; </code></pre></button>
+<button class="command" title="Allow items to wrap
+"><pre><code> flex-wrap: wrap; </code></pre></button>
+<button class="command" title="Flex item growth
+"><pre><code> flex: 1; </code></pre></button>
+<button class="command" title="Space between flex items
+"><pre><code> gap: 10px; </code></pre></button>
+<button class="topic"> GRID </button>
+<button class="command" title="Create grid container
+"><pre><code> display: grid; </code></pre></button>
+<button class="command" title="Define column sizes
+"><pre><code> grid-template-columns: 1fr 2fr 1fr; </code></pre></button>
+<button class="command" title="Define row sizes
+"><pre><code> grid-template-rows: 100px auto; </code></pre></button>
+<button class="command" title="Gap between grid items
+"><pre><code> grid-gap: 10px; </code></pre></button>
+<button class="command" title="Item spans 2 columns
+"><pre><code> grid-column: span 2; </code></pre></button>
+<button class="command" title="Item spans 3 rows
+"><pre><code> grid-row: span 3; </code></pre></button>
+<button class="topic"> RESPONSIVE DESIGN </button>
+<button class="command" title="Media query for mobile
+"><pre><code> @media (max-width: 768px) { </code></pre></button>
+<button class="command" title=""><pre><code> .class { font-size: 14px; } </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="Media query for desktop
+"><pre><code> @media (min-width: 1024px) { </code></pre></button>
+<button class="command" title=""><pre><code> .class { font-size: 18px; } </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="Responsive width
+"><pre><code> width: 100%; </code></pre></button>
+<button class="command" title="Prevent overflow
+"><pre><code> max-width: 100%; </code></pre></button>
+<button class="command" title="Responsive images
+"><pre><code> img { max-width: 100%; height: auto; } </code></pre></button>
+<button class="topic"> TRANSITIONS & ANIMATIONS </button>
+<button class="command" title="Smooth transition
+"><pre><code> transition: all 0.3s ease; </code></pre></button>
+<button class="command" title="Specific property transitions
+"><pre><code> transition: color 0.5s, font-size 0.2s; </code></pre></button>
+<button class="command" title="Scale element
+"><pre><code> transform: scale(1.1); </code></pre></button>
+<button class="command" title="Rotate element
+"><pre><code> transform: rotate(45deg); </code></pre></button>
+<button class="command" title="Move element
+"><pre><code> transform: translate(10px, 20px); </code></pre></button>
+<button class="command" title="Hover effect
+"><pre><code> :hover { color: red; } </code></pre></button>
+<button class="command" title="Define animation
+"><pre><code> @keyframes slideIn { </code></pre></button>
+<button class="command" title=""><pre><code> from { left: -100%; } </code></pre></button>
+<button class="command" title=""><pre><code> to { left: 0; } </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="Apply animation
+"><pre><code> animation: slideIn 1s ease-in-out; </code></pre></button>
+<button class="topic"> COMMON UNITS </button>
+<button class="command" title="Pixels (absolute)
+"><pre><code> px </code></pre></button>
+<button class="command" title="Percentage (relative to parent)
+"><pre><code> % </code></pre></button>
+<button class="command" title="Relative to element's font size
+"><pre><code> em </code></pre></button>
+<button class="command" title="Relative to root font size
+"><pre><code> rem </code></pre></button>
+<button class="command" title="Viewport height (1vh = 1% of viewport height)
+"><pre><code> vh </code></pre></button>
+<button class="command" title="Viewport width (1vw = 1% of viewport width)
+"><pre><code> vw </code></pre></button>
+<button class="topic"> LISTS </button>
+<button class="command" title="Remove bullet points
+"><pre><code> list-style-type: none; </code></pre></button>
+<button class="command" title="Bullet points (default)
+"><pre><code> list-style-type: disc; </code></pre></button>
+<button class="command" title="Numbers
+"><pre><code> list-style-type: decimal; </code></pre></button>
+<button class="command" title="Bullet position
+"><pre><code> list-style-position: inside; </code></pre></button>
+<button class="command" title="Custom bullet image
+"><pre><code> list-style-image: url('bullet.png'); </code></pre></button>
+<button class="topic"> TABLES </button>
+<button class="command" title="Remove space between borders
+"><pre><code> border-collapse: collapse; </code></pre></button>
+<button class="command" title="Space between table cells
+"><pre><code> border-spacing: 5px; </code></pre></button>
+<button class="command" title="Table caption position
+"><pre><code> caption-side: top; </code></pre></button>
+<button class="command" title="Fixed table layout
+"><pre><code> table-layout: fixed; </code></pre></button>
+<button class="command" title="Hide empty cells
+"><pre><code> empty-cells: hide; </code></pre></button>
+<button class="topic"> OVERFLOW </button>
+<button class="command" title="Content can overflow (default)
+"><pre><code> overflow: visible; </code></pre></button>
+<button class="command" title="Hide overflowing content
+"><pre><code> overflow: hidden; </code></pre></button>
+<button class="command" title="Always show scrollbars
+"><pre><code> overflow: scroll; </code></pre></button>
+<button class="command" title="Show scrollbars when needed
+"><pre><code> overflow: auto; </code></pre></button>
+<button class="command" title="Show ... for overflowing text
+"><pre><code> text-overflow: ellipsis; </code></pre></button>
+<button class="command" title="Prevent text wrapping
+"><pre><code> white-space: nowrap; </code></pre></button>
+<button class="topic"> COMMENTS </button>
+<button class="command" title="Comments are ignored by browser
+"><pre><code> /* This is a CSS comment */ </code></pre></button>
+<button class="topic"> CSS RESET/NORMALIZE </button>
+<button class="command" title="Universal reset
+"><pre><code> * { </code></pre></button>
+<button class="command" title=""><pre><code> margin: 0; </code></pre></button>
+<button class="command" title=""><pre><code> padding: 0; </code></pre></button>
+<button class="command" title=""><pre><code> box-sizing: border-box; </code></pre></button>
+</body></html>
