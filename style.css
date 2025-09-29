@@ -27,10 +27,25 @@ h1{
     font-size: 30px;
 }
 
+.center-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .languages:active{
     background-color: yellow;
     color: black;
     box-shadow: 0 0 10px yellow;
+}
+
+.languages:hover{
+    background-color: yellow;
+    color: black;
+    box-shadow: 0 0 10px yellow;
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.3s;
 }
 
 .header{
@@ -80,3 +95,29 @@ h1{
 }
 
 
+.introduction{
+    border-style: dotted;
+    color: white;
+    background-color: black;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 2px;
+    border-width: 2px;
+    border-color: rgb(138, 244, 0);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin: 20px 0 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+}
+
+.footer-text{
+    color: white;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
