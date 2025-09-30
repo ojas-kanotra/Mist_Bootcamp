@@ -13,7 +13,7 @@ def page_maker(lang):
         <h1>Let us learn '{lang}'</h1>
         <hr><hr>""")
 
-    doc = open(f'../{lang}.txt', "r").readlines()
+    doc = open(f'Script/{lang}.txt', "r").readlines()
     for line in range(len(doc)-1):
         if "===" in doc[line+1]:
             file.write(f'<button class="topic"> {doc[line][0:len(doc[line])-1]} </button>\n')
