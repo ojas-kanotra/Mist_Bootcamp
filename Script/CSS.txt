@@ -1,0 +1,195 @@
+CSS stands for Cascading Style Sheets. It's used to make HTML pages look beautiful by adding colors, fonts, spacing, and layouts. CSS works by selecting HTML elements and giving them visual properties. Think of HTML as the structure of a house and CSS as the paint, decorations, and furniture that make it look good.
+===========================================================================
+
+HOW TO ADD CSS
+==============
+<style> h1 { color: blue; } </style>            CSS inside HTML file (internal CSS)
+<link rel="stylesheet" href="style.css">        Link to separate CSS file (best practice)
+<h1 style="color: red;">Text</h1>               CSS directly on HTML element (inline CSS)
+
+BASIC CSS STRUCTURE
+===================
+h1 { color: blue; }                             Select element, give it a style property
+p { font-size: 16px; }                          Select paragraph, set font size
+.my-class { color: red; }                       Select by class name (starts with dot)
+#my-id { background: yellow; }                  Select by ID (starts with hash)
+
+SELECTING ELEMENTS
+==================
+h1{}                                            Selects all h1 heading elements
+p{}                                             Selects all paragraph elements
+.class-name{}                                   Selects elements with class="class-name"
+#unique-id{}                                    Selects element with id="unique-id"
+*{}                                             Selects all elements on the page
+h1, h2, p{}                                     Selects multiple element types at once
+div p{}                                         Selects paragraphs inside div elements
+a:hover{}                                       Selects links when mouse hovers over them
+
+COLORS
+======
+color: red;                                     Changes text color to red
+color: blue;                                    Changes text color to blue
+color: #ff0000;                                 Red color using hex code
+color: #00ff00;                                 Green color using hex code
+color: #0000ff;                                 Blue color using hex code
+color: rgb(255, 0, 0);                          Red using RGB values (0-255)
+background-color: yellow;                       Changes background color to yellow
+background-color: #f0f0f0;                      Light gray background using hex
+
+TEXT STYLING
+=============
+font-family: Arial;                             Changes font to Arial
+font-family: "Times New Roman";                 Changes font to Times New Roman
+font-size: 16px;                                Makes text 16 pixels big
+font-size: 20px;                                Makes text 20 pixels big
+font-weight: bold;                              Makes text bold/thick
+font-weight: normal;                            Makes text regular thickness
+font-style: italic;                             Makes text slanted (italic)
+font-style: normal;                             Makes text upright (not italic)
+text-align: left;                               Aligns text to the left
+text-align: center;                             Centers text horizontally
+text-align: right;                              Aligns text to the right
+text-decoration: underline;                     Adds underline to text
+text-decoration: none;                          Removes underline from links
+text-transform: uppercase;                      Makes all text UPPERCASE
+text-transform: lowercase;                      Makes all text lowercase
+line-height: 1.5;                               Adds space between lines of text
+
+BACKGROUNDS
+===========
+background-color: lightblue;                    Sets background color to light blue
+background-color: #f0f0f0;                      Sets background to light gray
+background-image: url("flower.jpg");            Sets image as background
+background-repeat: no-repeat;                   Shows background image only once
+background-repeat: repeat;                      Repeats background image to fill area
+background-position: center;                    Centers background image
+background-size: cover;                         Scales image to cover entire area
+
+SIZE AND SPACING
+=================
+width: 200px;                                   Makes element 200 pixels wide
+height: 100px;                                  Makes element 100 pixels tall
+width: 50%;                                     Makes element half the width of parent
+height: 300px;                                  Makes element 300 pixels tall
+max-width: 500px;                               Element won't get wider than 500px
+min-height: 100px;                              Element won't get shorter than 100px
+
+PADDING (INNER SPACE)
+=====================
+padding: 10px;                                  Adds 10px space inside element on all sides
+padding-top: 15px;                              Adds 15px space at top inside element
+padding-bottom: 15px;                           Adds 15px space at bottom inside element
+padding-left: 20px;                             Adds 20px space at left inside element
+padding-right: 20px;                            Adds 20px space at right inside element
+
+MARGIN (OUTER SPACE)
+====================
+margin: 10px;                                   Adds 10px space outside element on all sides
+margin-top: 20px;                               Adds 20px space above element
+margin-bottom: 20px;                            Adds 20px space below element
+margin-left: 15px;                              Adds 15px space to left of element
+margin-right: 15px;                             Adds 15px space to right of element
+margin: 0 auto;                                 Centers element horizontally on page
+
+BORDERS
+=======
+border: 1px solid black;                        Adds thin black line around element
+border: 2px solid red;                          Adds thick red line around element
+border-width: 3px;                              Makes border 3 pixels thick
+border-style: solid;                            Makes border a solid line
+border-style: dashed;                           Makes border a dashed line
+border-style: dotted;                           Makes border a dotted line
+border-color: blue;                             Makes border blue color
+border-radius: 10px;                            Makes corners rounded
+border-top: 2px solid green;                    Adds border only to top edge
+
+DISPLAY TYPES
+=============
+display: block;                                 Element takes full width (like paragraphs)
+display: inline;                                Element takes only needed width (like links)
+display: inline-block;                          Inline but can have width and height
+display: none;                                  Completely hides element from page
+visibility: hidden;                             Hides element but keeps its space
+visibility: visible;                            Shows element normally
+opacity: 0.5;                                   Makes element 50% transparent
+opacity: 0;                                     Makes element completely transparent
+opacity: 1;                                     Makes element completely solid
+
+POSITIONING
+===========
+position: static;                               Normal positioning (default)
+position: relative;                             Can move from normal position
+position: absolute;                             Positioned relative to parent element
+position: fixed;                                Stays in same place when scrolling
+top: 10px;                                      Moves element 10px from top
+left: 20px;                                     Moves element 20px from left
+right: 15px;                                    Moves element 15px from right
+bottom: 5px;                                    Moves element 5px from bottom
+z-index: 10;                                    Controls which element appears on top
+
+FLEXBOX (EASY LAYOUTS)
+=====================
+display: flex;                                  Makes container arrange items in a row
+flex-direction: row;                            Arranges items left to right (default)
+flex-direction: column;                         Arranges items top to bottom
+justify-content: center;                        Centers items horizontally
+justify-content: space-between;                 Spreads items evenly with space between
+align-items: center;                            Centers items vertically
+flex-wrap: wrap;                                Items move to next line if needed
+gap: 10px;                                      Adds 10px space between items
+
+HOVER EFFECTS
+=============
+a:hover { color: red; }                         Changes link color when hovering
+button:hover { background: blue; }              Changes button background on hover
+img:hover { opacity: 0.8; }                     Makes image slightly transparent on hover
+div:hover { border: 2px solid green; }          Adds border when hovering over div
+
+SIMPLE ANIMATIONS
+=================
+transition: all 0.3s;                           Smooth change over 0.3 seconds for all properties
+transition: color 0.5s;                         Smooth color change over 0.5 seconds
+transform: scale(1.1);                          Makes element 10% bigger
+transform: rotate(45deg);                       Rotates element 45 degrees
+
+RESPONSIVE DESIGN
+=================
+@media (max-width: 768px) {                     Styles for mobile phones (small screens)
+    h1 { font-size: 24px; }                     Smaller heading on mobile
+}
+@media (min-width: 1024px) {                    Styles for desktop computers (large screens)
+    h1 { font-size: 36px; }                     Larger heading on desktop
+}
+img { max-width: 100%; }                        Images scale down to fit screen
+width: 100%;                                    Element takes full width of container
+
+LISTS
+=====
+list-style-type: none;                          Removes bullet points from lists
+list-style-type: disc;                          Round bullet points (default)
+list-style-type: decimal;                       Numbered list (1, 2, 3...)
+list-style-type: square;                        Square bullet points
+list-style-position: inside;                    Bullets inside the text area
+
+COMMON MEASUREMENTS
+===================
+width: 100px;                                   100 pixels wide (fixed size)
+width: 50%;                                     50% of parent element's width
+font-size: 16px;                                Font size in pixels
+margin: 2em;                                    2 times the current font size
+height: 100vh;                                  100% of screen height
+width: 100vw;                                   100% of screen width
+
+USEFUL PROPERTIES
+=================
+text-align: center;                             Centers text horizontally
+vertical-align: middle;                         Aligns content vertically in cells
+cursor: pointer;                                Shows hand cursor on hover
+outline: none;                                  Removes focus outline (like on buttons)
+box-shadow: 2px 2px 5px gray;                   Adds shadow around element
+overflow: hidden;                               Hides content that goes outside element
+white-space: nowrap;                            Prevents text from wrapping to new line
+
+COMMENTS
+========
+/* This text is ignored by browser */           Notes for developers only       

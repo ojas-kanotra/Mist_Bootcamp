@@ -9,350 +9,287 @@
     </head>
     <body>
         <h1>Let us learn 'JAVASCRIPT'</h1>
-        <hr><hr><button class="topic"> JavaScript (JS) is a versatile, high-level programming language that brings interactivity and dynamic behavior to webpages. Unlike HTML, which structures content, or CSS, which styles it, JavaScript enables webpages to respond to user actions, manipulate content in real time, handle data, and communicate with servers. It powers animations, form validations, interactive maps, and complex web applications, making the web responsive and engaging. As a cornerstone of modern web development, JavaScript works seamlessly with HTML and CSS, forming a complete trio that allows developers to create rich, functional, and interactive user experiences across browsers and devices. </button>
-<button class="topic"> BASIC JAVASCRIPT STRUCTURE </button>
-<button class="command" title="      JavaScript code container (in HTML)
-"><pre><code> &lt;script&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/script&gt; </code></pre></button>
-<button class="command" title="            Link to external JavaScript file
+        <hr><hr><button class="topic"> JavaScript is a programming language that makes websites interactive and dynamic. While HTML creates the structure and CSS adds styling, JavaScript adds behavior - like responding to clicks, validating forms, creating animations, and updating content without refreshing the page. It's what makes modern websites feel alive and responsive to user actions. </button>
+<button class="topic"> ADDING JAVASCRIPT TO HTML </button>
+<button class="command" title="            JavaScript code inside HTML file
+"><pre><code> &lt;script&gt; alert("Hello!"); &lt;/script&gt; </code></pre></button>
+<button class="command" title="            Link to separate JavaScript file (recommended)
 "><pre><code> &lt;script src="script.js"&gt;&lt;/script&gt; </code></pre></button>
-<button class="command" title="Display message in browser console
+<button class="command" title="Shows message in browser's developer console
 "><pre><code> console.log("Hello World"); </code></pre></button>
-<button class="command" title="Show popup message to user
+<button class="command" title="Shows popup message box to user
 "><pre><code> alert("Hello World"); </code></pre></button>
-<button class="command" title="Write directly to HTML document
-"><pre><code> document.write("Hello World"); </code></pre></button>
-<button class="topic"> VARIABLES </button>
-<button class="command" title="Variable declaration (old way)
-"><pre><code> var name = "John"; </code></pre></button>
-<button class="command" title="Block-scoped variable (modern)
+<button class="command" title="Shows yes/no dialog box
+"><pre><code> confirm("Are you sure?"); </code></pre></button>
+<button class="command" title="Shows input dialog box
+"><pre><code> prompt("What's your name?"); </code></pre></button>
+<button class="topic"> VARIABLES (STORING DATA) </button>
+<button class="command" title="Creates variable to store text
+"><pre><code> let name = "John"; </code></pre></button>
+<button class="command" title="Creates variable to store number
 "><pre><code> let age = 25; </code></pre></button>
-<button class="command" title="Constant value (cannot change)
+<button class="command" title="Creates constant that cannot change
 "><pre><code> const PI = 3.14; </code></pre></button>
-<button class="command" title="Multiple variable declaration
-"><pre><code> let x, y, z; </code></pre></button>
-<button class="command" title="Multiple variables with values
-"><pre><code> let firstName = "John", lastName = "Doe"; </code></pre></button>
-<button class="command" title="Check data type of variable
-"><pre><code> typeof variable; </code></pre></button>
+<button class="command" title="Creates empty variable
+"><pre><code> let x; </code></pre></button>
+<button class="command" title="Puts value 10 into variable x
+"><pre><code> x = 10; </code></pre></button>
+<button class="command" title="Variable storing person's first name
+"><pre><code> let firstName = "John"; </code></pre></button>
+<button class="command" title="Variable storing person's last name
+"><pre><code> let lastName = "Doe"; </code></pre></button>
 <button class="topic"> DATA TYPES </button>
-<button class="command" title="String data type
-"><pre><code> let text = "Hello"; </code></pre></button>
-<button class="command" title="Number data type
-"><pre><code> let number = 42; </code></pre></button>
-<button class="command" title="Decimal number
-"><pre><code> let decimal = 3.14; </code></pre></button>
-<button class="command" title="Boolean true
-"><pre><code> let isTrue = true; </code></pre></button>
-<button class="command" title="Boolean false
-"><pre><code> let isFalse = false; </code></pre></button>
-<button class="command" title="Null value
+<button class="command" title="Text data (called string)
+"><pre><code> let message = "Hello World"; </code></pre></button>
+<button class="command" title="Whole number data
+"><pre><code> let count = 42; </code></pre></button>
+<button class="command" title="Decimal number data  
+"><pre><code> let price = 19.99; </code></pre></button>
+<button class="command" title="True/false data (called boolean)
+"><pre><code> let isReady = true; </code></pre></button>
+<button class="command" title="Another true/false value
+"><pre><code> let isFinished = false; </code></pre></button>
+<button class="command" title="Intentionally empty value
 "><pre><code> let nothing = null; </code></pre></button>
-<button class="command" title="Undefined variable
-"><pre><code> let notDefined; </code></pre></button>
-<button class="command" title="Array data type
-"><pre><code> let arr = [1, 2, 3]; </code></pre></button>
-<button class="command" title="Object data type
-"><pre><code> let obj = {name: "John", age: 30}; </code></pre></button>
-<button class="topic"> OPERATORS </button>
-<button class="command" title="Addition operator
+<button class="command" title="Variable with no value (undefined)
+"><pre><code> let notSet; </code></pre></button>
+<button class="command" title="Shows what type of data a variable holds
+"><pre><code> typeof age; </code></pre></button>
+<button class="topic"> MATH OPERATIONS </button>
+<button class="command" title="Adds numbers together (result: 8)
 "><pre><code> let sum = 5 + 3; </code></pre></button>
-<button class="command" title="Subtraction operator
-"><pre><code> let diff = 10 - 4; </code></pre></button>
-<button class="command" title="Multiplication operator
+<button class="command" title="Subtracts numbers (result: 6)
+"><pre><code> let difference = 10 - 4; </code></pre></button>
+<button class="command" title="Multiplies numbers (result: 42)
 "><pre><code> let product = 6 * 7; </code></pre></button>
-<button class="command" title="Division operator
+<button class="command" title="Divides numbers (result: 5)
 "><pre><code> let quotient = 15 / 3; </code></pre></button>
-<button class="command" title="Modulus (remainder) operator
+<button class="command" title="Gets remainder after division (result: 2)
 "><pre><code> let remainder = 17 % 5; </code></pre></button>
-<button class="command" title="Increment by 1
+<button class="command" title="Increases x by 1
 "><pre><code> x++; </code></pre></button>
-<button class="command" title="Decrement by 1
+<button class="command" title="Decreases x by 1
 "><pre><code> x--; </code></pre></button>
-<button class="command" title="Add and assign
+<button class="command" title="Adds 5 to x and stores result in x
 "><pre><code> x += 5; </code></pre></button>
-<button class="command" title="Subtract and assign
+<button class="command" title="Subtracts 3 from x and stores result in x
 "><pre><code> x -= 3; </code></pre></button>
-<button class="command" title="Multiply and assign
-"><pre><code> x *= 2; </code></pre></button>
-<button class="command" title="Divide and assign
-"><pre><code> x /= 4; </code></pre></button>
-<button class="topic"> COMPARISON OPERATORS </button>
-<button class="topic"> x == y;                                         Equal to (loose comparison) </button>
-<button class="command" title="Not equal to
+<button class="topic"> COMPARING VALUES </button>
+<button class="topic"> x == y;                                         Checks if x and y are equal </button>
+<button class="command" title="Checks if x and y are not equal
 "><pre><code> x != y; </code></pre></button>
-<button class="command" title="Strict not equal
+<button class="command" title="Checks if x and y are not exactly equal
 "><pre><code> x !== y; </code></pre></button>
-<button class="command" title="   Greater than
+<button class="command" title="   Checks if x is greater than y
 "><pre><code> x &gt; y; </code></pre></button>
-<button class="command" title="   Less than
+<button class="command" title="   Checks if x is less than y
 "><pre><code> x &lt; y; </code></pre></button>
-<button class="command" title="   Greater than or equal
+<button class="command" title="   Checks if x is greater than or equal to y
 "><pre><code> x &gt;= y; </code></pre></button>
-<button class="command" title="   Less than or equal
+<button class="command" title="   Checks if x is less than or equal to y
 "><pre><code> x &lt;= y; </code></pre></button>
 <button class="topic"> LOGICAL OPERATORS </button>
-<button class="command" title="        Logical AND (both true)
+<button class="command" title="        Both x and y must be true
 "><pre><code> x &amp;&amp; y; </code></pre></button>
-<button class="command" title="Logical OR (either true)
+<button class="command" title="Either x or y must be true
 "><pre><code> x || y; </code></pre></button>
-<button class="command" title="Logical NOT (opposite)
+<button class="command" title="Opposite of x (if x is true, this is false)
 "><pre><code> !x; </code></pre></button>
-<button class="command" title="Ternary operator (if x then y else z)
-"><pre><code> x ? y : z; </code></pre></button>
-<button class="topic"> STRINGS </button>
-<button class="command" title="String literal
-"><pre><code> let str = "Hello World"; </code></pre></button>
-<button class="command" title="String with single quotes
-"><pre><code> let str2 = 'Single quotes'; </code></pre></button>
-<button class="command" title="Template literal with variables
-"><pre><code> let str3 = `Template literal ${variable}`; </code></pre></button>
-<button class="command" title="Get string length
-"><pre><code> str.length; </code></pre></button>
-<button class="command" title="Convert to uppercase
-"><pre><code> str.toUpperCase(); </code></pre></button>
-<button class="command" title="Convert to lowercase
-"><pre><code> str.toLowerCase(); </code></pre></button>
-<button class="command" title="Get character at position
-"><pre><code> str.charAt(0); </code></pre></button>
-<button class="command" title="Find position of substring
-"><pre><code> str.indexOf("World"); </code></pre></button>
-<button class="command" title="Extract part of string
-"><pre><code> str.slice(0, 5); </code></pre></button>
-<button class="command" title="Replace text in string
-"><pre><code> str.replace("Hello", "Hi"); </code></pre></button>
-<button class="command" title="Split string into array
-"><pre><code> str.split(" "); </code></pre></button>
-<button class="topic"> ARRAYS </button>
-<button class="command" title="Array creation
-"><pre><code> let arr = [1, 2, 3, 4, 5]; </code></pre></button>
-<button class="command" title="String array
+<button class="topic"> WORKING WITH TEXT </button>
+<button class="command" title="Creates text variable
+"><pre><code> let message = "Hello World"; </code></pre></button>
+<button class="command" title="Text can use single quotes too
+"><pre><code> let name = 'John'; </code></pre></button>
+<button class="command" title="Inserts variable into text
+"><pre><code> let greeting = `Hi ${name}!`; </code></pre></button>
+<button class="command" title="Counts characters in text (result: 11)
+"><pre><code> message.length; </code></pre></button>
+<button class="command" title="Makes all letters UPPERCASE
+"><pre><code> message.toUpperCase(); </code></pre></button>
+<button class="command" title="Makes all letters lowercase
+"><pre><code> message.toLowerCase(); </code></pre></button>
+<button class="command" title="Gets first character (result: "H")
+"><pre><code> message.charAt(0); </code></pre></button>
+<button class="command" title="Finds where "World" starts (result: 6)
+"><pre><code> message.indexOf("World"); </code></pre></button>
+<button class="command" title="Gets part of text (result: "Hello")
+"><pre><code> message.slice(0, 5); </code></pre></button>
+<button class="command" title="Changes "Hello" to "Hi"
+"><pre><code> message.replace("Hello", "Hi"); </code></pre></button>
+<button class="command" title="Splits text into array at spaces
+"><pre><code> message.split(" "); </code></pre></button>
+<button class="topic"> ARRAYS (LISTS OF DATA) </button>
+<button class="command" title="Creates list of numbers
+"><pre><code> let numbers = [1, 2, 3, 4, 5]; </code></pre></button>
+<button class="command" title="Creates list of fruits
 "><pre><code> let fruits = ["apple", "banana", "orange"]; </code></pre></button>
-<button class="command" title="Access first element (index 0)
-"><pre><code> arr[0]; </code></pre></button>
-<button class="command" title="Get array length
-"><pre><code> arr.length; </code></pre></button>
-<button class="command" title="Add element to end
-"><pre><code> arr.push(6); </code></pre></button>
-<button class="command" title="Remove last element
-"><pre><code> arr.pop(); </code></pre></button>
-<button class="command" title="Add element to beginning
-"><pre><code> arr.unshift(0); </code></pre></button>
-<button class="command" title="Remove first element
-"><pre><code> arr.shift(); </code></pre></button>
-<button class="command" title="Find index of element
-"><pre><code> arr.indexOf(3); </code></pre></button>
-<button class="command" title="Check if element exists
-"><pre><code> arr.includes(5); </code></pre></button>
-<button class="command" title="Convert array to string
-"><pre><code> arr.join(", "); </code></pre></button>
-<button class="command" title="Extract portion of array
-"><pre><code> arr.slice(1, 3); </code></pre></button>
-<button class="command" title="Remove elements from array
-"><pre><code> arr.splice(1, 2); </code></pre></button>
-<button class="topic"> OBJECTS </button>
-<button class="command" title="Object creation
+<button class="command" title="List can hold different data types
+"><pre><code> let mixed = [1, "hello", true]; </code></pre></button>
+<button class="command" title="Gets first item (result: 1)
+"><pre><code> numbers[0]; </code></pre></button>
+<button class="command" title="Gets second item (result: "banana")
+"><pre><code> fruits[1]; </code></pre></button>
+<button class="command" title="Counts how many items in list
+"><pre><code> numbers.length; </code></pre></button>
+<button class="command" title="Adds 6 to end of list
+"><pre><code> numbers.push(6); </code></pre></button>
+<button class="command" title="Removes last item from list
+"><pre><code> numbers.pop(); </code></pre></button>
+<button class="command" title="Adds 0 to beginning of list
+"><pre><code> numbers.unshift(0); </code></pre></button>
+<button class="command" title="Removes first item from list
+"><pre><code> numbers.shift(); </code></pre></button>
+<button class="command" title="Finds position of "banana" in list
+"><pre><code> fruits.indexOf("banana"); </code></pre></button>
+<button class="command" title="Checks if "apple" is in list (true/false)
+"><pre><code> fruits.includes("apple"); </code></pre></button>
+<button class="command" title="Converts list to text with commas
+"><pre><code> fruits.join(", "); </code></pre></button>
+<button class="topic"> OBJECTS (STORING RELATED DATA) </button>
+<button class="command" title="Creates object with name and age properties
 "><pre><code> let person = {name: "John", age: 30}; </code></pre></button>
-<button class="command" title="Access property (dot notation)
+<button class="command" title="Creates car object with brand and year
+"><pre><code> let car = {brand: "Toyota", year: 2020}; </code></pre></button>
+<button class="command" title="Gets the name property (result: "John")
 "><pre><code> person.name; </code></pre></button>
-<button class="command" title="Access property (bracket notation)
-"><pre><code> person["age"]; </code></pre></button>
-<button class="command" title="Add new property
+<button class="command" title="Gets the age property (result: 30)
+"><pre><code> person.age; </code></pre></button>
+<button class="command" title="Another way to get name property
+"><pre><code> person["name"]; </code></pre></button>
+<button class="command" title="Adds new city property to person
 "><pre><code> person.city = "New York"; </code></pre></button>
-<button class="command" title="Delete property
+<button class="command" title="Changes age to 31
+"><pre><code> person.age = 31; </code></pre></button>
+<button class="command" title="Removes age property from person
 "><pre><code> delete person.age; </code></pre></button>
-<button class="command" title="Get all property names
-"><pre><code> Object.keys(person); </code></pre></button>
-<button class="command" title="Get all property values
-"><pre><code> Object.values(person); </code></pre></button>
-<button class="command" title="Get key-value pairs
-"><pre><code> Object.entries(person); </code></pre></button>
-<button class="topic"> FUNCTIONS </button>
-<button class="command" title="Function declaration
-"><pre><code> function greet() { return "Hello"; } </code></pre></button>
-<button class="command" title="Function with parameters
-"><pre><code> function add(a, b) { return a + b; } </code></pre></button>
-<button class="command" title="Function expression
-"><pre><code> let multiply = function(x, y) { return x * y; } </code></pre></button>
-<button class="command" title="   Arrow function (short)
-"><pre><code> let divide = (a, b) =&gt; a / b; </code></pre></button>
-<button class="command" title="   Arrow function (single parameter)
-"><pre><code> let square = x =&gt; x * x; </code></pre></button>
-<button class="command" title="Call function
-"><pre><code> greet(); </code></pre></button>
-<button class="command" title="Call function with arguments
-"><pre><code> add(5, 3); </code></pre></button>
-<button class="command" title="Get function name
-"><pre><code> function.name; </code></pre></button>
-<button class="command" title="Get number of parameters
-"><pre><code> function.length; </code></pre></button>
-<button class="topic"> CONDITIONAL STATEMENTS </button>
-<button class="command" title="Basic if statement
-"><pre><code> if (condition) { /* code */ } </code></pre></button>
-<button class="command" title="   If with condition
-"><pre><code> if (x &gt; 5) { console.log("Greater"); } </code></pre></button>
-<button class="command" title="}  If-else statement
-"><pre><code> if (x &gt; 5) { /* true */ } else { /* false */ </code></pre></button>
-<button class="command" title=" }    Multiple conditions
-"><pre><code> if (x &gt; 10) { } else if (x &gt; 5) { } else { </code></pre></button>
-<button class="command" title="Switch statement
-"><pre><code> switch (variable) { case 1: break; default: } </code></pre></button>
-<button class="command" title="Ternary conditional operator
-"><pre><code> condition ? value1 : value2; </code></pre></button>
-<button class="topic"> LOOPS </button>
-<button class="command" title="   For loop
-"><pre><code> for (let i = 0; i &lt; 5; i++) { /* code */ } </code></pre></button>
-<button class="command" title="For-of loop (arrays)
-"><pre><code> for (let item of array) { /* code */ } </code></pre></button>
-<button class="command" title="For-in loop (objects)
-"><pre><code> for (let key in object) { /* code */ } </code></pre></button>
-<button class="command" title="While loop
-"><pre><code> while (condition) { /* code */ } </code></pre></button>
-<button class="command" title="Do-while loop
-"><pre><code> do { /* code */ } while (condition); </code></pre></button>
-<button class="command" title="Exit loop
-"><pre><code> break; </code></pre></button>
-<button class="command" title="Skip to next iteration
-"><pre><code> continue; </code></pre></button>
-<button class="topic"> DOM MANIPULATION </button>
-<button class="command" title="Get element by ID
-"><pre><code> document.getElementById("myId"); </code></pre></button>
-<button class="command" title="Get elements by class name
-"><pre><code> document.getElementsByClassName("myClass"); </code></pre></button>
-<button class="command" title="Get elements by tag name
-"><pre><code> document.getElementsByTagName("div"); </code></pre></button>
-<button class="command" title="Get first element matching CSS selector
+<button class="topic"> FUNCTIONS (REUSABLE CODE) </button>
+<button class="command" title="Creates function that says hello
+"><pre><code> function sayHello() { </code></pre></button>
+<button class="command" title=""><pre><code> alert("Hello!"); </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="Function that takes input (parameter)
+"><pre><code> function greet(name) { </code></pre></button>
+<button class="command" title=""><pre><code> return "Hello " + name; </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="Function that adds two numbers
+"><pre><code> function add(a, b) { </code></pre></button>
+<button class="command" title=""><pre><code> return a + b; </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="Runs the sayHello function
+"><pre><code> sayHello(); </code></pre></button>
+<button class="command" title="Runs greet function with "John" as input
+"><pre><code> greet("John"); </code></pre></button>
+<button class="command" title="Runs add function and stores result (8)
+"><pre><code> let result = add(5, 3); </code></pre></button>
+<button class="topic"> MAKING DECISIONS (IF STATEMENTS) </button>
+<button class="command" title="   If age is 18 or more, do something
+"><pre><code> if (age &gt;= 18) { </code></pre></button>
+<button class="command" title=""><pre><code> alert("You can vote!"); </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="   If age is 18 or more
+"><pre><code> if (age &gt;= 18) { </code></pre></button>
+<button class="command" title=""><pre><code> alert("You can vote!"); </code></pre></button>
+<button class="command" title="Otherwise (if age is less than 18)
+"><pre><code> } else { </code></pre></button>
+<button class="command" title=""><pre><code> alert("Too young to vote."); </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="   Multiple conditions checking score
+"><pre><code> if (score &gt;= 90) { </code></pre></button>
+<button class="command" title=""><pre><code> grade = "A"; </code></pre></button>
+<button class="command" title=""><pre><code> } else if (score &gt;= 80) { </code></pre></button>
+<button class="command" title=""><pre><code> grade = "B"; </code></pre></button>
+<button class="command" title=""><pre><code> } else { </code></pre></button>
+<button class="command" title=""><pre><code> grade = "C"; </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="topic"> LOOPS (REPEATING CODE) </button>
+<button class="command" title="   Repeats code 5 times (i goes 0,1,2,3,4)
+"><pre><code> for (let i = 0; i &lt; 5; i++) { </code></pre></button>
+<button class="command" title=""><pre><code> console.log("Count: " + i); </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title="
+"><pre><code> let fruits = ["apple", "banana", "orange"]; </code></pre></button>
+<button class="command" title="Goes through each item in array
+"><pre><code> for (let fruit of fruits) { </code></pre></button>
+<button class="command" title=""><pre><code> console.log(fruit); </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="command" title=""><pre><code> let count = 0; </code></pre></button>
+<button class="command" title="   Repeats while condition is true
+"><pre><code> while (count &lt; 3) { </code></pre></button>
+<button class="command" title=""><pre><code> console.log("Count: " + count); </code></pre></button>
+<button class="command" title=""><pre><code> count++; </code></pre></button>
+<button class="command" title=""><pre><code> } </code></pre></button>
+<button class="topic"> CHANGING HTML WITH JAVASCRIPT </button>
+<button class="command" title="Finds HTML element with id="myButton"
+"><pre><code> document.getElementById("myButton"); </code></pre></button>
+<button class="command" title="Finds first element with class="myClass"
 "><pre><code> document.querySelector(".myClass"); </code></pre></button>
-<button class="command" title="Get all elements matching selector
-"><pre><code> document.querySelectorAll("div"); </code></pre></button>
-<button class="command" title="Change HTML content
-"><pre><code> element.innerHTML = "New content"; </code></pre></button>
-<button class="command" title="Change text content only
-"><pre><code> element.textContent = "New text"; </code></pre></button>
-<button class="command" title="Set attribute
-"><pre><code> element.setAttribute("class", "newClass"); </code></pre></button>
-<button class="command" title="Get attribute value
-"><pre><code> element.getAttribute("class"); </code></pre></button>
-<button class="command" title="Change CSS style
-"><pre><code> element.style.color = "red"; </code></pre></button>
-<button class="command" title="Add CSS class
-"><pre><code> element.classList.add("newClass"); </code></pre></button>
-<button class="command" title="Remove CSS class
-"><pre><code> element.classList.remove("oldClass"); </code></pre></button>
-<button class="topic"> EVENTS </button>
-<button class="command" title="Click event (old way)
-"><pre><code> element.onclick = function() { /* code */ }; </code></pre></button>
-<button class="command" title="Add event listener (modern)
-"><pre><code> element.addEventListener("click", function() {}) </code></pre></button>
-<button class="command" title="Remove event listener
-"><pre><code> element.removeEventListener("click", handler); </code></pre></button>
-<button class="command" title="Page load event
-"><pre><code> window.onload = function() { /* code */ }; </code></pre></button>
-<button class="command" title="Document ready event
-"><pre><code> document.onready = function() { /* code */ }; </code></pre></button>
-<button class="command" title="Prevent default behavior
-"><pre><code> event.preventDefault(); </code></pre></button>
-<button class="command" title="Stop event bubbling
-"><pre><code> event.stopPropagation(); </code></pre></button>
-<button class="command" title="Element that triggered event
-"><pre><code> event.target; </code></pre></button>
-<button class="topic"> ERROR HANDLING </button>
-<button class="command" title="Try-catch block
-"><pre><code> try { /* risky code */ } catch (error) { } </code></pre></button>
-<button class="command" title="Throw custom error
-"><pre><code> throw new Error("Custom error message"); </code></pre></button>
-<button class="command" title="Finally block (always executes)
-"><pre><code> finally { /* always runs */ } </code></pre></button>
-<button class="command" title="Log error to console
-"><pre><code> console.error("Error message"); </code></pre></button>
+<button class="command" title="Finds first h1 heading element
+"><pre><code> document.querySelector("h1"); </code></pre></button>
+<button class="command" title="Gets element and stores it in variable
+"><pre><code> let title = document.getElementById("title"); </code></pre></button>
+<button class="command" title="Changes the content inside element
+"><pre><code> title.innerHTML = "New Title"; </code></pre></button>
+<button class="command" title="Changes only text (no HTML tags)
+"><pre><code> title.textContent = "Just Text"; </code></pre></button>
+<button class="command" title="Changes text color to red
+"><pre><code> title.style.color = "red"; </code></pre></button>
+<button class="command" title="Changes font size
+"><pre><code> title.style.fontSize = "24px"; </code></pre></button>
+<button class="command" title="Adds CSS class to element
+"><pre><code> element.classList.add("highlight"); </code></pre></button>
+<button class="command" title="Removes CSS class from element
+"><pre><code> element.classList.remove("hidden"); </code></pre></button>
+<button class="topic"> RESPONDING TO USER ACTIONS </button>
+<button class="command" title="When button is clicked, run this code
+"><pre><code> button.onclick = function() { </code></pre></button>
+<button class="command" title=""><pre><code> alert("Button was clicked!"); </code></pre></button>
+<button class="command" title=""><pre><code> }; </code></pre></button>
+<button class="command" title="Modern way to handle click events
+"><pre><code> button.addEventListener("click", function() { </code></pre></button>
+<button class="command" title=""><pre><code> console.log("Button clicked!"); </code></pre></button>
+<button class="command" title=""><pre><code> }); </code></pre></button>
+<button class="command" title="When user types in input field
+"><pre><code> input.addEventListener("keyup", function() { </code></pre></button>
+<button class="command" title=""><pre><code> console.log("User is typing!"); </code></pre></button>
+<button class="command" title=""><pre><code> }); </code></pre></button>
+<button class="command" title="When form is submitted
+"><pre><code> form.addEventListener("submit", function() { </code></pre></button>
+<button class="command" title=""><pre><code> console.log("Form submitted!"); </code></pre></button>
+<button class="command" title=""><pre><code> }); </code></pre></button>
 <button class="topic"> TIMING FUNCTIONS </button>
-<button class="command" title="Execute function after delay (ms)
-"><pre><code> setTimeout(function, 2000); </code></pre></button>
-<button class="command" title="Execute function repeatedly
-"><pre><code> setInterval(function, 1000); </code></pre></button>
-<button class="command" title="Cancel setTimeout
-"><pre><code> clearTimeout(timeoutId); </code></pre></button>
-<button class="command" title="Cancel setInterval
-"><pre><code> clearInterval(intervalId); </code></pre></button>
-<button class="topic"> JSON </button>
-<button class="command" title="Convert object to JSON string
-"><pre><code> JSON.stringify(object); </code></pre></button>
-<button class="command" title="Convert JSON string to object
-"><pre><code> JSON.parse(jsonString); </code></pre></button>
-<button class="command" title=")  Fetch JSON data from API
-"><pre><code> fetch('url').then(response =&gt; response.json() </code></pre></button>
-<button class="topic"> LOCAL STORAGE </button>
-<button class="command" title="Store data in browser
-"><pre><code> localStorage.setItem("key", "value"); </code></pre></button>
-<button class="command" title="Retrieve stored data
-"><pre><code> localStorage.getItem("key"); </code></pre></button>
-<button class="command" title="Remove specific item
-"><pre><code> localStorage.removeItem("key"); </code></pre></button>
-<button class="command" title="Clear all stored data
-"><pre><code> localStorage.clear(); </code></pre></button>
-<button class="command" title="Store data for session only
-"><pre><code> sessionStorage.setItem("key", "value"); </code></pre></button>
-<button class="topic"> MATH FUNCTIONS </button>
-<button class="command" title="Round to nearest integer
+<button class="command" title="Waits 2 seconds then runs code
+"><pre><code> setTimeout(function() { </code></pre></button>
+<button class="command" title=""><pre><code> alert("2 seconds passed!"); </code></pre></button>
+<button class="command" title=""><pre><code> }, 2000); </code></pre></button>
+<button class="command" title="Runs code every 1 second repeatedly
+"><pre><code> setInterval(function() { </code></pre></button>
+<button class="command" title=""><pre><code> console.log("1 second passed"); </code></pre></button>
+<button class="command" title=""><pre><code> }, 1000); </code></pre></button>
+<button class="topic"> BASIC MATH FUNCTIONS </button>
+<button class="command" title="Rounds 4.7 to nearest whole number (5)
 "><pre><code> Math.round(4.7); </code></pre></button>
-<button class="command" title="Round down
+<button class="command" title="Rounds down to 4
 "><pre><code> Math.floor(4.7); </code></pre></button>
-<button class="command" title="Round up
+<button class="command" title="Rounds up to 5
 "><pre><code> Math.ceil(4.3); </code></pre></button>
-<button class="command" title="Find maximum value
-"><pre><code> Math.max(1, 3, 2); </code></pre></button>
-<button class="command" title="Find minimum value
-"><pre><code> Math.min(1, 3, 2); </code></pre></button>
-<button class="command" title="Random number between 0 and 1
+<button class="command" title="Gets random number between 0 and 1
 "><pre><code> Math.random(); </code></pre></button>
-<button class="command" title="Square root
-"><pre><code> Math.sqrt(16); </code></pre></button>
-<button class="command" title="Power (2 to the power of 3)
-"><pre><code> Math.pow(2, 3); </code></pre></button>
-<button class="topic"> DATE AND TIME </button>
-<button class="command" title="Current date and time
-"><pre><code> let now = new Date(); </code></pre></button>
-<button class="command" title="Specific date
-"><pre><code> let date = new Date("2023-12-25"); </code></pre></button>
-<button class="command" title="Get year
-"><pre><code> date.getFullYear(); </code></pre></button>
-<button class="command" title="Get month (0-11)
-"><pre><code> date.getMonth(); </code></pre></button>
-<button class="command" title="Get day of month
-"><pre><code> date.getDate(); </code></pre></button>
-<button class="command" title="Get hours
-"><pre><code> date.getHours(); </code></pre></button>
-<button class="command" title="Get minutes
-"><pre><code> date.getMinutes(); </code></pre></button>
-<button class="command" title="Get seconds
-"><pre><code> date.getSeconds(); </code></pre></button>
-<button class="command" title="Convert to readable date string 
-"><pre><code> date.toDateString(); </code></pre></button>
-<button class="topic"> REGULAR EXPRESSIONS </button>
-<button class="command" title="Regular expression pattern
-"><pre><code> let pattern = /hello/i; </code></pre></button>
-<button class="command" title="Test if pattern matches
-"><pre><code> pattern.test(string); </code></pre></button>
-<button class="command" title="Find matches in string
-"><pre><code> string.match(pattern); </code></pre></button>
-<button class="command" title="Replace using regex
-"><pre><code> string.replace(/old/g, "new"); </code></pre></button>
-<button class="command" title="Regex with flags (i=ignore case, g=global) 
-"><pre><code> /pattern/flags; </code></pre></button>
+<button class="command" title="Finds biggest number (10)
+"><pre><code> Math.max(5, 10, 3); </code></pre></button>
+<button class="command" title="Finds smallest number (3)
+"><pre><code> Math.min(5, 10, 3); </code></pre></button>
+<button class="topic"> STORING DATA IN BROWSER </button>
+<button class="command" title="Saves data in browser (stays after refresh)
+"><pre><code> localStorage.setItem("username", "John"); </code></pre></button>
+<button class="command" title="Gets saved data from browser
+"><pre><code> localStorage.getItem("username"); </code></pre></button>
+<button class="command" title="Deletes specific saved data
+"><pre><code> localStorage.removeItem("username"); </code></pre></button>
+<button class="command" title="Saves data only for current session
+"><pre><code> sessionStorage.setItem("temp", "data"); </code></pre></button>
 <button class="topic"> COMMENTS </button>
-<button class="command" title="ingle line comment
-"><pre><code> // This is a single line comment               S </code></pre></button>
-<button class="command" title="ulti-line comment
-"><pre><code> /* This is a multi-line comment */             M </code></pre></button>
-<button class="command" title="ocumentation comment (JSDoc)
-"><pre><code> /** This is a documentation comment */         D </code></pre></button>
-<button class="topic"> DEBUGGING </button>
-<button class="command" title="og variable to console
-"><pre><code> console.log(variable);                         L </code></pre></button>
-<button class="command" title="og error message
-"><pre><code> console.error("Error occurred");               L </code></pre></button>
-<button class="command" title="og warning message
-"><pre><code> console.warn("Warning message");               L </code></pre></button>
-<button class="command" title="isplay array/object as table
-"><pre><code> console.table(array);                          D </code></pre></button>
+<button class="command" title="Notes that don't run as code
+"><pre><code> // This is a single line comment </code></pre></button>
+<button class="command" title="Multi-line comment for longer notes
+"><pre><code> /* This is a multi-line comment */ </code></pre></button>
 </body></html>

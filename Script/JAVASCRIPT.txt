@@ -1,0 +1,210 @@
+JavaScript is a programming language that makes websites interactive and dynamic. While HTML creates the structure and CSS adds styling, JavaScript adds behavior - like responding to clicks, validating forms, creating animations, and updating content without refreshing the page. It's what makes modern websites feel alive and responsive to user actions.
+=========================
+
+ADDING JAVASCRIPT TO HTML
+==========================
+<script> alert("Hello!"); </script>             JavaScript code inside HTML file
+<script src="script.js"></script>               Link to separate JavaScript file (recommended)
+console.log("Hello World");                     Shows message in browser's developer console
+alert("Hello World");                           Shows popup message box to user
+confirm("Are you sure?");                       Shows yes/no dialog box
+prompt("What's your name?");                    Shows input dialog box
+
+VARIABLES (STORING DATA)
+=======================
+let name = "John";                              Creates variable to store text
+let age = 25;                                   Creates variable to store number
+const PI = 3.14;                                Creates constant that cannot change
+let x;                                          Creates empty variable
+x = 10;                                         Puts value 10 into variable x
+let firstName = "John";                         Variable storing person's first name
+let lastName = "Doe";                           Variable storing person's last name
+
+DATA TYPES
+==========
+let message = "Hello World";                    Text data (called string)
+let count = 42;                                 Whole number data
+let price = 19.99;                              Decimal number data  
+let isReady = true;                             True/false data (called boolean)
+let isFinished = false;                         Another true/false value
+let nothing = null;                             Intentionally empty value
+let notSet;                                     Variable with no value (undefined)
+typeof age;                                     Shows what type of data a variable holds
+
+MATH OPERATIONS
+===============
+let sum = 5 + 3;                                Adds numbers together (result: 8)
+let difference = 10 - 4;                        Subtracts numbers (result: 6)
+let product = 6 * 7;                            Multiplies numbers (result: 42)
+let quotient = 15 / 3;                          Divides numbers (result: 5)
+let remainder = 17 % 5;                         Gets remainder after division (result: 2)
+x++;                                            Increases x by 1
+x--;                                            Decreases x by 1
+x += 5;                                         Adds 5 to x and stores result in x
+x -= 3;                                         Subtracts 3 from x and stores result in x
+
+COMPARING VALUES
+================
+x == y;                                         Checks if x and y are equal
+x === y;                                        Checks if x and y are exactly equal (same type)
+x != y;                                         Checks if x and y are not equal
+x !== y;                                        Checks if x and y are not exactly equal
+x > y;                                          Checks if x is greater than y
+x < y;                                          Checks if x is less than y
+x >= y;                                         Checks if x is greater than or equal to y
+x <= y;                                         Checks if x is less than or equal to y
+
+LOGICAL OPERATORS
+=================
+x && y;                                         Both x and y must be true
+x || y;                                         Either x or y must be true
+!x;                                             Opposite of x (if x is true, this is false)
+
+WORKING WITH TEXT
+==================
+let message = "Hello World";                    Creates text variable
+let name = 'John';                              Text can use single quotes too
+let greeting = `Hi ${name}!`;                   Inserts variable into text
+message.length;                                 Counts characters in text (result: 11)
+message.toUpperCase();                          Makes all letters UPPERCASE
+message.toLowerCase();                          Makes all letters lowercase
+message.charAt(0);                              Gets first character (result: "H")
+message.indexOf("World");                       Finds where "World" starts (result: 6)
+message.slice(0, 5);                            Gets part of text (result: "Hello")
+message.replace("Hello", "Hi");                 Changes "Hello" to "Hi"
+message.split(" ");                             Splits text into array at spaces
+
+ARRAYS (LISTS OF DATA)
+=======================
+let numbers = [1, 2, 3, 4, 5];                  Creates list of numbers
+let fruits = ["apple", "banana", "orange"];     Creates list of fruits
+let mixed = [1, "hello", true];                 List can hold different data types
+numbers[0];                                     Gets first item (result: 1)
+fruits[1];                                      Gets second item (result: "banana")
+numbers.length;                                 Counts how many items in list
+numbers.push(6);                                Adds 6 to end of list
+numbers.pop();                                  Removes last item from list
+numbers.unshift(0);                             Adds 0 to beginning of list
+numbers.shift();                                Removes first item from list
+fruits.indexOf("banana");                       Finds position of "banana" in list
+fruits.includes("apple");                       Checks if "apple" is in list (true/false)
+fruits.join(", ");                              Converts list to text with commas
+
+OBJECTS (STORING RELATED DATA)
+===============================
+let person = {name: "John", age: 30};           Creates object with name and age properties
+let car = {brand: "Toyota", year: 2020};        Creates car object with brand and year
+person.name;                                    Gets the name property (result: "John")
+person.age;                                     Gets the age property (result: 30)
+person["name"];                                 Another way to get name property
+person.city = "New York";                       Adds new city property to person
+person.age = 31;                                Changes age to 31
+delete person.age;                              Removes age property from person
+
+FUNCTIONS (REUSABLE CODE)
+==========================
+function sayHello() {                           Creates function that says hello
+    alert("Hello!");
+}
+function greet(name) {                          Function that takes input (parameter)
+    return "Hello " + name;
+}
+function add(a, b) {                            Function that adds two numbers
+    return a + b;
+}
+sayHello();                                     Runs the sayHello function
+greet("John");                                  Runs greet function with "John" as input
+let result = add(5, 3);                         Runs add function and stores result (8)
+
+MAKING DECISIONS (IF STATEMENTS)
+=================================
+if (age >= 18) {                                If age is 18 or more, do something
+    alert("You can vote!");
+}
+if (age >= 18) {                                If age is 18 or more
+    alert("You can vote!");
+} else {                                        Otherwise (if age is less than 18)
+    alert("Too young to vote.");
+}
+if (score >= 90) {                              Multiple conditions checking score
+    grade = "A";
+} else if (score >= 80) {
+    grade = "B";
+} else {
+    grade = "C";
+}
+
+LOOPS (REPEATING CODE)
+=======================
+for (let i = 0; i < 5; i++) {                   Repeats code 5 times (i goes 0,1,2,3,4)
+    console.log("Count: " + i);
+}
+let fruits = ["apple", "banana", "orange"];     
+for (let fruit of fruits) {                     Goes through each item in array
+    console.log(fruit);
+}
+let count = 0;
+while (count < 3) {                             Repeats while condition is true
+    console.log("Count: " + count);
+    count++;
+}
+
+CHANGING HTML WITH JAVASCRIPT
+==============================
+document.getElementById("myButton");            Finds HTML element with id="myButton"
+document.querySelector(".myClass");             Finds first element with class="myClass"
+document.querySelector("h1");                   Finds first h1 heading element
+let title = document.getElementById("title");   Gets element and stores it in variable
+title.innerHTML = "New Title";                  Changes the content inside element
+title.textContent = "Just Text";                Changes only text (no HTML tags)
+title.style.color = "red";                      Changes text color to red
+title.style.fontSize = "24px";                  Changes font size
+element.classList.add("highlight");             Adds CSS class to element
+element.classList.remove("hidden");             Removes CSS class from element
+
+RESPONDING TO USER ACTIONS
+============================
+button.onclick = function() {                   When button is clicked, run this code
+    alert("Button was clicked!");
+};
+button.addEventListener("click", function() {   Modern way to handle click events
+    console.log("Button clicked!");
+});
+input.addEventListener("keyup", function() {    When user types in input field
+    console.log("User is typing!");
+});
+form.addEventListener("submit", function() {    When form is submitted
+    console.log("Form submitted!");
+});
+
+TIMING FUNCTIONS
+=================
+setTimeout(function() {                         Waits 2 seconds then runs code
+    alert("2 seconds passed!");
+}, 2000);
+setInterval(function() {                        Runs code every 1 second repeatedly
+    console.log("1 second passed");
+}, 1000);
+
+BASIC MATH FUNCTIONS
+====================
+Math.round(4.7);                                Rounds 4.7 to nearest whole number (5)
+Math.floor(4.7);                                Rounds down to 4
+Math.ceil(4.3);                                 Rounds up to 5
+Math.random();                                  Gets random number between 0 and 1
+Math.max(5, 10, 3);                             Finds biggest number (10)
+Math.min(5, 10, 3);                             Finds smallest number (3)
+
+STORING DATA IN BROWSER
+=======================
+localStorage.setItem("username", "John");       Saves data in browser (stays after refresh)
+localStorage.getItem("username");               Gets saved data from browser
+localStorage.removeItem("username");            Deletes specific saved data
+sessionStorage.setItem("temp", "data");         Saves data only for current session
+
+COMMENTS
+========
+// This is a single line comment                Notes that don't run as code
+/* This is a multi-line comment */              Multi-line comment for longer notes
+   
+

@@ -9,361 +9,276 @@
     </head>
     <body>
         <h1>Let us learn 'HTML'</h1>
-        <hr><hr><button class="topic"> HTML, or HyperText Markup Language, is the foundational language of the web, serving as the backbone for creating and structuring content on webpages. It provides a systematic way to organize text, images, multimedia, and interactive elements so that web browsers can interpret and display them consistently across devices. Beyond mere presentation, HTML establishes the semantic structure of a webpage, enabling search engines, accessibility tools, and other technologies to understand the content meaningfully. As the cornerstone of web development, it works in tandem with CSS and JavaScript to deliver visually appealing, dynamic, and user-friendly online experiences, forming the essential framework on which the modern internet is built. </button>
+        <hr><hr><button class="topic"> HTML is the standard language for creating webpages. It uses tags to structure content like text, images, and links. HTML works with CSS for styling and JavaScript for interactivity. Every webpage starts with HTML - it's like the skeleton of a website that browsers can understand and display to users. </button>
 <button class="topic"> BASIC HTML STRUCTURE </button>
-<button class="command" title="      Document type declaration - must be first line
+<button class="command" title="      Tells browser this is HTML5 document
 "><pre><code> &lt;!DOCTYPE html&gt; </code></pre></button>
-<button class="command" title="      Root container element for entire webpage
+<button class="command" title="      Root element that contains entire webpage
 "><pre><code> &lt;html&gt; </code></pre></button>
-<button class="command" title="      Metadata section - not displayed to users
+<button class="command" title="      HTML with language attribute for accessibility
+"><pre><code> &lt;html lang="en"&gt; </code></pre></button>
+<button class="command" title="      Contains page info not shown to users
 "><pre><code> &lt;head&gt; </code></pre></button>
-<button class="command" title="            Title shown in browser tab and search results
-"><pre><code> &lt;title&gt;Page Title&lt;/title&gt; </code></pre></button>
-<button class="command" title="      Main content area visible to users
+<button class="command" title="            Text shown in browser tab
+"><pre><code> &lt;title&gt;My First Page&lt;/title&gt; </code></pre></button>
+<button class="command" title="      Contains all visible content on page
 "><pre><code> &lt;body&gt; </code></pre></button>
-<button class="command" title="&gt;  Inline CSS styling using RGB color values
-"><pre><code> &lt;body style="background-color: RGB(255,0,0);" </code></pre></button>
 <button class="topic"> HEADINGS </button>
-<button class="command" title="            Largest heading - main page title (SEO important)
+<button class="command" title="            Biggest heading for page title
 "><pre><code> &lt;h1&gt;Main Title&lt;/h1&gt; </code></pre></button>
-<button class="command" title="            Major section heading - second most important
-"><pre><code> &lt;h2&gt;Section Title&lt;/h2&gt; </code></pre></button>
-<button class="command" title="            Subsection within main sections
-"><pre><code> &lt;h3&gt;Subsection&lt;/h3&gt; </code></pre></button>
-<button class="command" title="            Fourth level - detailed categorization
-"><pre><code> &lt;h4&gt;Minor Heading&lt;/h4&gt; </code></pre></button>
-<button class="command" title="            Fifth level - fine-grained organization
-"><pre><code> &lt;h5&gt;Small Heading&lt;/h5&gt; </code></pre></button>
-<button class="command" title="            Least important - rarely used in practice
-"><pre><code> &lt;h6&gt;Smallest&lt;/h6&gt; </code></pre></button>
-<button class="topic"> TEXT CONTENT </button>
-<button class="command" title="            Block-level text container with automatic margins
-"><pre><code> &lt;p&gt;This is a paragraph.&lt;/p&gt; </code></pre></button>
-<button class="command" title="      Self-closing line break - forces new line
+<button class="command" title="            Second biggest for major sections
+"><pre><code> &lt;h2&gt;Chapter Title&lt;/h2&gt; </code></pre></button>
+<button class="command" title="            Third level for subsections
+"><pre><code> &lt;h3&gt;Section Title&lt;/h3&gt; </code></pre></button>
+<button class="command" title="            Fourth level for smaller parts
+"><pre><code> &lt;h4&gt;Subsection&lt;/h4&gt; </code></pre></button>
+<button class="command" title="            Fifth level rarely used
+"><pre><code> &lt;h5&gt;Minor Heading&lt;/h5&gt; </code></pre></button>
+<button class="command" title="            Smallest heading rarely used
+"><pre><code> &lt;h6&gt;Smallest Heading&lt;/h6&gt; </code></pre></button>
+<button class="topic"> PARAGRAPHS AND TEXT </button>
+<button class="command" title="            Main way to add text content
+"><pre><code> &lt;p&gt;This is a paragraph of text.&lt;/p&gt; </code></pre></button>
+<button class="command" title="            Each paragraph creates new block
+"><pre><code> &lt;p&gt;Another paragraph here.&lt;/p&gt; </code></pre></button>
+<button class="command" title="      Creates line break within text
 "><pre><code> &lt;br&gt; </code></pre></button>
-<button class="command" title="      Horizontal rule - creates visual section divider
+<button class="command" title="      Creates horizontal line to divide sections
 "><pre><code> &lt;hr&gt; </code></pre></button>
-<button class="topic"> TEXT FORMATTING </button>
-<button class="command" title="            Visual bold formatting without semantic meaning
-"><pre><code> &lt;b&gt;Bold text&lt;/b&gt; </code></pre></button>
-<button class="command" title="            Strong importance - bold with semantic value
-"><pre><code> &lt;strong&gt;Important&lt;/strong&gt; </code></pre></button>
-<button class="command" title="            Visual italic formatting only
-"><pre><code> &lt;i&gt;Italic text&lt;/i&gt; </code></pre></button>
-<button class="command" title="            Emphasized text - italic with semantic meaning
-"><pre><code> &lt;em&gt;Emphasized&lt;/em&gt; </code></pre></button>
-<button class="command" title="            Underlined text (avoid - confuses with links)
-"><pre><code> &lt;u&gt;Underlined&lt;/u&gt; </code></pre></button>
-<button class="command" title="            Text highlighting - like yellow marker
-"><pre><code> &lt;mark&gt;Highlighted&lt;/mark&gt; </code></pre></button>
-<button class="command" title="            Smaller text - legal disclaimers, copyright
-"><pre><code> &lt;small&gt;Fine print&lt;/small&gt; </code></pre></button>
-<button class="command" title="            Deprecated HTML element - use CSS font-size
-"><pre><code> &lt;big&gt;Bigger text&lt;/big&gt; </code></pre></button>
-<button class="command" title="            Subscript - chemical formulas, footnotes
-"><pre><code> &lt;sub&gt;H2O&lt;/sub&gt; </code></pre></button>
-<button class="command" title="            Superscript - mathematical expressions, ordinals
-"><pre><code> &lt;sup&gt;E=mc2&lt;/sup&gt; </code></pre></button>
-<button class="command" title="            Strikethrough - shows removed content
-"><pre><code> &lt;del&gt;Deleted text&lt;/del&gt; </code></pre></button>
-<button class="command" title="            Underlined - shows newly added content
-"><pre><code> &lt;ins&gt;Inserted text&lt;/ins&gt; </code></pre></button>
-<button class="command" title="gt;         Inline styling container for custom formatting
-"><pre><code> &lt;span style="color: red;"&gt;Styled&lt;/span& </code></pre></button>
-<button class="topic"> COMMENTS </button>
-<button class="command" title="      Developer notes - invisible to users but in source
-"><pre><code> &lt;!-- This is a comment --&gt; </code></pre></button>
+<button class="topic"> BASIC TEXT FORMATTING </button>
+<button class="command" title="            Makes text bold for visual emphasis
+"><pre><code> &lt;b&gt;Bold text here&lt;/b&gt; </code></pre></button>
+<button class="command" title="            Makes text bold for importance
+"><pre><code> &lt;strong&gt;Important text&lt;/strong&gt; </code></pre></button>
+<button class="command" title="            Makes text italic for visual style
+"><pre><code> &lt;i&gt;Italic text here&lt;/i&gt; </code></pre></button>
+<button class="command" title="            Makes text italic for emphasis
+"><pre><code> &lt;em&gt;Emphasized text&lt;/em&gt; </code></pre></button>
+<button class="command" title="            Underlines text (rarely used)
+"><pre><code> &lt;u&gt;Underlined text&lt;/u&gt; </code></pre></button>
+<button class="command" title="            Highlights text with yellow background
+"><pre><code> &lt;mark&gt;Highlighted text&lt;/mark&gt; </code></pre></button>
+<button class="command" title="            Makes text smaller than normal
+"><pre><code> &lt;small&gt;Small text&lt;/small&gt; </code></pre></button>
+<button class="command" title="            Makes text smaller and lower (like H₂O)
+"><pre><code> &lt;sub&gt;Subscript text&lt;/sub&gt; </code></pre></button>
+<button class="command" title="            Makes text smaller and higher (like E=MC²)
+"><pre><code> &lt;sup&gt;Superscript text&lt;/sup&gt; </code></pre></button>
 <button class="topic"> LINKS </button>
-<button class="command" title="t;          Hyperlink to external webpage or resource
-"><pre><code> &lt;a href="https://example.com"&gt;Link&lt;/a&g </code></pre></button>
-<button class="command" title="t;/a&gt;    Opens destination in new browser tab/window
-"><pre><code> &lt;a href="page.html" target="_blank"&gt;Link&l </code></pre></button>
-<button class="command" title=";/a&gt;     Opens in same tab (default browser behavior)
-"><pre><code> &lt;a href="page.html" target="_self"&gt;Link&lt </code></pre></button>
-<button class="command" title="gt;         Internal anchor link to element with id="section1"
-"><pre><code> &lt;a href="#section1"&gt;Jump to section&lt;/a& </code></pre></button>
-<button class="command" title="a&gt;       Creates clickable email link using default client
-"><pre><code> &lt;a href="mailto:user@email.com"&gt;Email&lt;/ </code></pre></button>
+<button class="command" title="lt;/a&gt;   Creates clickable link to another website
+"><pre><code> &lt;a href="https://google.com"&gt;Visit Google& </code></pre></button>
+<button class="command" title=";           Links to another page in same website
+"><pre><code> &lt;a href="page2.html"&gt;Go to Page 2&lt;/a&gt </code></pre></button>
+<button class="command" title="t;/a&gt;    Creates link that opens email program
+"><pre><code> &lt;a href="mailto:user@email.com"&gt;Email Me&l </code></pre></button>
+<button class="command" title="gt;         Links to another part of same page
+"><pre><code> &lt;a href="#section1"&gt;Jump to Section&lt;/a& </code></pre></button>
+<button class="command" title="gt;   Opens link in new tab or window
+"><pre><code> &lt;a href="https://google.com" target="_blank"& </code></pre></button>
+<button class="command" title=""><pre><code> Open in New Tab&lt;/a&gt; </code></pre></button>
 <button class="topic"> IMAGES </button>
-<button class="command" title="      Self-closing image element (no end tag needed)
-"><pre><code> &lt;img src="photo.jpg"&gt; </code></pre></button>
-<button class="command" title="      Alt text for accessibility and SEO (required!)
-"><pre><code> &lt;img src="photo.jpg" alt="Person smiling"&gt; </code></pre></button>
-<button class="command" title="      Fixed width in pixels (height auto-scales)
-"><pre><code> &lt;img src="photo.jpg" width="300"&gt; </code></pre></button>
-<button class="command" title="      Fixed height in pixels (width auto-scales)
-"><pre><code> &lt;img src="photo.jpg" height="200"&gt; </code></pre></button>
-<button class="command" title="      Tooltip text displayed on mouse hover
-"><pre><code> &lt;img src="photo.jpg" title="My vacation"&gt; </code></pre></button>
+<button class="command" title="      Displays image with description for screen readers
+"><pre><code> &lt;img src="photo.jpg" alt="My photo"&gt; </code></pre></button>
+<button class="command" title="      Image from images folder
+"><pre><code> &lt;img src="images/cat.jpg" alt="Cute cat"&gt; </code></pre></button>
+<button class="command" title="gt;   Image with fixed width in pixels
+"><pre><code> &lt;img src="photo.jpg" width="300" alt="Photo"& </code></pre></button>
+<button class="command" title="&gt;  Image with fixed height in pixels
+"><pre><code> &lt;img src="photo.jpg" height="200" alt="Photo" </code></pre></button>
+<button class="command" title="   Image with hover tooltip text
+"><pre><code> &lt;img src="photo.jpg" alt="Photo" </code></pre></button>
+<button class="command" title=""><pre><code> title="This is my vacation photo"&gt; </code></pre></button>
 <button class="topic"> LISTS </button>
-<button class="command" title="      Unordered list (bullet points)
+<button class="command" title="      Starts bulleted list
 "><pre><code> &lt;ul&gt; </code></pre></button>
-<button class="command" title="      List item
-"><pre><code> &lt;li&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/ul&gt; </code></pre></button>
-<button class="command" title="      Ordered list (numbered)
+<button class="command" title="            List item with bullet point
+"><pre><code> &lt;li&gt;First item&lt;/li&gt; </code></pre></button>
+<button class="command" title="            Another list item
+"><pre><code> &lt;li&gt;Second item&lt;/li&gt; </code></pre></button>
+<button class="command" title="      Ends bulleted list
+"><pre><code> &lt;/ul&gt; </code></pre></button>
+<button class="command" title="      Starts numbered list
 "><pre><code> &lt;ol&gt; </code></pre></button>
-<button class="command" title="      List item
-"><pre><code> &lt;li&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/ol&gt; </code></pre></button>
-<button class="command" title="      Ordered list with letters (A, B, C...)
-"><pre><code> &lt;ol type="A"&gt; </code></pre></button>
-<button class="command" title="      Ordered list with numbers (default)
-"><pre><code> &lt;ol type="1"&gt; </code></pre></button>
-<button class="command" title="      Ordered list with Roman numerals
-"><pre><code> &lt;ol type="I"&gt; </code></pre></button>
-<button class="command" title="      Description list
-"><pre><code> &lt;dl&gt; </code></pre></button>
-<button class="command" title="      Description term
-"><pre><code> &lt;dt&gt; </code></pre></button>
-<button class="command" title="      Description definition
-"><pre><code> &lt;dd&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/dl&gt; </code></pre></button>
+<button class="command" title="            Numbered list item
+"><pre><code> &lt;li&gt;First step&lt;/li&gt; </code></pre></button>
+<button class="command" title="            Another numbered item
+"><pre><code> &lt;li&gt;Second step&lt;/li&gt; </code></pre></button>
+<button class="command" title="      Ends numbered list
+"><pre><code> &lt;/ol&gt; </code></pre></button>
+<button class="topic"> COMMENTS </button>
+<button class="command" title="      Notes for developers only
+"><pre><code> &lt;!-- This text won't show on webpage --&gt; </code></pre></button>
 <button class="topic"> TABLES </button>
-<button class="command" title="      Table container
+<button class="command" title="      Creates data table with rows and columns
 "><pre><code> &lt;table&gt; </code></pre></button>
-<button class="command" title="      Table row
+<button class="command" title="      Creates table row
 "><pre><code> &lt;tr&gt; </code></pre></button>
-<button class="command" title="      Table header cell
-"><pre><code> &lt;th&gt; </code></pre></button>
-<button class="command" title="      Table data cell
-"><pre><code> &lt;td&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/tr&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/table&gt; </code></pre></button>
-<button class="command" title="      Table row with background color
-"><pre><code> &lt;tr bgcolor="color"&gt; </code></pre></button>
-<button class="command" title="      Table with background color
-"><pre><code> &lt;table bgcolor="color"&gt; </code></pre></button>
-<button class="command" title="      Table alignment (left/center/right)
-"><pre><code> &lt;table align="center"&gt; </code></pre></button>
-<button class="command" title="      Cell spans across 2 columns
-"><pre><code> &lt;td colspan="2"&gt; </code></pre></button>
-<button class="command" title="      Cell spans across 2 rows
-"><pre><code> &lt;td rowspan="2"&gt; </code></pre></button>
-<button class="command" title="      Table header section
-"><pre><code> &lt;thead&gt; </code></pre></button>
-<button class="command" title="      Table body section
-"><pre><code> &lt;tbody&gt; </code></pre></button>
-<button class="command" title="      Table footer section
-"><pre><code> &lt;tfoot&gt; </code></pre></button>
-<button class="topic"> FORMS </button>
-<button class="command" title="      Form container
+<button class="command" title="            Creates bold header cell
+"><pre><code> &lt;th&gt;Header 1&lt;/th&gt; </code></pre></button>
+<button class="command" title="            Another header cell in same row
+"><pre><code> &lt;th&gt;Header 2&lt;/th&gt; </code></pre></button>
+<button class="command" title="      Ends table row
+"><pre><code> &lt;/tr&gt; </code></pre></button>
+<button class="command" title="      Starts new data row
+"><pre><code> &lt;tr&gt; </code></pre></button>
+<button class="command" title="            Creates regular data cell
+"><pre><code> &lt;td&gt;Cell 1&lt;/td&gt; </code></pre></button>
+<button class="command" title="            Another data cell in same row
+"><pre><code> &lt;td&gt;Cell 2&lt;/td&gt; </code></pre></button>
+<button class="command" title="      Ends data row
+"><pre><code> &lt;/tr&gt; </code></pre></button>
+<button class="command" title="      Ends table
+"><pre><code> &lt;/table&gt; </code></pre></button>
+<button class="command" title="      Table with visible borders
+"><pre><code> &lt;table border="1"&gt; </code></pre></button>
+<button class="command" title="            Cell that spans across 2 columns
+"><pre><code> &lt;td colspan="2"&gt;Wide Cell&lt;/td&gt; </code></pre></button>
+<button class="command" title="            Cell that spans down 2 rows
+"><pre><code> &lt;td rowspan="2"&gt;Tall Cell&lt;/td&gt; </code></pre></button>
+<button class="topic"> BASIC FORMS </button>
+<button class="command" title="      Container for form elements
 "><pre><code> &lt;form&gt; </code></pre></button>
-<button class="command" title="      Form with submission details
-"><pre><code> &lt;form action="submit.php" method="POST"&gt; </code></pre></button>
-<button class="command" title=""><pre><code> INPUT TYPES: </code></pre></button>
-<button class="command" title="      Text input field
-"><pre><code> &lt;input type="text"&gt; </code></pre></button>
-<button class="command" title="      Password input field
-"><pre><code> &lt;input type="password"&gt; </code></pre></button>
-<button class="command" title="      Email input field
-"><pre><code> &lt;input type="email"&gt; </code></pre></button>
-<button class="command" title="      Number input field
-"><pre><code> &lt;input type="number"&gt; </code></pre></button>
-<button class="command" title="      Telephone number input
-"><pre><code> &lt;input type="tel"&gt; </code></pre></button>
-<button class="command" title="      URL input field
-"><pre><code> &lt;input type="url"&gt; </code></pre></button>
-<button class="command" title="      Date picker
-"><pre><code> &lt;input type="date"&gt; </code></pre></button>
-<button class="command" title="      Time picker
-"><pre><code> &lt;input type="time"&gt; </code></pre></button>
-<button class="command" title="      Color picker
-"><pre><code> &lt;input type="color"&gt; </code></pre></button>
-<button class="command" title="      File upload
-"><pre><code> &lt;input type="file"&gt; </code></pre></button>
-<button class="command" title="      Hidden input (not visible to user)
-"><pre><code> &lt;input type="hidden"&gt; </code></pre></button>
-<button class="command" title="      Checkbox (can select multiple)
-"><pre><code> &lt;input type="checkbox"&gt; </code></pre></button>
-<button class="command" title="      Radio button (select one from group)
-"><pre><code> &lt;input type="radio"&gt; </code></pre></button>
-<button class="command" title="      Slider input
-"><pre><code> &lt;input type="range"&gt; </code></pre></button>
-<button class="command" title="      Search input field
-"><pre><code> &lt;input type="search"&gt; </code></pre></button>
-<button class="command" title="      Submit button
-"><pre><code> &lt;input type="submit"&gt; </code></pre></button>
-<button class="command" title="      Regular button
-"><pre><code> &lt;input type="button"&gt; </code></pre></button>
-<button class="command" title="      Reset form button
-"><pre><code> &lt;input type="reset"&gt; </code></pre></button>
-<button class="command" title=""><pre><code> INPUT ATTRIBUTES: </code></pre></button>
-<button class="command" title="      Unique identifier (links with label)
-"><pre><code> &lt;input id="unique-id"&gt; </code></pre></button>
-<button class="command" title="      Name for form data submission
-"><pre><code> &lt;input name="username"&gt; </code></pre></button>
-<button class="command" title="      Hint text shown inside input field
-"><pre><code> &lt;input placeholder="Enter text here"&gt; </code></pre></button>
-<button class="command" title="      Pre-filled default value
-"><pre><code> &lt;input value="default text"&gt; </code></pre></button>
-<button class="command" title="      Makes field mandatory to fill
-"><pre><code> &lt;input required&gt; </code></pre></button>
-<button class="command" title="      User cannot edit (but can select/copy)
-"><pre><code> &lt;input readonly&gt; </code></pre></button>
-<button class="command" title="      Field is completely disabled
-"><pre><code> &lt;input disabled&gt; </code></pre></button>
-<button class="command" title="      Maximum characters allowed
-"><pre><code> &lt;input maxlength="50"&gt; </code></pre></button>
-<button class="command" title="      Minimum characters required
-"><pre><code> &lt;input minlength="5"&gt; </code></pre></button>
-<button class="command" title="      Visual width of input field
-"><pre><code> &lt;input size="30"&gt; </code></pre></button>
-<button class="command" title="      Browser suggests previous values
-"><pre><code> &lt;input autocomplete="on"&gt; </code></pre></button>
-<button class="command" title="      Auto-focuses on page load
-"><pre><code> &lt;input autofocus&gt; </code></pre></button>
-<button class="command" title="      Allow multiple selections (file, email)
-"><pre><code> &lt;input multiple&gt; </code></pre></button>
-<button class="command" title="      Step value for number/range inputs
-"><pre><code> &lt;input step="0.1"&gt; </code></pre></button>
-<button class="command" title="      Min/max values for number inputs
-"><pre><code> &lt;input min="0" max="100"&gt; </code></pre></button>
-<button class="command" title=""><pre><code> OTHER FORM ELEMENTS: </code></pre></button>
-<button class="command" title="      Multi-line text input
-"><pre><code> &lt;textarea&gt; </code></pre></button>
-<button class="command" title="      Textarea with specific dimensions
-"><pre><code> &lt;textarea rows="5" cols="30"&gt; </code></pre></button>
-<button class="command" title="      Dropdown menu
-"><pre><code> &lt;select&gt; </code></pre></button>
-<button class="command" title=";           Dropdown option with value
-"><pre><code> &lt;option value="1"&gt;Option 1&lt;/option&gt </code></pre></button>
-<button class="command" title="            Pre-selected option
-"><pre><code> &lt;option selected&gt;Default&lt;/option&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/select&gt; </code></pre></button>
-<button class="command" title="      Multi-select dropdown
-"><pre><code> &lt;select multiple&gt; </code></pre></button>
-<button class="command" title="      Label for form elements
-"><pre><code> &lt;label&gt; </code></pre></button>
-<button class="command" title="            Label linked to specific input
-"><pre><code> &lt;label for="input-id"&gt;Text&lt;/label&gt; </code></pre></button>
-<button class="command" title="      Groups related form elements
-"><pre><code> &lt;fieldset&gt; </code></pre></button>
-<button class="command" title="      Title for fieldset group
-"><pre><code> &lt;legend&gt; </code></pre></button>
-<button class="command" title="      Clickable button
-"><pre><code> &lt;button&gt; </code></pre></button>
-<button class="topic"> BUTTONS </button>
-<button class="command" title="      Basic clickable button
-"><pre><code> &lt;button&gt; </code></pre></button>
-<button class="command" title="      Regular button (default)
-"><pre><code> &lt;button type="button"&gt; </code></pre></button>
-<button class="command" title="      Submit form button
-"><pre><code> &lt;button type="submit"&gt; </code></pre></button>
-<button class="command" title="      Reset form button
-"><pre><code> &lt;button type="reset"&gt; </code></pre></button>
-<button class="command" title="      Input button with text
-"><pre><code> &lt;input type="button" value="Click Me"&gt; </code></pre></button>
-<button class="command" title="      Input submit button
+<button class="command" title="t;    Text input box with hint text
+"><pre><code> &lt;input type="text" placeholder="Enter name"&g </code></pre></button>
+<button class="command" title="   Password input that hides text
+"><pre><code> &lt;input type="password" </code></pre></button>
+<button class="command" title=""><pre><code> placeholder="Enter password"&gt; </code></pre></button>
+<button class="command" title="&gt;  Email input with validation
+"><pre><code> &lt;input type="email" placeholder="Enter email" </code></pre></button>
+<button class="command" title="gt;   Number input with up/down arrows
+"><pre><code> &lt;input type="number" placeholder="Enter age"& </code></pre></button>
+<button class="command" title="      Large text box for long text
+"><pre><code> &lt;textarea placeholder="Enter message"&gt; </code></pre></button>
+<button class="command" title=""><pre><code> &lt;/textarea&gt; </code></pre></button>
+<button class="command" title="      Button to submit form
 "><pre><code> &lt;input type="submit" value="Submit"&gt; </code></pre></button>
-<button class="command" title="      Input reset button
-"><pre><code> &lt;input type="reset" value="Reset"&gt; </code></pre></button>
-<button class="command" title="      Disabled button (not clickable)
-"><pre><code> &lt;button disabled&gt; </code></pre></button>
-<button class="command" title="      Button with JavaScript function
-"><pre><code> &lt;button onclick="function()"&gt; </code></pre></button>
-<button class="command" title="      Button with name and value
-"><pre><code> &lt;button name="btn1" value="data"&gt; </code></pre></button>
-<button class="command" title="      Button linked to specific form
-"><pre><code> &lt;button form="form1"&gt; </code></pre></button>
-<button class="command" title="      Submit to different URL
-"><pre><code> &lt;button formaction="page.html"&gt; </code></pre></button>
-<button class="command" title="      Override form method
-"><pre><code> &lt;button formmethod="POST"&gt; </code></pre></button>
-<button class="command" title="      Button focused on page load
-"><pre><code> &lt;button autofocus&gt; </code></pre></button>
+<button class="command" title="      Ends form container
+"><pre><code> &lt;/form&gt; </code></pre></button>
+<button class="topic"> FORM INPUT TYPES </button>
+<button class="command" title="      Regular text input
+"><pre><code> &lt;input type="text" name="username"&gt; </code></pre></button>
+<button class="command" title="      Password input (text hidden)
+"><pre><code> &lt;input type="password" name="pass"&gt; </code></pre></button>
+<button class="command" title="      Email input with @ validation
+"><pre><code> &lt;input type="email" name="email"&gt; </code></pre></button>
+<button class="command" title="      Checkbox for yes/no choices
+"><pre><code> &lt;input type="checkbox" name="agree"&gt; </code></pre></button>
+<button class="command" title=""&gt; Radio button for multiple choice
+"><pre><code> &lt;input type="radio" name="gender" value="male </code></pre></button>
+<button class="command" title="      File upload button
+"><pre><code> &lt;input type="file" name="upload"&gt; </code></pre></button>
+<button class="command" title="      Date picker calendar
+"><pre><code> &lt;input type="date" name="birthday"&gt; </code></pre></button>
+<button class="command" title="      Color picker tool
+"><pre><code> &lt;input type="color" name="favcolor"&gt; </code></pre></button>
+<button class="command" title="      Slider for number range
+"><pre><code> &lt;input type="range" min="1" max="10"&gt; </code></pre></button>
+<button class="topic"> FORM ELEMENTS </button>
+<button class="command" title="            Text label for form input
+"><pre><code> &lt;label for="name"&gt;Name:&lt;/label&gt; </code></pre></button>
+<button class="command" title="      Input linked to label above
+"><pre><code> &lt;input type="text" id="name" name="name"&gt; </code></pre></button>
+<button class="command" title="      Dropdown selection menu
+"><pre><code> &lt;select name="country"&gt; </code></pre></button>
+<button class="command" title="n&gt;       Choice in dropdown menu
+"><pre><code> &lt;option value="us"&gt;United States&lt;/optio </code></pre></button>
+<button class="command" title="            Another dropdown choice
+"><pre><code> &lt;option value="ca"&gt;Canada&lt;/option&gt; </code></pre></button>
+<button class="command" title="      Ends dropdown menu
+"><pre><code> &lt;/select&gt; </code></pre></button>
+<button class="command" title="            Clickable button for forms
+"><pre><code> &lt;button type="submit"&gt;Send&lt;/button&gt; </code></pre></button>
+<button class="command" title="gt;         Regular button (no form action)
+"><pre><code> &lt;button type="button"&gt;Click Me&lt;/button& </code></pre></button>
 <button class="topic"> SEMANTIC ELEMENTS </button>
-<button class="command" title="      Page or section header
-"><pre><code> &lt;header&gt; </code></pre></button>
-<button class="command" title="      Navigation links
-"><pre><code> &lt;nav&gt; </code></pre></button>
-<button class="command" title="      Main content area
-"><pre><code> &lt;main&gt; </code></pre></button>
-<button class="command" title="      Content section
-"><pre><code> &lt;section&gt; </code></pre></button>
-<button class="command" title="      Independent content
-"><pre><code> &lt;article&gt; </code></pre></button>
-<button class="command" title="      Sidebar content
-"><pre><code> &lt;aside&gt; </code></pre></button>
-<button class="command" title="      Page or section footer
-"><pre><code> &lt;footer&gt; </code></pre></button>
-<button class="command" title="      Generic container (no semantic meaning)
-"><pre><code> &lt;div&gt; </code></pre></button>
-<button class="command" title="      Inline container (no semantic meaning)
-"><pre><code> &lt;span&gt; </code></pre></button>
-<button class="topic"> MEDIA </button>
-<button class="command" title="      Audio player with controls
-"><pre><code> &lt;audio controls src="audio.mp3"&gt; </code></pre></button>
-<button class="command" title="      Auto-playing audio
-"><pre><code> &lt;audio autoplay src="audio.mp3"&gt; </code></pre></button>
-<button class="command" title="      Muted audio
-"><pre><code> &lt;audio muted src="audio.mp3"&gt; </code></pre></button>
-<button class="command" title="      Looping audio
-"><pre><code> &lt;audio loop src="audio.mp3"&gt; </code></pre></button>
-<button class="command" title="      Video player with controls
-"><pre><code> &lt;video controls src="video.mp4"&gt; </code></pre></button>
-<button class="command" title="      Auto-playing video
-"><pre><code> &lt;video autoplay src="video.mp4"&gt; </code></pre></button>
-<button class="command" title="      Muted video
-"><pre><code> &lt;video muted src="video.mp4"&gt; </code></pre></button>
-<button class="command" title="      Looping video
-"><pre><code> &lt;video loop src="video.mp4"&gt; </code></pre></button>
-<button class="command" title="      Video with specific dimensions
-"><pre><code> &lt;video width="400" height="300"&gt; </code></pre></button>
-<button class="topic"> ATTRIBUTES </button>
-<button class="command" title="Unique identifier for element
-"><pre><code> id="unique-name" </code></pre></button>
-<button class="command" title="CSS class for styling
-"><pre><code> class="class-name" </code></pre></button>
-<button class="command" title="Inline CSS styling
-"><pre><code> style="CSS-properties" </code></pre></button>
-<button class="command" title="Tooltip on hover
-"><pre><code> title="tooltip-text" </code></pre></button>
-<button class="topic"> META TAGS (in <head>) </button>
-<button class="command" title="      Character encoding
+<button class="command" title="r&gt;       Top section of page
+"><pre><code> &lt;header&gt;Page header content here&lt;/heade </code></pre></button>
+<button class="command" title="            Menu or navigation area
+"><pre><code> &lt;nav&gt;Navigation links here&lt;/nav&gt; </code></pre></button>
+<button class="command" title="            Primary content of page
+"><pre><code> &lt;main&gt;Main page content here&lt;/main&gt; </code></pre></button>
+<button class="command" title="gt;         Group of related content
+"><pre><code> &lt;section&gt;Related content here&lt;/section& </code></pre></button>
+<button class="command" title="cle&gt;     Self-contained content like blog post
+"><pre><code> &lt;article&gt;Independent content here&lt;/arti </code></pre></button>
+<button class="command" title="            Sidebar or related info
+"><pre><code> &lt;aside&gt;Side content here&lt;/aside&gt; </code></pre></button>
+<button class="command" title="r&gt;       Bottom section of page
+"><pre><code> &lt;footer&gt;Page footer content here&lt;/foote </code></pre></button>
+<button class="topic"> MEDIA ELEMENTS </button>
+<button class="command" title="udio&gt;    Audio player with play/pause controls
+"><pre><code> &lt;audio controls src="song.mp3"&gt;Audio&lt;/a </code></pre></button>
+<button class="command" title="video&gt;   Video player with play/pause controls
+"><pre><code> &lt;video controls src="movie.mp4"&gt;Video&lt;/ </code></pre></button>
+<button class="command" title="   Video with specific size and controls
+"><pre><code> &lt;video width="400" height="300" controls </code></pre></button>
+<button class="command" title=""><pre><code> src="clip.mp4"&gt;Video&lt;/video&gt; </code></pre></button>
+<button class="command" title="    Embeds another webpage or video
+"><pre><code> &lt;iframe src="https://youtube.com/embed/ID" </code></pre></button>
+<button class="command" title=""><pre><code> width="560" height="315"&gt; </code></pre></button>
+<button class="command" title=""><pre><code> &lt;/iframe&gt; </code></pre></button>
+<button class="topic"> META TAGS FOR HEAD </button>
+<button class="command" title="      Sets character encoding for text
 "><pre><code> &lt;meta charset="UTF-8"&gt; </code></pre></button>
-<button class="command" title="th&gt;Responsive design
-"><pre><code> &lt;meta name="viewport"content=width=device-wid </code></pre></button>
-<button class="command" title="      Page description for search engines
-"><pre><code> &lt;meta name="description" content="text"&gt; </code></pre></button>
-<button class="command" title="      Link to external CSS file
+<button class="command" title="   Makes page mobile-friendly
+"><pre><code> &lt;meta name="viewport" </code></pre></button>
+<button class="command" title=""><pre><code> content="width=device-width"&gt; </code></pre></button>
+<button class="command" title="   Page description for search engines
+"><pre><code> &lt;meta name="description" </code></pre></button>
+<button class="command" title=""><pre><code> content="This is my webpage"&gt; </code></pre></button>
+<button class="command" title="      Links external CSS file for styling
 "><pre><code> &lt;link rel="stylesheet" href="style.css"&gt; </code></pre></button>
-<button class="command" title="            Link to external JavaScript file
+<button class="command" title="            Links external JavaScript file
 "><pre><code> &lt;script src="script.js"&gt;&lt;/script&gt; </code></pre></button>
-<button class="command" title="&gt;  Keywords for search engines
-"><pre><code> &lt;meta name="keywords" content="HTML tutorial" </code></pre></button>
-<button class="command" title="      Author of the webpage
-"><pre><code> &lt;meta name="author" content="ojas"&gt; </code></pre></button>
-<button class="command" title="      Auto-refresh page every 30 seconds
-"><pre><code> &lt;meta http-equiv="refresh" content="30"&gt; </code></pre></button>
+<button class="topic"> COMMON ATTRIBUTES </button>
+<button class="command" title="Unique identifier for any element
+"><pre><code> id="unique-name" </code></pre></button>
+<button class="command" title="CSS class name for styling
+"><pre><code> class="style-name" </code></pre></button>
+<button class="command" title="Inline CSS styling directly on element
+"><pre><code> style="color: red;" </code></pre></button>
+<button class="command" title="Text shown when hovering over element
+"><pre><code> title="tooltip text" </code></pre></button>
+<button class="command" title="Alternative text for images
+"><pre><code> alt="description" </code></pre></button>
+<button class="command" title="Link destination for anchor tags
+"><pre><code> href="url" </code></pre></button>
+<button class="command" title="Source file path for images/media
+"><pre><code> src="file.jpg" </code></pre></button>
+<button class="command" title="Width of element in pixels
+"><pre><code> width="300" </code></pre></button>
+<button class="command" title="Height of element in pixels
+"><pre><code> height="200" </code></pre></button>
+<button class="topic"> CONTAINER ELEMENTS </button>
+<button class="command" title="            Generic container for grouping elements
+"><pre><code> &lt;div&gt;Content here&lt;/div&gt; </code></pre></button>
+<button class="command" title="            Inline container for styling parts of text
+"><pre><code> &lt;span&gt;Inline content&lt;/span&gt; </code></pre></button>
+<button class="command" title="            Section of related content
+"><pre><code> &lt;section&gt;Related content&lt;/section&gt; </code></pre></button>
+<button class="command" title="t;          Self-contained content like blog post
+"><pre><code> &lt;article&gt;Independent content&lt;/article&g </code></pre></button>
+<button class="command" title="            Header section of page or article
+"><pre><code> &lt;header&gt;Header content&lt;/header&gt; </code></pre></button>
+<button class="command" title="            Footer section of page or article
+"><pre><code> &lt;footer&gt;Footer content&lt;/footer&gt; </code></pre></button>
+<button class="command" title="            Navigation menu area
+"><pre><code> &lt;nav&gt;Navigation links&lt;/nav&gt; </code></pre></button>
+<button class="command" title="            Primary content of the page
+"><pre><code> &lt;main&gt;Main content&lt;/main&gt; </code></pre></button>
+<button class="command" title="            Sidebar or supplementary content
+"><pre><code> &lt;aside&gt;Side content&lt;/aside&gt; </code></pre></button>
 <button class="topic"> SPECIAL CHARACTERS </button>
-<button class="command" title="    Less than symbol (&lt;)
+<button class="command" title="    Shows less than symbol (&lt;)
 "><pre><code> &amp;lt; </code></pre></button>
-<button class="command" title="    Greater than symbol (&gt;)
+<button class="command" title="    Shows greater than symbol (&gt;)
 "><pre><code> &amp;gt; </code></pre></button>
-<button class="command" title="    Ampersand symbol (&amp;)
+<button class="command" title="    Shows ampersand symbol (&amp;)
 "><pre><code> &amp;amp; </code></pre></button>
-<button class="command" title="    Quote symbol (")
+<button class="command" title="    Shows quotation mark (")
 "><pre><code> &amp;quot; </code></pre></button>
-<button class="command" title="    Copyright symbol (©)
+<button class="command" title="    Shows copyright symbol (©)
 "><pre><code> &amp;copy; </code></pre></button>
-<button class="command" title="    Non-breaking space
+<button class="command" title="    Creates non-breaking space
 "><pre><code> &amp;nbsp; </code></pre></button>
-<button class="topic"> IFRAME (EMBEDDED CONTENT) </button>
-<button class="command" title="      Embeds another webpage inside current page
-"><pre><code> &lt;iframe src="URL"&gt; </code></pre></button>
-<button class="command" title=";     Iframe with specific dimensions
-"><pre><code> &lt;iframe src="URL" width="600" height="400"&gt </code></pre></button>
-<button class="command" title="      Iframe without border
-"><pre><code> &lt;iframe src="URL" frameborder="0"&gt; </code></pre></button>
-<button class="command" title="      Iframe without scrollbars
-"><pre><code> &lt;iframe src="URL" scrolling="no"&gt; </code></pre></button>
-<button class="command" title="      Named iframe (can be targeted by links)
-"><pre><code> &lt;iframe src="URL" name="frame1"&gt; </code></pre></button>
-<button class="command" title="      Allows iframe content to go fullscreen
-"><pre><code> &lt;iframe src="URL" allowfullscreen&gt; </code></pre></button>
-<button class="command" title="      Restricted iframe for security
-"><pre><code> &lt;iframe src="URL" sandbox&gt; </code></pre></button>
-<button class="command" title="      Lazy loading iframe (loads when visible)
-"><pre><code> &lt;iframe src="URL" loading="lazy"&gt; </code></pre></button>
 </body></html>

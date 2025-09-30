@@ -1,0 +1,188 @@
+HTML is the standard language for creating webpages. It uses tags to structure content like text, images, and links. HTML works with CSS for styling and JavaScript for interactivity. Every webpage starts with HTML - it's like the skeleton of a website that browsers can understand and display to users.
+===========================================================================
+
+BASIC HTML STRUCTURE
+====================
+<!DOCTYPE html>                                 Tells browser this is HTML5 document
+<html>                                          Root element that contains entire webpage
+<html lang="en">                                HTML with language attribute for accessibility
+<head>                                          Contains page info not shown to users
+<title>My First Page</title>                    Text shown in browser tab
+<body>                                          Contains all visible content on page
+
+HEADINGS
+========
+<h1>Main Title</h1>                             Biggest heading for page title
+<h2>Chapter Title</h2>                          Second biggest for major sections
+<h3>Section Title</h3>                          Third level for subsections
+<h4>Subsection</h4>                             Fourth level for smaller parts
+<h5>Minor Heading</h5>                          Fifth level rarely used
+<h6>Smallest Heading</h6>                       Smallest heading rarely used
+
+PARAGRAPHS AND TEXT
+===================
+<p>This is a paragraph of text.</p>             Main way to add text content
+<p>Another paragraph here.</p>                  Each paragraph creates new block
+<br>                                            Creates line break within text
+<hr>                                            Creates horizontal line to divide sections
+
+BASIC TEXT FORMATTING
+=====================
+<b>Bold text here</b>                           Makes text bold for visual emphasis
+<strong>Important text</strong>                 Makes text bold for importance
+<i>Italic text here</i>                         Makes text italic for visual style
+<em>Emphasized text</em>                        Makes text italic for emphasis
+<u>Underlined text</u>                          Underlines text (rarely used)
+<mark>Highlighted text</mark>                   Highlights text with yellow background
+<small>Small text</small>                       Makes text smaller than normal
+<sub>Subscript text</sub>                       Makes text smaller and lower (like H₂O)
+<sup>Superscript text</sup>                     Makes text smaller and higher (like E=MC²)
+
+LINKS
+=====
+<a href="https://google.com">Visit Google</a>   Creates clickable link to another website
+<a href="page2.html">Go to Page 2</a>           Links to another page in same website
+<a href="mailto:user@email.com">Email Me</a>    Creates link that opens email program
+<a href="#section1">Jump to Section</a>         Links to another part of same page
+<a href="https://google.com" target="_blank">   Opens link in new tab or window
+  Open in New Tab</a>
+
+IMAGES
+======
+<img src="photo.jpg" alt="My photo">            Displays image with description for screen readers
+<img src="images/cat.jpg" alt="Cute cat">       Image from images folder
+<img src="photo.jpg" width="300" alt="Photo">   Image with fixed width in pixels
+<img src="photo.jpg" height="200" alt="Photo">  Image with fixed height in pixels
+<img src="photo.jpg" alt="Photo"                Image with hover tooltip text
+     title="This is my vacation photo">
+
+LISTS
+=====
+<ul>                                            Starts bulleted list
+<li>First item</li>                             List item with bullet point
+<li>Second item</li>                            Another list item
+</ul>                                           Ends bulleted list
+<ol>                                            Starts numbered list
+<li>First step</li>                             Numbered list item
+<li>Second step</li>                            Another numbered item
+</ol>                                           Ends numbered list
+
+COMMENTS
+========
+<!-- This text won't show on webpage -->        Notes for developers only
+
+TABLES
+======
+<table>                                         Creates data table with rows and columns
+<tr>                                            Creates table row
+<th>Header 1</th>                               Creates bold header cell
+<th>Header 2</th>                               Another header cell in same row
+</tr>                                           Ends table row
+<tr>                                            Starts new data row
+<td>Cell 1</td>                                 Creates regular data cell
+<td>Cell 2</td>                                 Another data cell in same row
+</tr>                                           Ends data row
+</table>                                        Ends table
+<table border="1">                              Table with visible borders
+<td colspan="2">Wide Cell</td>                  Cell that spans across 2 columns
+<td rowspan="2">Tall Cell</td>                  Cell that spans down 2 rows
+
+BASIC FORMS
+===========
+<form>                                          Container for form elements
+<input type="text" placeholder="Enter name">    Text input box with hint text
+<input type="password"                          Password input that hides text
+       placeholder="Enter password">
+<input type="email" placeholder="Enter email">  Email input with validation
+<input type="number" placeholder="Enter age">   Number input with up/down arrows
+<textarea placeholder="Enter message">          Large text box for long text
+</textarea>
+<input type="submit" value="Submit">            Button to submit form
+</form>                                         Ends form container
+
+FORM INPUT TYPES
+================
+<input type="text" name="username">             Regular text input
+<input type="password" name="pass">             Password input (text hidden)
+<input type="email" name="email">               Email input with @ validation
+<input type="checkbox" name="agree">            Checkbox for yes/no choices
+<input type="radio" name="gender" value="male"> Radio button for multiple choice
+<input type="file" name="upload">               File upload button
+<input type="date" name="birthday">             Date picker calendar
+<input type="color" name="favcolor">            Color picker tool
+<input type="range" min="1" max="10">           Slider for number range
+
+FORM ELEMENTS
+=============
+<label for="name">Name:</label>                 Text label for form input
+<input type="text" id="name" name="name">       Input linked to label above
+<select name="country">                         Dropdown selection menu
+<option value="us">United States</option>       Choice in dropdown menu
+<option value="ca">Canada</option>              Another dropdown choice
+</select>                                       Ends dropdown menu
+<button type="submit">Send</button>             Clickable button for forms
+<button type="button">Click Me</button>         Regular button (no form action)
+
+SEMANTIC ELEMENTS
+=================
+<header>Page header content here</header>       Top section of page
+<nav>Navigation links here</nav>                Menu or navigation area
+<main>Main page content here</main>             Primary content of page
+<section>Related content here</section>         Group of related content
+<article>Independent content here</article>     Self-contained content like blog post
+<aside>Side content here</aside>                Sidebar or related info
+<footer>Page footer content here</footer>       Bottom section of page
+
+MEDIA ELEMENTS
+==============
+<audio controls src="song.mp3">Audio</audio>    Audio player with play/pause controls
+<video controls src="movie.mp4">Video</video>   Video player with play/pause controls
+<video width="400" height="300" controls        Video with specific size and controls
+       src="clip.mp4">Video</video>
+<iframe src="https://youtube.com/embed/ID"       Embeds another webpage or video
+        width="560" height="315">
+</iframe>
+
+META TAGS FOR HEAD
+==================
+<meta charset="UTF-8">                          Sets character encoding for text
+<meta name="viewport"                           Makes page mobile-friendly
+      content="width=device-width">
+<meta name="description"                        Page description for search engines
+      content="This is my webpage">
+<link rel="stylesheet" href="style.css">        Links external CSS file for styling
+<script src="script.js"></script>               Links external JavaScript file
+
+COMMON ATTRIBUTES
+=================
+id="unique-name"                                Unique identifier for any element
+class="style-name"                              CSS class name for styling
+style="color: red;"                             Inline CSS styling directly on element
+title="tooltip text"                            Text shown when hovering over element
+alt="description"                               Alternative text for images
+href="url"                                      Link destination for anchor tags
+src="file.jpg"                                  Source file path for images/media
+width="300"                                     Width of element in pixels
+height="200"                                    Height of element in pixels
+
+CONTAINER ELEMENTS
+==================
+<div>Content here</div>                         Generic container for grouping elements
+<span>Inline content</span>                     Inline container for styling parts of text
+<section>Related content</section>              Section of related content
+<article>Independent content</article>          Self-contained content like blog post
+<header>Header content</header>                 Header section of page or article
+<footer>Footer content</footer>                 Footer section of page or article
+<nav>Navigation links</nav>                     Navigation menu area
+<main>Main content</main>                       Primary content of the page
+<aside>Side content</aside>                     Sidebar or supplementary content
+
+SPECIAL CHARACTERS
+==================
+&lt;                                            Shows less than symbol (<)
+&gt;                                            Shows greater than symbol (>)
+&amp;                                           Shows ampersand symbol (&)
+&quot;                                          Shows quotation mark (")
+&copy;                                          Shows copyright symbol (©)
+&nbsp;                                          Creates non-breaking space
+
