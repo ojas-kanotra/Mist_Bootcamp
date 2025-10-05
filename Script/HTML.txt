@@ -1,3 +1,4 @@
+
 HTML is the standard language for creating webpages. It uses tags to structure content like text, images, and links. HTML works with CSS for styling and JavaScript for interactivity. Every webpage starts with HTML - it's like the skeleton of a website that browsers can understand and display to users.
 ===========================================================================
 

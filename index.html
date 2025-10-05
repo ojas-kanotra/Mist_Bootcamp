@@ -1,32 +1,96 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>WebDev</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>WebDev_Ka_Adda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Welcome to WebDev_ka_Adda</h1>
-    <hr><hr><BR><BR>
-    <p class="introduction"> Web development is the process of building and maintaining websites and web applications that are accessible via the internet or an intranet. It involves a blend of programming, design, and content creation to deliver functional, visually appealing, and interactive user experiences.</p>
-    <BR><BR>
-    <H3 text-color="Blue">fad</H3>
-    <div class="center-box">
-    <a href="HTML.html">
-    <button class="languages">HTML</button>
+<body class="bg-black text-white" style="font-family: 'Fira Code', monospace;">
+<nav class="m-6">
+  <div class="bg-gray-800 w-full flex justify-between items-center px-6 py-4 rounded">
+    <a href="#">
+      <img src="logo.png" class="h-16 w-auto" alt="Logo">
     </a>
-    <a href="CSS.html">
-    <button class="languages">CSS</button>
-    </a>
-    <a href="JAVASCRIPT.html">
-    <button class="languages">JavaScript</button>
-    </a>
+    <div class="flex gap-x-12">
+      <a href="#" class="font-semibold text-white text-lg">Introduction</a>
+      <a href="#" class="font-semibold text-white text-lg">About Me</a>
+      <a href="#" class="font-semibold text-white text-lg">Other Websites</a>
+      <a href="#" class="font-semibold text-white text-lg">Company</a>
     </div>
-    <BR><BR>
-    <footer>
-        <hr><hr>
-        <p class="footer-text">I hope this website was helpful.... ~~~OjasKanotra</p>
-    </footer>
+    <a href="#" class="font-semibold text-white text-lg">Welcome, User</a>
+  </div>
+</nav>
+
+<div class="text-center">
+  <h1 class="font-bold text-white text-6xl" style="font-family: 'Fira Code', 'JetBrains Mono' monospace;"> Welcome to WebDev_Ka_Adda </h1>
+</div>
+<BR>
+<div class="flex items-center justify-center">
+  <section class="mx-8 my-12 max-w-4xl">
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold">Introduction to Web Development</span>
+      <span class="h-px flex-1 bg-gray-500"></span>
+    </div>
+
+    <p class="mt-6 text-gray-300 leading-relaxed">
+      Web development is the process of building websites and web applications. It includes front-end work (what users see), back-end work (server logic and data), and the tooling that connects them. Common starting technologies are HTML for structure, CSS for presentation, and JavaScript for interactivity.
+    </p>
+
+    <div class="mt-8">
+      <div class="flex items-center" role="separator" aria-hidden="true">
+        <span class="h-px flex-1 bg-gray-500"></span>
+        <span class="shrink-0 px-4 text-white font-semibold">Why learn it?</span>
+        <span class="h-px flex-1 bg-gray-500"></span>
+      </div>
+      <p class="mt-4 text-gray-300 leading-relaxed">
+        Learning web development enables you to create projects, ship products, and collaborate on teams. It's a versatile skillset with strong real-world demand and immediate visual feedback.
+      </p>
+    </div>
+
+    <div class="mt-8">
+      <div class="flex items-center" role="separator" aria-hidden="true">
+        <span class="h-px flex-1 bg-gray-500"></span>
+        <span class="shrink-0 px-4 text-white font-semibold">How to get started</span>
+        <span class="h-px flex-1 bg-gray-500"></span>
+      </div>
+      <ul class="mt-4 list-disc list-inside text-gray-300 leading-relaxed">
+        <li>Begin with HTML to learn structure and semantics.</li>
+        <li>Use CSS to style pages and learn responsive layout techniques.</li>
+        <li>Add JavaScript for interactivity; explore frameworks and developer tools as you grow.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+<div class="mt-12 flex justify-center">
+  <nav class="flex gap-6">
+    <a class="group relative inline-block focus:ring-3 focus:outline-hidden mx-1" href="HTML.html">
+      <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span class="relative inline-block px-6 py-3 bg-gray-800 text-white font-semibold border-2 border-yellow-300">HTML</span>
+    </a>
+
+    <a class="group relative inline-block focus:ring-3 focus:outline-hidden mx-1" href="CSS.html">
+      <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span class="relative inline-block px-6 py-3 bg-gray-800 text-white font-semibold border-2 border-yellow-300">CSS</span>
+    </a>
+
+    <a class="group relative inline-block focus:ring-3 focus:outline-hidden mx-1" href="JAVASCRIPT.html">
+      <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span class="relative inline-block px-6 py-3 bg-gray-800 text-white font-semibold border-2 border-yellow-300">JavaScript</span>
+    </a>
+
+    <a class="group relative inline-block focus:ring-3 focus:outline-hidden mx-1" href="#">
+      <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+      <span class="relative inline-block px-6 py-3 bg-gray-800 text-white font-semibold border-2 border-yellow-300">Future Aspects</span>
+    </a>
+  </nav>
+</div>
+<BR><BR><BR>
+<footer class="mt-8 w-full">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm text-gray-400">Website by "ojas_kanotra for purpose of education"</p>
+    </div>
+</footer>
 </body>
 </html>
