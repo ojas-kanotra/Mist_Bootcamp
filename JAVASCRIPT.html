@@ -1,295 +1,940 @@
 
-    <!DOCTYPE html>
-    <head>
-        <title>WebDev</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Let us learn 'JAVASCRIPT'</h1>
-        <hr><hr><button class="topic"> JavaScript is a programming language that makes websites interactive and dynamic. While HTML creates the structure and CSS adds styling, JavaScript adds behavior - like responding to clicks, validating forms, creating animations, and updating content without refreshing the page. It's what makes modern websites feel alive and responsive to user actions. </button>
-<button class="topic"> ADDING JAVASCRIPT TO HTML </button>
-<button class="command" title="            JavaScript code inside HTML file
-"><pre><code> &lt;script&gt; alert("Hello!"); &lt;/script&gt; </code></pre></button>
-<button class="command" title="            Link to separate JavaScript file (recommended)
-"><pre><code> &lt;script src="script.js"&gt;&lt;/script&gt; </code></pre></button>
-<button class="command" title="Shows message in browser's developer console
-"><pre><code> console.log("Hello World"); </code></pre></button>
-<button class="command" title="Shows popup message box to user
-"><pre><code> alert("Hello World"); </code></pre></button>
-<button class="command" title="Shows yes/no dialog box
-"><pre><code> confirm("Are you sure?"); </code></pre></button>
-<button class="command" title="Shows input dialog box
-"><pre><code> prompt("What's your name?"); </code></pre></button>
-<button class="topic"> VARIABLES (STORING DATA) </button>
-<button class="command" title="Creates variable to store text
-"><pre><code> let name = "John"; </code></pre></button>
-<button class="command" title="Creates variable to store number
-"><pre><code> let age = 25; </code></pre></button>
-<button class="command" title="Creates constant that cannot change
-"><pre><code> const PI = 3.14; </code></pre></button>
-<button class="command" title="Creates empty variable
-"><pre><code> let x; </code></pre></button>
-<button class="command" title="Puts value 10 into variable x
-"><pre><code> x = 10; </code></pre></button>
-<button class="command" title="Variable storing person's first name
-"><pre><code> let firstName = "John"; </code></pre></button>
-<button class="command" title="Variable storing person's last name
-"><pre><code> let lastName = "Doe"; </code></pre></button>
-<button class="topic"> DATA TYPES </button>
-<button class="command" title="Text data (called string)
-"><pre><code> let message = "Hello World"; </code></pre></button>
-<button class="command" title="Whole number data
-"><pre><code> let count = 42; </code></pre></button>
-<button class="command" title="Decimal number data  
-"><pre><code> let price = 19.99; </code></pre></button>
-<button class="command" title="True/false data (called boolean)
-"><pre><code> let isReady = true; </code></pre></button>
-<button class="command" title="Another true/false value
-"><pre><code> let isFinished = false; </code></pre></button>
-<button class="command" title="Intentionally empty value
-"><pre><code> let nothing = null; </code></pre></button>
-<button class="command" title="Variable with no value (undefined)
-"><pre><code> let notSet; </code></pre></button>
-<button class="command" title="Shows what type of data a variable holds
-"><pre><code> typeof age; </code></pre></button>
-<button class="topic"> MATH OPERATIONS </button>
-<button class="command" title="Adds numbers together (result: 8)
-"><pre><code> let sum = 5 + 3; </code></pre></button>
-<button class="command" title="Subtracts numbers (result: 6)
-"><pre><code> let difference = 10 - 4; </code></pre></button>
-<button class="command" title="Multiplies numbers (result: 42)
-"><pre><code> let product = 6 * 7; </code></pre></button>
-<button class="command" title="Divides numbers (result: 5)
-"><pre><code> let quotient = 15 / 3; </code></pre></button>
-<button class="command" title="Gets remainder after division (result: 2)
-"><pre><code> let remainder = 17 % 5; </code></pre></button>
-<button class="command" title="Increases x by 1
-"><pre><code> x++; </code></pre></button>
-<button class="command" title="Decreases x by 1
-"><pre><code> x--; </code></pre></button>
-<button class="command" title="Adds 5 to x and stores result in x
-"><pre><code> x += 5; </code></pre></button>
-<button class="command" title="Subtracts 3 from x and stores result in x
-"><pre><code> x -= 3; </code></pre></button>
-<button class="topic"> COMPARING VALUES </button>
-<button class="topic"> x == y;                                         Checks if x and y are equal </button>
-<button class="command" title="Checks if x and y are not equal
-"><pre><code> x != y; </code></pre></button>
-<button class="command" title="Checks if x and y are not exactly equal
-"><pre><code> x !== y; </code></pre></button>
-<button class="command" title="   Checks if x is greater than y
-"><pre><code> x &gt; y; </code></pre></button>
-<button class="command" title="   Checks if x is less than y
-"><pre><code> x &lt; y; </code></pre></button>
-<button class="command" title="   Checks if x is greater than or equal to y
-"><pre><code> x &gt;= y; </code></pre></button>
-<button class="command" title="   Checks if x is less than or equal to y
-"><pre><code> x &lt;= y; </code></pre></button>
-<button class="topic"> LOGICAL OPERATORS </button>
-<button class="command" title="        Both x and y must be true
-"><pre><code> x &amp;&amp; y; </code></pre></button>
-<button class="command" title="Either x or y must be true
-"><pre><code> x || y; </code></pre></button>
-<button class="command" title="Opposite of x (if x is true, this is false)
-"><pre><code> !x; </code></pre></button>
-<button class="topic"> WORKING WITH TEXT </button>
-<button class="command" title="Creates text variable
-"><pre><code> let message = "Hello World"; </code></pre></button>
-<button class="command" title="Text can use single quotes too
-"><pre><code> let name = 'John'; </code></pre></button>
-<button class="command" title="Inserts variable into text
-"><pre><code> let greeting = `Hi ${name}!`; </code></pre></button>
-<button class="command" title="Counts characters in text (result: 11)
-"><pre><code> message.length; </code></pre></button>
-<button class="command" title="Makes all letters UPPERCASE
-"><pre><code> message.toUpperCase(); </code></pre></button>
-<button class="command" title="Makes all letters lowercase
-"><pre><code> message.toLowerCase(); </code></pre></button>
-<button class="command" title="Gets first character (result: "H")
-"><pre><code> message.charAt(0); </code></pre></button>
-<button class="command" title="Finds where "World" starts (result: 6)
-"><pre><code> message.indexOf("World"); </code></pre></button>
-<button class="command" title="Gets part of text (result: "Hello")
-"><pre><code> message.slice(0, 5); </code></pre></button>
-<button class="command" title="Changes "Hello" to "Hi"
-"><pre><code> message.replace("Hello", "Hi"); </code></pre></button>
-<button class="command" title="Splits text into array at spaces
-"><pre><code> message.split(" "); </code></pre></button>
-<button class="topic"> ARRAYS (LISTS OF DATA) </button>
-<button class="command" title="Creates list of numbers
-"><pre><code> let numbers = [1, 2, 3, 4, 5]; </code></pre></button>
-<button class="command" title="Creates list of fruits
-"><pre><code> let fruits = ["apple", "banana", "orange"]; </code></pre></button>
-<button class="command" title="List can hold different data types
-"><pre><code> let mixed = [1, "hello", true]; </code></pre></button>
-<button class="command" title="Gets first item (result: 1)
-"><pre><code> numbers[0]; </code></pre></button>
-<button class="command" title="Gets second item (result: "banana")
-"><pre><code> fruits[1]; </code></pre></button>
-<button class="command" title="Counts how many items in list
-"><pre><code> numbers.length; </code></pre></button>
-<button class="command" title="Adds 6 to end of list
-"><pre><code> numbers.push(6); </code></pre></button>
-<button class="command" title="Removes last item from list
-"><pre><code> numbers.pop(); </code></pre></button>
-<button class="command" title="Adds 0 to beginning of list
-"><pre><code> numbers.unshift(0); </code></pre></button>
-<button class="command" title="Removes first item from list
-"><pre><code> numbers.shift(); </code></pre></button>
-<button class="command" title="Finds position of "banana" in list
-"><pre><code> fruits.indexOf("banana"); </code></pre></button>
-<button class="command" title="Checks if "apple" is in list (true/false)
-"><pre><code> fruits.includes("apple"); </code></pre></button>
-<button class="command" title="Converts list to text with commas
-"><pre><code> fruits.join(", "); </code></pre></button>
-<button class="topic"> OBJECTS (STORING RELATED DATA) </button>
-<button class="command" title="Creates object with name and age properties
-"><pre><code> let person = {name: "John", age: 30}; </code></pre></button>
-<button class="command" title="Creates car object with brand and year
-"><pre><code> let car = {brand: "Toyota", year: 2020}; </code></pre></button>
-<button class="command" title="Gets the name property (result: "John")
-"><pre><code> person.name; </code></pre></button>
-<button class="command" title="Gets the age property (result: 30)
-"><pre><code> person.age; </code></pre></button>
-<button class="command" title="Another way to get name property
-"><pre><code> person["name"]; </code></pre></button>
-<button class="command" title="Adds new city property to person
-"><pre><code> person.city = "New York"; </code></pre></button>
-<button class="command" title="Changes age to 31
-"><pre><code> person.age = 31; </code></pre></button>
-<button class="command" title="Removes age property from person
-"><pre><code> delete person.age; </code></pre></button>
-<button class="topic"> FUNCTIONS (REUSABLE CODE) </button>
-<button class="command" title="Creates function that says hello
-"><pre><code> function sayHello() { </code></pre></button>
-<button class="command" title=""><pre><code> alert("Hello!"); </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title="Function that takes input (parameter)
-"><pre><code> function greet(name) { </code></pre></button>
-<button class="command" title=""><pre><code> return "Hello " + name; </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title="Function that adds two numbers
-"><pre><code> function add(a, b) { </code></pre></button>
-<button class="command" title=""><pre><code> return a + b; </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title="Runs the sayHello function
-"><pre><code> sayHello(); </code></pre></button>
-<button class="command" title="Runs greet function with "John" as input
-"><pre><code> greet("John"); </code></pre></button>
-<button class="command" title="Runs add function and stores result (8)
-"><pre><code> let result = add(5, 3); </code></pre></button>
-<button class="topic"> MAKING DECISIONS (IF STATEMENTS) </button>
-<button class="command" title="   If age is 18 or more, do something
-"><pre><code> if (age &gt;= 18) { </code></pre></button>
-<button class="command" title=""><pre><code> alert("You can vote!"); </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title="   If age is 18 or more
-"><pre><code> if (age &gt;= 18) { </code></pre></button>
-<button class="command" title=""><pre><code> alert("You can vote!"); </code></pre></button>
-<button class="command" title="Otherwise (if age is less than 18)
-"><pre><code> } else { </code></pre></button>
-<button class="command" title=""><pre><code> alert("Too young to vote."); </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title="   Multiple conditions checking score
-"><pre><code> if (score &gt;= 90) { </code></pre></button>
-<button class="command" title=""><pre><code> grade = "A"; </code></pre></button>
-<button class="command" title=""><pre><code> } else if (score &gt;= 80) { </code></pre></button>
-<button class="command" title=""><pre><code> grade = "B"; </code></pre></button>
-<button class="command" title=""><pre><code> } else { </code></pre></button>
-<button class="command" title=""><pre><code> grade = "C"; </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="topic"> LOOPS (REPEATING CODE) </button>
-<button class="command" title="   Repeats code 5 times (i goes 0,1,2,3,4)
-"><pre><code> for (let i = 0; i &lt; 5; i++) { </code></pre></button>
-<button class="command" title=""><pre><code> console.log("Count: " + i); </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title="
-"><pre><code> let fruits = ["apple", "banana", "orange"]; </code></pre></button>
-<button class="command" title="Goes through each item in array
-"><pre><code> for (let fruit of fruits) { </code></pre></button>
-<button class="command" title=""><pre><code> console.log(fruit); </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title=""><pre><code> let count = 0; </code></pre></button>
-<button class="command" title="   Repeats while condition is true
-"><pre><code> while (count &lt; 3) { </code></pre></button>
-<button class="command" title=""><pre><code> console.log("Count: " + count); </code></pre></button>
-<button class="command" title=""><pre><code> count++; </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="topic"> CHANGING HTML WITH JAVASCRIPT </button>
-<button class="command" title="Finds HTML element with id="myButton"
-"><pre><code> document.getElementById("myButton"); </code></pre></button>
-<button class="command" title="Finds first element with class="myClass"
-"><pre><code> document.querySelector(".myClass"); </code></pre></button>
-<button class="command" title="Finds first h1 heading element
-"><pre><code> document.querySelector("h1"); </code></pre></button>
-<button class="command" title="Gets element and stores it in variable
-"><pre><code> let title = document.getElementById("title"); </code></pre></button>
-<button class="command" title="Changes the content inside element
-"><pre><code> title.innerHTML = "New Title"; </code></pre></button>
-<button class="command" title="Changes only text (no HTML tags)
-"><pre><code> title.textContent = "Just Text"; </code></pre></button>
-<button class="command" title="Changes text color to red
-"><pre><code> title.style.color = "red"; </code></pre></button>
-<button class="command" title="Changes font size
-"><pre><code> title.style.fontSize = "24px"; </code></pre></button>
-<button class="command" title="Adds CSS class to element
-"><pre><code> element.classList.add("highlight"); </code></pre></button>
-<button class="command" title="Removes CSS class from element
-"><pre><code> element.classList.remove("hidden"); </code></pre></button>
-<button class="topic"> RESPONDING TO USER ACTIONS </button>
-<button class="command" title="When button is clicked, run this code
-"><pre><code> button.onclick = function() { </code></pre></button>
-<button class="command" title=""><pre><code> alert("Button was clicked!"); </code></pre></button>
-<button class="command" title=""><pre><code> }; </code></pre></button>
-<button class="command" title="Modern way to handle click events
-"><pre><code> button.addEventListener("click", function() { </code></pre></button>
-<button class="command" title=""><pre><code> console.log("Button clicked!"); </code></pre></button>
-<button class="command" title=""><pre><code> }); </code></pre></button>
-<button class="command" title="When user types in input field
-"><pre><code> input.addEventListener("keyup", function() { </code></pre></button>
-<button class="command" title=""><pre><code> console.log("User is typing!"); </code></pre></button>
-<button class="command" title=""><pre><code> }); </code></pre></button>
-<button class="command" title="When form is submitted
-"><pre><code> form.addEventListener("submit", function() { </code></pre></button>
-<button class="command" title=""><pre><code> console.log("Form submitted!"); </code></pre></button>
-<button class="command" title=""><pre><code> }); </code></pre></button>
-<button class="topic"> TIMING FUNCTIONS </button>
-<button class="command" title="Waits 2 seconds then runs code
-"><pre><code> setTimeout(function() { </code></pre></button>
-<button class="command" title=""><pre><code> alert("2 seconds passed!"); </code></pre></button>
-<button class="command" title=""><pre><code> }, 2000); </code></pre></button>
-<button class="command" title="Runs code every 1 second repeatedly
-"><pre><code> setInterval(function() { </code></pre></button>
-<button class="command" title=""><pre><code> console.log("1 second passed"); </code></pre></button>
-<button class="command" title=""><pre><code> }, 1000); </code></pre></button>
-<button class="topic"> BASIC MATH FUNCTIONS </button>
-<button class="command" title="Rounds 4.7 to nearest whole number (5)
-"><pre><code> Math.round(4.7); </code></pre></button>
-<button class="command" title="Rounds down to 4
-"><pre><code> Math.floor(4.7); </code></pre></button>
-<button class="command" title="Rounds up to 5
-"><pre><code> Math.ceil(4.3); </code></pre></button>
-<button class="command" title="Gets random number between 0 and 1
-"><pre><code> Math.random(); </code></pre></button>
-<button class="command" title="Finds biggest number (10)
-"><pre><code> Math.max(5, 10, 3); </code></pre></button>
-<button class="command" title="Finds smallest number (3)
-"><pre><code> Math.min(5, 10, 3); </code></pre></button>
-<button class="topic"> STORING DATA IN BROWSER </button>
-<button class="command" title="Saves data in browser (stays after refresh)
-"><pre><code> localStorage.setItem("username", "John"); </code></pre></button>
-<button class="command" title="Gets saved data from browser
-"><pre><code> localStorage.getItem("username"); </code></pre></button>
-<button class="command" title="Deletes specific saved data
-"><pre><code> localStorage.removeItem("username"); </code></pre></button>
-<button class="command" title="Saves data only for current session
-"><pre><code> sessionStorage.setItem("temp", "data"); </code></pre></button>
-<button class="topic"> COMMENTS </button>
-<button class="command" title="Notes that don't run as code
-"><pre><code> // This is a single line comment </code></pre></button>
-<button class="command" title="Multi-line comment for longer notes
-"><pre><code> /* This is a multi-line comment */ </code></pre></button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebDev_Ka_Adda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white" style="font-family: 'Fira Code', monospace;">
+<nav class="m-6">
+  <div class="bg-gray-800 w-full flex justify-between items-center px-6 py-4 rounded">
+    <a href="#">
+      <img src="logo.png" class="h-16 w-auto" alt="Logo">
+    </a>
+    <div class="flex gap-x-12">
+      <a href="#" class="font-semibold text-white text-lg">Introduction</a>
+      <a href="#" class="font-semibold text-white text-lg">About Me</a>
+      <a href="#" class="font-semibold text-white text-lg">Other Websites</a>
+      <a href="#" class="font-semibold text-white text-lg">Company</a>
+    </div>
+    <a href="#" class="font-semibold text-white text-lg">Welcome, User</a>
+  </div>
+</nav>
+
+<div class="text-center">
+  <h1 class="font-bold text-white text-6xl" style="font-family: 'Fira Code', 'JetBrains Mono', monospace;"> JAVASCRIPT </h1>
+</div>
+<BR>
+    
+    <p class="text-white text-center"> JavaScript is a programming language that makes websites interactive and dynamic. While HTML creates the structure and CSS adds styling, JavaScript adds behavior - like responding to clicks, validating forms, creating animations, and updating content without refreshing the page. It's what makes modern websites feel alive and responsive to user actions. </p>
+    
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">ADDING JAVASCRIPT TO HTML</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;script&gt; alert("Hello!"); &lt;/script&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">JavaScript code inside HTML file</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;script src="script.js"&gt;&lt;/script&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Link to separate JavaScript file (recommended)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">console.log("Hello World");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows message in browser's developer console</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">alert("Hello World");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows popup message box to user</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">confirm("Are you sure?");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows yes/no dialog box</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">prompt("What's your name?");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows input dialog box</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">VARIABLES (STORING DATA)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let name = "John";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates variable to store text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let age = 25;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates variable to store number</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">const PI = 3.14;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates constant that cannot change</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let x;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates empty variable</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x = 10;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Puts value 10 into variable x</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let firstName = "John";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Variable storing person's first name</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let lastName = "Doe";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Variable storing person's last name</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">DATA TYPES</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let message = "Hello World";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Text data (called string)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let count = 42;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Whole number data</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let price = 19.99;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Decimal number data</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let isReady = true;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">True/false data (called boolean)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let isFinished = false;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Another true/false value</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let nothing = null;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Intentionally empty value</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let notSet;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Variable with no value (undefined)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">typeof age;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows what type of data a variable holds</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">MATH OPERATIONS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let sum = 5 + 3;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds numbers together (result: 8)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let difference = 10 - 4;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Subtracts numbers (result: 6)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let product = 6 * 7;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Multiplies numbers (result: 42)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let quotient = 15 / 3;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Divides numbers (result: 5)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let remainder = 17 % 5;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets remainder after division (result: 2)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x++;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Increases x by 1</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x--;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Decreases x by 1</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x += 5;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 5 to x and stores result in x</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x -= 3;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Subtracts 3 from x and stores result in x</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">COMPARING VALUES</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">x == y;                                         Checks if x and y are equal</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x != y;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Checks if x and y are not equal</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x !== y;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Checks if x and y are not exactly equal</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x &gt; y;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Checks if x is greater than y</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x &lt; y;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Checks if x is less than y</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x &gt;= y;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Checks if x is greater than or equal to y</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x &lt;= y;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Checks if x is less than or equal to y</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">LOGICAL OPERATORS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x &amp;&amp; y;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Both x and y must be true</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">x || y;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Either x or y must be true</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">!x;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Opposite of x (if x is true, this is false)</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">WORKING WITH TEXT</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let message = "Hello World";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates text variable</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let name = 'John';</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Text can use single quotes too</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let greeting = `Hi ${name}!`;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Inserts variable into text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">message.length;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Counts characters in text (result: 11)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">message.toUpperCase();</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes all letters UPPERCASE</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">message.toLowerCase();</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes all letters lowercase</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">message.charAt(0);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets first character (result: "H")</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">message.indexOf("World");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Finds where "World" starts (result: 6)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">message.slice(0, 5);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets part of text (result: "Hello")</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">message.replace("Hello", "Hi");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes "Hello" to "Hi"</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">message.split(" ");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Splits text into array at spaces</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">ARRAYS (LISTS OF DATA)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let numbers = [1, 2, 3, 4, 5];</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates list of numbers</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let fruits = ["apple", "banana", "orange"];</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates list of fruits</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let mixed = [1, "hello", true];</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">List can hold different data types</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">numbers[0];</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets first item (result: 1)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">fruits[1];</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets second item (result: "banana")</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">numbers.length;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Counts how many items in list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">numbers.push(6);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 6 to end of list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">numbers.pop();</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Removes last item from list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">numbers.unshift(0);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 0 to beginning of list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">numbers.shift();</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Removes first item from list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">fruits.indexOf("banana");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Finds position of "banana" in list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">fruits.includes("apple");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Checks if "apple" is in list (true/false)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">fruits.join(", ");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Converts list to text with commas</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">OBJECTS (STORING RELATED DATA)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let person = {name: "John", age: 30};</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates object with name and age properties</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let car = {brand: "Toyota", year: 2020};</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates car object with brand and year</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">person.name;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets the name property (result: "John")</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">person.age;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets the age property (result: 30)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">person["name"];</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Another way to get name property</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">person.city = "New York";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds new city property to person</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">person.age = 31;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes age to 31</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">delete person.age;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Removes age property from person</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">FUNCTIONS (REUSABLE CODE)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">function sayHello() {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates function that says hello</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">alert("Hello!");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">function greet(name) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Function that takes input (parameter)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">return "Hello " + name;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">function add(a, b) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Function that adds two numbers</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">return a + b;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">sayHello();</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Runs the sayHello function</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">greet("John");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Runs greet function with "John" as input</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let result = add(5, 3);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Runs add function and stores result (8)</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">MAKING DECISIONS (IF STATEMENTS)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">if (age &gt;= 18) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">If age is 18 or more, do something</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">alert("You can vote!");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">if (age &gt;= 18) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">If age is 18 or more</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">alert("You can vote!");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">} else {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Otherwise (if age is less than 18)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">alert("Too young to vote.");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">if (score &gt;= 90) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Multiple conditions checking score</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">grade = "A";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">} else if (score &gt;= 80) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">grade = "B";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">} else {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">grade = "C";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">LOOPS (REPEATING CODE)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">for (let i = 0; i &lt; 5; i++) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Repeats code 5 times (i goes 0,1,2,3,4)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">console.log("Count: " + i);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let fruits = ["apple", "banana", "orange"];</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">for (let fruit of fruits) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Goes through each item in array</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">console.log(fruit);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let count = 0;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">while (count &lt; 3) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Repeats while condition is true</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">console.log("Count: " + count);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">count++;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">CHANGING HTML WITH JAVASCRIPT</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">document.getElementById("myButton");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Finds HTML element with id="myButton"</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">document.querySelector(".myClass");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Finds first element with class="myClass"</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">document.querySelector("h1");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Finds first h1 heading element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">let title = document.getElementById("title");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets element and stores it in variable</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">title.innerHTML = "New Title";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes the content inside element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">title.textContent = "Just Text";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes only text (no HTML tags)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">title.style.color = "red";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes text color to red</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">title.style.fontSize = "24px";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes font size</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">element.classList.add("highlight");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds CSS class to element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">element.classList.remove("hidden");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Removes CSS class from element</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">RESPONDING TO USER ACTIONS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">button.onclick = function() {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">When button is clicked, run this code</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">alert("Button was clicked!");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">};</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">button.addEventListener("click", function() {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Modern way to handle click events</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">console.log("Button clicked!");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">});</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">input.addEventListener("keyup", function() {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">When user types in input field</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">console.log("User is typing!");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">});</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">form.addEventListener("submit", function() {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">When form is submitted</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">console.log("Form submitted!");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">});</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">TIMING FUNCTIONS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">setTimeout(function() {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Waits 2 seconds then runs code</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">alert("2 seconds passed!");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}, 2000);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">setInterval(function() {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Runs code every 1 second repeatedly</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">console.log("1 second passed");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}, 1000);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">BASIC MATH FUNCTIONS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">Math.round(4.7);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Rounds 4.7 to nearest whole number (5)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">Math.floor(4.7);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Rounds down to 4</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">Math.ceil(4.3);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Rounds up to 5</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">Math.random();</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets random number between 0 and 1</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">Math.max(5, 10, 3);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Finds biggest number (10)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">Math.min(5, 10, 3);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Finds smallest number (3)</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">STORING DATA IN BROWSER</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">localStorage.setItem("username", "John");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Saves data in browser (stays after refresh)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">localStorage.getItem("username");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Gets saved data from browser</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">localStorage.removeItem("username");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Deletes specific saved data</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">sessionStorage.setItem("temp", "data");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Saves data only for current session</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">COMMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">// This is a single line comment</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Notes that don't run as code</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">/* This is a multi-line comment */</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Multi-line comment for longer notes</div> 
+    </div>
+
+<footer class="mt-8 w-full py-4 border-t border-gray-700 bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm text-gray-400">Generated from txt files | <a href="index.html" class="text-blue-400 hover:text-blue-300">Back to Home</a></p>
+    </div>
+</footer>
 </body></html>

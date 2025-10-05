@@ -1,5 +1,4 @@
 JavaScript is a programming language that makes websites interactive and dynamic. While HTML creates the structure and CSS adds styling, JavaScript adds behavior - like responding to clicks, validating forms, creating animations, and updating content without refreshing the page. It's what makes modern websites feel alive and responsive to user actions.
-=========================
 
 ADDING JAVASCRIPT TO HTML
 ==========================

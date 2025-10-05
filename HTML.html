@@ -1,284 +1,837 @@
 
-    <!DOCTYPE html>
-    <head>
-        <title>WebDev</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Let us learn 'HTML'</h1>
-        <hr><hr><button class="topic"> HTML is the standard language for creating webpages. It uses tags to structure content like text, images, and links. HTML works with CSS for styling and JavaScript for interactivity. Every webpage starts with HTML - it's like the skeleton of a website that browsers can understand and display to users. </button>
-<button class="topic"> BASIC HTML STRUCTURE </button>
-<button class="command" title="      Tells browser this is HTML5 document
-"><pre><code> &lt;!DOCTYPE html&gt; </code></pre></button>
-<button class="command" title="      Root element that contains entire webpage
-"><pre><code> &lt;html&gt; </code></pre></button>
-<button class="command" title="      HTML with language attribute for accessibility
-"><pre><code> &lt;html lang="en"&gt; </code></pre></button>
-<button class="command" title="      Contains page info not shown to users
-"><pre><code> &lt;head&gt; </code></pre></button>
-<button class="command" title="            Text shown in browser tab
-"><pre><code> &lt;title&gt;My First Page&lt;/title&gt; </code></pre></button>
-<button class="command" title="      Contains all visible content on page
-"><pre><code> &lt;body&gt; </code></pre></button>
-<button class="topic"> HEADINGS </button>
-<button class="command" title="            Biggest heading for page title
-"><pre><code> &lt;h1&gt;Main Title&lt;/h1&gt; </code></pre></button>
-<button class="command" title="            Second biggest for major sections
-"><pre><code> &lt;h2&gt;Chapter Title&lt;/h2&gt; </code></pre></button>
-<button class="command" title="            Third level for subsections
-"><pre><code> &lt;h3&gt;Section Title&lt;/h3&gt; </code></pre></button>
-<button class="command" title="            Fourth level for smaller parts
-"><pre><code> &lt;h4&gt;Subsection&lt;/h4&gt; </code></pre></button>
-<button class="command" title="            Fifth level rarely used
-"><pre><code> &lt;h5&gt;Minor Heading&lt;/h5&gt; </code></pre></button>
-<button class="command" title="            Smallest heading rarely used
-"><pre><code> &lt;h6&gt;Smallest Heading&lt;/h6&gt; </code></pre></button>
-<button class="topic"> PARAGRAPHS AND TEXT </button>
-<button class="command" title="            Main way to add text content
-"><pre><code> &lt;p&gt;This is a paragraph of text.&lt;/p&gt; </code></pre></button>
-<button class="command" title="            Each paragraph creates new block
-"><pre><code> &lt;p&gt;Another paragraph here.&lt;/p&gt; </code></pre></button>
-<button class="command" title="      Creates line break within text
-"><pre><code> &lt;br&gt; </code></pre></button>
-<button class="command" title="      Creates horizontal line to divide sections
-"><pre><code> &lt;hr&gt; </code></pre></button>
-<button class="topic"> BASIC TEXT FORMATTING </button>
-<button class="command" title="            Makes text bold for visual emphasis
-"><pre><code> &lt;b&gt;Bold text here&lt;/b&gt; </code></pre></button>
-<button class="command" title="            Makes text bold for importance
-"><pre><code> &lt;strong&gt;Important text&lt;/strong&gt; </code></pre></button>
-<button class="command" title="            Makes text italic for visual style
-"><pre><code> &lt;i&gt;Italic text here&lt;/i&gt; </code></pre></button>
-<button class="command" title="            Makes text italic for emphasis
-"><pre><code> &lt;em&gt;Emphasized text&lt;/em&gt; </code></pre></button>
-<button class="command" title="            Underlines text (rarely used)
-"><pre><code> &lt;u&gt;Underlined text&lt;/u&gt; </code></pre></button>
-<button class="command" title="            Highlights text with yellow background
-"><pre><code> &lt;mark&gt;Highlighted text&lt;/mark&gt; </code></pre></button>
-<button class="command" title="            Makes text smaller than normal
-"><pre><code> &lt;small&gt;Small text&lt;/small&gt; </code></pre></button>
-<button class="command" title="            Makes text smaller and lower (like H₂O)
-"><pre><code> &lt;sub&gt;Subscript text&lt;/sub&gt; </code></pre></button>
-<button class="command" title="            Makes text smaller and higher (like E=MC²)
-"><pre><code> &lt;sup&gt;Superscript text&lt;/sup&gt; </code></pre></button>
-<button class="topic"> LINKS </button>
-<button class="command" title="lt;/a&gt;   Creates clickable link to another website
-"><pre><code> &lt;a href="https://google.com"&gt;Visit Google& </code></pre></button>
-<button class="command" title=";           Links to another page in same website
-"><pre><code> &lt;a href="page2.html"&gt;Go to Page 2&lt;/a&gt </code></pre></button>
-<button class="command" title="t;/a&gt;    Creates link that opens email program
-"><pre><code> &lt;a href="mailto:user@email.com"&gt;Email Me&l </code></pre></button>
-<button class="command" title="gt;         Links to another part of same page
-"><pre><code> &lt;a href="#section1"&gt;Jump to Section&lt;/a& </code></pre></button>
-<button class="command" title="gt;   Opens link in new tab or window
-"><pre><code> &lt;a href="https://google.com" target="_blank"& </code></pre></button>
-<button class="command" title=""><pre><code> Open in New Tab&lt;/a&gt; </code></pre></button>
-<button class="topic"> IMAGES </button>
-<button class="command" title="      Displays image with description for screen readers
-"><pre><code> &lt;img src="photo.jpg" alt="My photo"&gt; </code></pre></button>
-<button class="command" title="      Image from images folder
-"><pre><code> &lt;img src="images/cat.jpg" alt="Cute cat"&gt; </code></pre></button>
-<button class="command" title="gt;   Image with fixed width in pixels
-"><pre><code> &lt;img src="photo.jpg" width="300" alt="Photo"& </code></pre></button>
-<button class="command" title="&gt;  Image with fixed height in pixels
-"><pre><code> &lt;img src="photo.jpg" height="200" alt="Photo" </code></pre></button>
-<button class="command" title="   Image with hover tooltip text
-"><pre><code> &lt;img src="photo.jpg" alt="Photo" </code></pre></button>
-<button class="command" title=""><pre><code> title="This is my vacation photo"&gt; </code></pre></button>
-<button class="topic"> LISTS </button>
-<button class="command" title="      Starts bulleted list
-"><pre><code> &lt;ul&gt; </code></pre></button>
-<button class="command" title="            List item with bullet point
-"><pre><code> &lt;li&gt;First item&lt;/li&gt; </code></pre></button>
-<button class="command" title="            Another list item
-"><pre><code> &lt;li&gt;Second item&lt;/li&gt; </code></pre></button>
-<button class="command" title="      Ends bulleted list
-"><pre><code> &lt;/ul&gt; </code></pre></button>
-<button class="command" title="      Starts numbered list
-"><pre><code> &lt;ol&gt; </code></pre></button>
-<button class="command" title="            Numbered list item
-"><pre><code> &lt;li&gt;First step&lt;/li&gt; </code></pre></button>
-<button class="command" title="            Another numbered item
-"><pre><code> &lt;li&gt;Second step&lt;/li&gt; </code></pre></button>
-<button class="command" title="      Ends numbered list
-"><pre><code> &lt;/ol&gt; </code></pre></button>
-<button class="topic"> COMMENTS </button>
-<button class="command" title="      Notes for developers only
-"><pre><code> &lt;!-- This text won't show on webpage --&gt; </code></pre></button>
-<button class="topic"> TABLES </button>
-<button class="command" title="      Creates data table with rows and columns
-"><pre><code> &lt;table&gt; </code></pre></button>
-<button class="command" title="      Creates table row
-"><pre><code> &lt;tr&gt; </code></pre></button>
-<button class="command" title="            Creates bold header cell
-"><pre><code> &lt;th&gt;Header 1&lt;/th&gt; </code></pre></button>
-<button class="command" title="            Another header cell in same row
-"><pre><code> &lt;th&gt;Header 2&lt;/th&gt; </code></pre></button>
-<button class="command" title="      Ends table row
-"><pre><code> &lt;/tr&gt; </code></pre></button>
-<button class="command" title="      Starts new data row
-"><pre><code> &lt;tr&gt; </code></pre></button>
-<button class="command" title="            Creates regular data cell
-"><pre><code> &lt;td&gt;Cell 1&lt;/td&gt; </code></pre></button>
-<button class="command" title="            Another data cell in same row
-"><pre><code> &lt;td&gt;Cell 2&lt;/td&gt; </code></pre></button>
-<button class="command" title="      Ends data row
-"><pre><code> &lt;/tr&gt; </code></pre></button>
-<button class="command" title="      Ends table
-"><pre><code> &lt;/table&gt; </code></pre></button>
-<button class="command" title="      Table with visible borders
-"><pre><code> &lt;table border="1"&gt; </code></pre></button>
-<button class="command" title="            Cell that spans across 2 columns
-"><pre><code> &lt;td colspan="2"&gt;Wide Cell&lt;/td&gt; </code></pre></button>
-<button class="command" title="            Cell that spans down 2 rows
-"><pre><code> &lt;td rowspan="2"&gt;Tall Cell&lt;/td&gt; </code></pre></button>
-<button class="topic"> BASIC FORMS </button>
-<button class="command" title="      Container for form elements
-"><pre><code> &lt;form&gt; </code></pre></button>
-<button class="command" title="t;    Text input box with hint text
-"><pre><code> &lt;input type="text" placeholder="Enter name"&g </code></pre></button>
-<button class="command" title="   Password input that hides text
-"><pre><code> &lt;input type="password" </code></pre></button>
-<button class="command" title=""><pre><code> placeholder="Enter password"&gt; </code></pre></button>
-<button class="command" title="&gt;  Email input with validation
-"><pre><code> &lt;input type="email" placeholder="Enter email" </code></pre></button>
-<button class="command" title="gt;   Number input with up/down arrows
-"><pre><code> &lt;input type="number" placeholder="Enter age"& </code></pre></button>
-<button class="command" title="      Large text box for long text
-"><pre><code> &lt;textarea placeholder="Enter message"&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/textarea&gt; </code></pre></button>
-<button class="command" title="      Button to submit form
-"><pre><code> &lt;input type="submit" value="Submit"&gt; </code></pre></button>
-<button class="command" title="      Ends form container
-"><pre><code> &lt;/form&gt; </code></pre></button>
-<button class="topic"> FORM INPUT TYPES </button>
-<button class="command" title="      Regular text input
-"><pre><code> &lt;input type="text" name="username"&gt; </code></pre></button>
-<button class="command" title="      Password input (text hidden)
-"><pre><code> &lt;input type="password" name="pass"&gt; </code></pre></button>
-<button class="command" title="      Email input with @ validation
-"><pre><code> &lt;input type="email" name="email"&gt; </code></pre></button>
-<button class="command" title="      Checkbox for yes/no choices
-"><pre><code> &lt;input type="checkbox" name="agree"&gt; </code></pre></button>
-<button class="command" title=""&gt; Radio button for multiple choice
-"><pre><code> &lt;input type="radio" name="gender" value="male </code></pre></button>
-<button class="command" title="      File upload button
-"><pre><code> &lt;input type="file" name="upload"&gt; </code></pre></button>
-<button class="command" title="      Date picker calendar
-"><pre><code> &lt;input type="date" name="birthday"&gt; </code></pre></button>
-<button class="command" title="      Color picker tool
-"><pre><code> &lt;input type="color" name="favcolor"&gt; </code></pre></button>
-<button class="command" title="      Slider for number range
-"><pre><code> &lt;input type="range" min="1" max="10"&gt; </code></pre></button>
-<button class="topic"> FORM ELEMENTS </button>
-<button class="command" title="            Text label for form input
-"><pre><code> &lt;label for="name"&gt;Name:&lt;/label&gt; </code></pre></button>
-<button class="command" title="      Input linked to label above
-"><pre><code> &lt;input type="text" id="name" name="name"&gt; </code></pre></button>
-<button class="command" title="      Dropdown selection menu
-"><pre><code> &lt;select name="country"&gt; </code></pre></button>
-<button class="command" title="n&gt;       Choice in dropdown menu
-"><pre><code> &lt;option value="us"&gt;United States&lt;/optio </code></pre></button>
-<button class="command" title="            Another dropdown choice
-"><pre><code> &lt;option value="ca"&gt;Canada&lt;/option&gt; </code></pre></button>
-<button class="command" title="      Ends dropdown menu
-"><pre><code> &lt;/select&gt; </code></pre></button>
-<button class="command" title="            Clickable button for forms
-"><pre><code> &lt;button type="submit"&gt;Send&lt;/button&gt; </code></pre></button>
-<button class="command" title="gt;         Regular button (no form action)
-"><pre><code> &lt;button type="button"&gt;Click Me&lt;/button& </code></pre></button>
-<button class="topic"> SEMANTIC ELEMENTS </button>
-<button class="command" title="r&gt;       Top section of page
-"><pre><code> &lt;header&gt;Page header content here&lt;/heade </code></pre></button>
-<button class="command" title="            Menu or navigation area
-"><pre><code> &lt;nav&gt;Navigation links here&lt;/nav&gt; </code></pre></button>
-<button class="command" title="            Primary content of page
-"><pre><code> &lt;main&gt;Main page content here&lt;/main&gt; </code></pre></button>
-<button class="command" title="gt;         Group of related content
-"><pre><code> &lt;section&gt;Related content here&lt;/section& </code></pre></button>
-<button class="command" title="cle&gt;     Self-contained content like blog post
-"><pre><code> &lt;article&gt;Independent content here&lt;/arti </code></pre></button>
-<button class="command" title="            Sidebar or related info
-"><pre><code> &lt;aside&gt;Side content here&lt;/aside&gt; </code></pre></button>
-<button class="command" title="r&gt;       Bottom section of page
-"><pre><code> &lt;footer&gt;Page footer content here&lt;/foote </code></pre></button>
-<button class="topic"> MEDIA ELEMENTS </button>
-<button class="command" title="udio&gt;    Audio player with play/pause controls
-"><pre><code> &lt;audio controls src="song.mp3"&gt;Audio&lt;/a </code></pre></button>
-<button class="command" title="video&gt;   Video player with play/pause controls
-"><pre><code> &lt;video controls src="movie.mp4"&gt;Video&lt;/ </code></pre></button>
-<button class="command" title="   Video with specific size and controls
-"><pre><code> &lt;video width="400" height="300" controls </code></pre></button>
-<button class="command" title=""><pre><code> src="clip.mp4"&gt;Video&lt;/video&gt; </code></pre></button>
-<button class="command" title="    Embeds another webpage or video
-"><pre><code> &lt;iframe src="https://youtube.com/embed/ID" </code></pre></button>
-<button class="command" title=""><pre><code> width="560" height="315"&gt; </code></pre></button>
-<button class="command" title=""><pre><code> &lt;/iframe&gt; </code></pre></button>
-<button class="topic"> META TAGS FOR HEAD </button>
-<button class="command" title="      Sets character encoding for text
-"><pre><code> &lt;meta charset="UTF-8"&gt; </code></pre></button>
-<button class="command" title="   Makes page mobile-friendly
-"><pre><code> &lt;meta name="viewport" </code></pre></button>
-<button class="command" title=""><pre><code> content="width=device-width"&gt; </code></pre></button>
-<button class="command" title="   Page description for search engines
-"><pre><code> &lt;meta name="description" </code></pre></button>
-<button class="command" title=""><pre><code> content="This is my webpage"&gt; </code></pre></button>
-<button class="command" title="      Links external CSS file for styling
-"><pre><code> &lt;link rel="stylesheet" href="style.css"&gt; </code></pre></button>
-<button class="command" title="            Links external JavaScript file
-"><pre><code> &lt;script src="script.js"&gt;&lt;/script&gt; </code></pre></button>
-<button class="topic"> COMMON ATTRIBUTES </button>
-<button class="command" title="Unique identifier for any element
-"><pre><code> id="unique-name" </code></pre></button>
-<button class="command" title="CSS class name for styling
-"><pre><code> class="style-name" </code></pre></button>
-<button class="command" title="Inline CSS styling directly on element
-"><pre><code> style="color: red;" </code></pre></button>
-<button class="command" title="Text shown when hovering over element
-"><pre><code> title="tooltip text" </code></pre></button>
-<button class="command" title="Alternative text for images
-"><pre><code> alt="description" </code></pre></button>
-<button class="command" title="Link destination for anchor tags
-"><pre><code> href="url" </code></pre></button>
-<button class="command" title="Source file path for images/media
-"><pre><code> src="file.jpg" </code></pre></button>
-<button class="command" title="Width of element in pixels
-"><pre><code> width="300" </code></pre></button>
-<button class="command" title="Height of element in pixels
-"><pre><code> height="200" </code></pre></button>
-<button class="topic"> CONTAINER ELEMENTS </button>
-<button class="command" title="            Generic container for grouping elements
-"><pre><code> &lt;div&gt;Content here&lt;/div&gt; </code></pre></button>
-<button class="command" title="            Inline container for styling parts of text
-"><pre><code> &lt;span&gt;Inline content&lt;/span&gt; </code></pre></button>
-<button class="command" title="            Section of related content
-"><pre><code> &lt;section&gt;Related content&lt;/section&gt; </code></pre></button>
-<button class="command" title="t;          Self-contained content like blog post
-"><pre><code> &lt;article&gt;Independent content&lt;/article&g </code></pre></button>
-<button class="command" title="            Header section of page or article
-"><pre><code> &lt;header&gt;Header content&lt;/header&gt; </code></pre></button>
-<button class="command" title="            Footer section of page or article
-"><pre><code> &lt;footer&gt;Footer content&lt;/footer&gt; </code></pre></button>
-<button class="command" title="            Navigation menu area
-"><pre><code> &lt;nav&gt;Navigation links&lt;/nav&gt; </code></pre></button>
-<button class="command" title="            Primary content of the page
-"><pre><code> &lt;main&gt;Main content&lt;/main&gt; </code></pre></button>
-<button class="command" title="            Sidebar or supplementary content
-"><pre><code> &lt;aside&gt;Side content&lt;/aside&gt; </code></pre></button>
-<button class="topic"> SPECIAL CHARACTERS </button>
-<button class="command" title="    Shows less than symbol (&lt;)
-"><pre><code> &amp;lt; </code></pre></button>
-<button class="command" title="    Shows greater than symbol (&gt;)
-"><pre><code> &amp;gt; </code></pre></button>
-<button class="command" title="    Shows ampersand symbol (&amp;)
-"><pre><code> &amp;amp; </code></pre></button>
-<button class="command" title="    Shows quotation mark (")
-"><pre><code> &amp;quot; </code></pre></button>
-<button class="command" title="    Shows copyright symbol (©)
-"><pre><code> &amp;copy; </code></pre></button>
-<button class="command" title="    Creates non-breaking space
-"><pre><code> &amp;nbsp; </code></pre></button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebDev_Ka_Adda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white" style="font-family: 'Fira Code', monospace;">
+<nav class="m-6">
+  <div class="bg-gray-800 w-full flex justify-between items-center px-6 py-4 rounded">
+    <a href="#">
+      <img src="logo.png" class="h-16 w-auto" alt="Logo">
+    </a>
+    <div class="flex gap-x-12">
+      <a href="#" class="font-semibold text-white text-lg">Introduction</a>
+      <a href="#" class="font-semibold text-white text-lg">About Me</a>
+      <a href="#" class="font-semibold text-white text-lg">Other Websites</a>
+      <a href="#" class="font-semibold text-white text-lg">Company</a>
+    </div>
+    <a href="#" class="font-semibold text-white text-lg">Welcome, User</a>
+  </div>
+</nav>
+
+<div class="text-center">
+  <h1 class="font-bold text-white text-6xl" style="font-family: 'Fira Code', 'JetBrains Mono', monospace;"> HTML </h1>
+</div>
+<BR>
+    
+    <p class="text-white text-center"> HTML (HyperText Markup Language) is the standard markup language for building webpages: it uses nested tags and attributes to describe structure (headings, paragraphs, lists, links, images, tables, forms) and semantic sections (header, nav, main, section, article, footer) that improve accessibility and SEO; a valid document starts with <!DOCTYPE html> and an <html> root containing a <head> for metadata (charset, viewport, title, links to CSS/JS) and a <body> for visible content. HTML pairs with CSS to control presentation and with JavaScript to add interactivity; modern best practices include meaningful semantic elements, proper use of alt and ARIA attributes for screen readers, responsive design via the viewport meta and fluid layout techniques, progressive enhancement for broad compatibility, and validating markup to avoid rendering and accessibility issues. </p>
+    
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">BASIC HTML STRUCTURE</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;!DOCTYPE html&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Tells browser this is HTML5 document</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;html&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Root element that contains entire webpage</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;html lang="en"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">HTML with language attribute for accessibility</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;head&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Contains page info not shown to users</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;title&gt;My First Page&lt;/title&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Text shown in browser tab</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;body&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Contains all visible content on page</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">HEADINGS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;h1&gt;Main Title&lt;/h1&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Biggest heading for page title</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;h2&gt;Chapter Title&lt;/h2&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Second biggest for major sections</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;h3&gt;Section Title&lt;/h3&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Third level for subsections</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;h4&gt;Subsection&lt;/h4&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Fourth level for smaller parts</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;h5&gt;Minor Heading&lt;/h5&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Fifth level rarely used</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;h6&gt;Smallest Heading&lt;/h6&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Smallest heading rarely used</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">PARAGRAPHS AND TEXT</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Main way to add text content</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;p&gt;Another paragraph here.&lt;/p&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Each paragraph creates new block</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;br&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates line break within text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;hr&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates horizontal line to divide sections</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">BASIC TEXT FORMATTING</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;b&gt;Bold text here&lt;/b&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text bold for visual emphasis</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;strong&gt;Important text&lt;/strong&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text bold for importance</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;i&gt;Italic text here&lt;/i&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text italic for visual style</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;em&gt;Emphasized text&lt;/em&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text italic for emphasis</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;u&gt;Underlined text&lt;/u&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Underlines text (rarely used)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;mark&gt;Highlighted text&lt;/mark&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Highlights text with yellow background</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;small&gt;Small text&lt;/small&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text smaller than normal</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;sub&gt;Subscript text&lt;/sub&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text smaller and lower (like H₂O)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;sup&gt;Superscript text&lt;/sup&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text smaller and higher (like E=MC²)</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">LINKS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;a href="https://google.com"&gt;Visit Google&</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">lt;/a&gt;   Creates clickable link to another website</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;a href="page2.html"&gt;Go to Page 2&lt;/a&gt</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">;           Links to another page in same website</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;a href="mailto:user@email.com"&gt;Email Me&l</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">t;/a&gt;    Creates link that opens email program</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;a href="#section1"&gt;Jump to Section&lt;/a&</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">gt;         Links to another part of same page</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;a href="https://google.com" target="_blank"&</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">gt;   Opens link in new tab or window</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">Open in New Tab&lt;/a&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">IMAGES</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;img src="photo.jpg" alt="My photo"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Displays image with description for screen readers</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;img src="images/cat.jpg" alt="Cute cat"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Image from images folder</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;img src="photo.jpg" width="300" alt="Photo"&</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">gt;   Image with fixed width in pixels</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;img src="photo.jpg" height="200" alt="Photo"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">&gt;  Image with fixed height in pixels</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;img src="photo.jpg" alt="Photo"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Image with hover tooltip text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">title="This is my vacation photo"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">LISTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;ul&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Starts bulleted list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;li&gt;First item&lt;/li&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">List item with bullet point</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;li&gt;Second item&lt;/li&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Another list item</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/ul&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Ends bulleted list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;ol&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Starts numbered list</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;li&gt;First step&lt;/li&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Numbered list item</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;li&gt;Second step&lt;/li&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Another numbered item</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/ol&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Ends numbered list</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">COMMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;!-- This text won't show on webpage --&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Notes for developers only</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">TABLES</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;table&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates data table with rows and columns</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;tr&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates table row</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;th&gt;Header 1&lt;/th&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates bold header cell</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;th&gt;Header 2&lt;/th&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Another header cell in same row</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/tr&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Ends table row</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;tr&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Starts new data row</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;td&gt;Cell 1&lt;/td&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates regular data cell</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;td&gt;Cell 2&lt;/td&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Another data cell in same row</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/tr&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Ends data row</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/table&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Ends table</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;table border="1"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Table with visible borders</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;td colspan="2"&gt;Wide Cell&lt;/td&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Cell that spans across 2 columns</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;td rowspan="2"&gt;Tall Cell&lt;/td&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Cell that spans down 2 rows</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">BASIC FORMS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;form&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Container for form elements</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="text" placeholder="Enter name"&g</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">t;    Text input box with hint text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="password"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Password input that hides text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">placeholder="Enter password"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="email" placeholder="Enter email"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">&gt;  Email input with validation</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="number" placeholder="Enter age"&</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">gt;   Number input with up/down arrows</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;textarea placeholder="Enter message"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Large text box for long text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/textarea&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="submit" value="Submit"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Button to submit form</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/form&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Ends form container</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">FORM INPUT TYPES</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="text" name="username"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Regular text input</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="password" name="pass"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Password input (text hidden)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="email" name="email"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Email input with @ validation</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="checkbox" name="agree"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Checkbox for yes/no choices</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="radio" name="gender" value="male</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">"&gt; Radio button for multiple choice</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="file" name="upload"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">File upload button</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="date" name="birthday"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Date picker calendar</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="color" name="favcolor"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Color picker tool</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="range" min="1" max="10"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Slider for number range</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">FORM ELEMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;label for="name"&gt;Name:&lt;/label&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Text label for form input</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;input type="text" id="name" name="name"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Input linked to label above</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;select name="country"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Dropdown selection menu</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;option value="us"&gt;United States&lt;/optio</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">n&gt;       Choice in dropdown menu</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;option value="ca"&gt;Canada&lt;/option&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Another dropdown choice</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/select&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Ends dropdown menu</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;button type="submit"&gt;Send&lt;/button&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Clickable button for forms</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;button type="button"&gt;Click Me&lt;/button&</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">gt;         Regular button (no form action)</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">SEMANTIC ELEMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;header&gt;Page header content here&lt;/heade</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">r&gt;       Top section of page</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;nav&gt;Navigation links here&lt;/nav&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Menu or navigation area</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;main&gt;Main page content here&lt;/main&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Primary content of page</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;section&gt;Related content here&lt;/section&</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">gt;         Group of related content</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;article&gt;Independent content here&lt;/arti</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">cle&gt;     Self-contained content like blog post</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;aside&gt;Side content here&lt;/aside&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Sidebar or related info</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;footer&gt;Page footer content here&lt;/foote</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">r&gt;       Bottom section of page</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">MEDIA ELEMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;audio controls src="song.mp3"&gt;Audio&lt;/a</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">udio&gt;    Audio player with play/pause controls</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;video controls src="movie.mp4"&gt;Video&lt;/</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">video&gt;   Video player with play/pause controls</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;video width="400" height="300" controls</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Video with specific size and controls</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">src="clip.mp4"&gt;Video&lt;/video&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;iframe src="https://youtube.com/embed/ID"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Embeds another webpage or video</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">width="560" height="315"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;/iframe&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">META TAGS FOR HEAD</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;meta charset="UTF-8"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Sets character encoding for text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;meta name="viewport"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes page mobile-friendly</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">content="width=device-width"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;meta name="description"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Page description for search engines</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">content="This is my webpage"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;link rel="stylesheet" href="style.css"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Links external CSS file for styling</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;script src="script.js"&gt;&lt;/script&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Links external JavaScript file</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">COMMON ATTRIBUTES</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">id="unique-name"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Unique identifier for any element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">class="style-name"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">CSS class name for styling</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">style="color: red;"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Inline CSS styling directly on element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">title="tooltip text"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Text shown when hovering over element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">alt="description"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Alternative text for images</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">href="url"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Link destination for anchor tags</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">src="file.jpg"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Source file path for images/media</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">width="300"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Width of element in pixels</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">height="200"</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Height of element in pixels</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">CONTAINER ELEMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;div&gt;Content here&lt;/div&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Generic container for grouping elements</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;span&gt;Inline content&lt;/span&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Inline container for styling parts of text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;section&gt;Related content&lt;/section&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Section of related content</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;article&gt;Independent content&lt;/article&g</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">t;          Self-contained content like blog post</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;header&gt;Header content&lt;/header&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Header section of page or article</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;footer&gt;Footer content&lt;/footer&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Footer section of page or article</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;nav&gt;Navigation links&lt;/nav&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Navigation menu area</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;main&gt;Main content&lt;/main&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Primary content of the page</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;aside&gt;Side content&lt;/aside&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Sidebar or supplementary content</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">SPECIAL CHARACTERS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&amp;lt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows less than symbol (&lt;)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&amp;gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows greater than symbol (&gt;)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&amp;amp;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows ampersand symbol (&amp;)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&amp;quot;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows quotation mark (")</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&amp;copy;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows copyright symbol (©)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&amp;nbsp;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Creates non-breaking space</div> 
+    </div>
+
+<footer class="mt-8 w-full py-4 border-t border-gray-700 bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm text-gray-400">Generated from txt files | <a href="index.html" class="text-blue-400 hover:text-blue-300">Back to Home</a></p>
+    </div>
+</footer>
 </body></html>

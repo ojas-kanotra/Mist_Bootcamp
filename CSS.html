@@ -1,295 +1,858 @@
 
-    <!DOCTYPE html>
-    <head>
-        <title>WebDev</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Let us learn 'CSS'</h1>
-        <hr><hr><button class="topic"> CSS stands for Cascading Style Sheets. It's used to make HTML pages look beautiful by adding colors, fonts, spacing, and layouts. CSS works by selecting HTML elements and giving them visual properties. Think of HTML as the structure of a house and CSS as the paint, decorations, and furniture that make it look good. </button>
-<button class="topic"> HOW TO ADD CSS </button>
-<button class="command" title="            CSS inside HTML file (internal CSS)
-"><pre><code> &lt;style&gt; h1 { color: blue; } &lt;/style&gt; </code></pre></button>
-<button class="command" title="      Link to separate CSS file (best practice)
-"><pre><code> &lt;link rel="stylesheet" href="style.css"&gt; </code></pre></button>
-<button class="command" title="            CSS directly on HTML element (inline CSS)
-"><pre><code> &lt;h1 style="color: red;"&gt;Text&lt;/h1&gt; </code></pre></button>
-<button class="topic"> BASIC CSS STRUCTURE </button>
-<button class="command" title="Select element, give it a style property
-"><pre><code> h1 { color: blue; } </code></pre></button>
-<button class="command" title="Select paragraph, set font size
-"><pre><code> p { font-size: 16px; } </code></pre></button>
-<button class="command" title="Select by class name (starts with dot)
-"><pre><code> .my-class { color: red; } </code></pre></button>
-<button class="command" title="Select by ID (starts with hash)
-"><pre><code> #my-id { background: yellow; } </code></pre></button>
-<button class="topic"> SELECTING ELEMENTS </button>
-<button class="command" title="Selects all h1 heading elements
-"><pre><code> h1{} </code></pre></button>
-<button class="command" title="Selects all paragraph elements
-"><pre><code> p{} </code></pre></button>
-<button class="command" title="Selects elements with class="class-name"
-"><pre><code> .class-name{} </code></pre></button>
-<button class="command" title="Selects element with id="unique-id"
-"><pre><code> #unique-id{} </code></pre></button>
-<button class="command" title="Selects all elements on the page
-"><pre><code> *{} </code></pre></button>
-<button class="command" title="Selects multiple element types at once
-"><pre><code> h1, h2, p{} </code></pre></button>
-<button class="command" title="Selects paragraphs inside div elements
-"><pre><code> div p{} </code></pre></button>
-<button class="command" title="Selects links when mouse hovers over them
-"><pre><code> a:hover{} </code></pre></button>
-<button class="topic"> COLORS </button>
-<button class="command" title="Changes text color to red
-"><pre><code> color: red; </code></pre></button>
-<button class="command" title="Changes text color to blue
-"><pre><code> color: blue; </code></pre></button>
-<button class="command" title="Red color using hex code
-"><pre><code> color: #ff0000; </code></pre></button>
-<button class="command" title="Green color using hex code
-"><pre><code> color: #00ff00; </code></pre></button>
-<button class="command" title="Blue color using hex code
-"><pre><code> color: #0000ff; </code></pre></button>
-<button class="command" title="Red using RGB values (0-255)
-"><pre><code> color: rgb(255, 0, 0); </code></pre></button>
-<button class="command" title="Changes background color to yellow
-"><pre><code> background-color: yellow; </code></pre></button>
-<button class="command" title="Light gray background using hex
-"><pre><code> background-color: #f0f0f0; </code></pre></button>
-<button class="topic"> TEXT STYLING </button>
-<button class="command" title="Changes font to Arial
-"><pre><code> font-family: Arial; </code></pre></button>
-<button class="command" title="Changes font to Times New Roman
-"><pre><code> font-family: "Times New Roman"; </code></pre></button>
-<button class="command" title="Makes text 16 pixels big
-"><pre><code> font-size: 16px; </code></pre></button>
-<button class="command" title="Makes text 20 pixels big
-"><pre><code> font-size: 20px; </code></pre></button>
-<button class="command" title="Makes text bold/thick
-"><pre><code> font-weight: bold; </code></pre></button>
-<button class="command" title="Makes text regular thickness
-"><pre><code> font-weight: normal; </code></pre></button>
-<button class="command" title="Makes text slanted (italic)
-"><pre><code> font-style: italic; </code></pre></button>
-<button class="command" title="Makes text upright (not italic)
-"><pre><code> font-style: normal; </code></pre></button>
-<button class="command" title="Aligns text to the left
-"><pre><code> text-align: left; </code></pre></button>
-<button class="command" title="Centers text horizontally
-"><pre><code> text-align: center; </code></pre></button>
-<button class="command" title="Aligns text to the right
-"><pre><code> text-align: right; </code></pre></button>
-<button class="command" title="Adds underline to text
-"><pre><code> text-decoration: underline; </code></pre></button>
-<button class="command" title="Removes underline from links
-"><pre><code> text-decoration: none; </code></pre></button>
-<button class="command" title="Makes all text UPPERCASE
-"><pre><code> text-transform: uppercase; </code></pre></button>
-<button class="command" title="Makes all text lowercase
-"><pre><code> text-transform: lowercase; </code></pre></button>
-<button class="command" title="Adds space between lines of text
-"><pre><code> line-height: 1.5; </code></pre></button>
-<button class="topic"> BACKGROUNDS </button>
-<button class="command" title="Sets background color to light blue
-"><pre><code> background-color: lightblue; </code></pre></button>
-<button class="command" title="Sets background to light gray
-"><pre><code> background-color: #f0f0f0; </code></pre></button>
-<button class="command" title="Sets image as background
-"><pre><code> background-image: url("flower.jpg"); </code></pre></button>
-<button class="command" title="Shows background image only once
-"><pre><code> background-repeat: no-repeat; </code></pre></button>
-<button class="command" title="Repeats background image to fill area
-"><pre><code> background-repeat: repeat; </code></pre></button>
-<button class="command" title="Centers background image
-"><pre><code> background-position: center; </code></pre></button>
-<button class="command" title="Scales image to cover entire area
-"><pre><code> background-size: cover; </code></pre></button>
-<button class="topic"> SIZE AND SPACING </button>
-<button class="command" title="Makes element 200 pixels wide
-"><pre><code> width: 200px; </code></pre></button>
-<button class="command" title="Makes element 100 pixels tall
-"><pre><code> height: 100px; </code></pre></button>
-<button class="command" title="Makes element half the width of parent
-"><pre><code> width: 50%; </code></pre></button>
-<button class="command" title="Makes element 300 pixels tall
-"><pre><code> height: 300px; </code></pre></button>
-<button class="command" title="Element won't get wider than 500px
-"><pre><code> max-width: 500px; </code></pre></button>
-<button class="command" title="Element won't get shorter than 100px
-"><pre><code> min-height: 100px; </code></pre></button>
-<button class="topic"> PADDING (INNER SPACE) </button>
-<button class="command" title="Adds 10px space inside element on all sides
-"><pre><code> padding: 10px; </code></pre></button>
-<button class="command" title="Adds 15px space at top inside element
-"><pre><code> padding-top: 15px; </code></pre></button>
-<button class="command" title="Adds 15px space at bottom inside element
-"><pre><code> padding-bottom: 15px; </code></pre></button>
-<button class="command" title="Adds 20px space at left inside element
-"><pre><code> padding-left: 20px; </code></pre></button>
-<button class="command" title="Adds 20px space at right inside element
-"><pre><code> padding-right: 20px; </code></pre></button>
-<button class="topic"> MARGIN (OUTER SPACE) </button>
-<button class="command" title="Adds 10px space outside element on all sides
-"><pre><code> margin: 10px; </code></pre></button>
-<button class="command" title="Adds 20px space above element
-"><pre><code> margin-top: 20px; </code></pre></button>
-<button class="command" title="Adds 20px space below element
-"><pre><code> margin-bottom: 20px; </code></pre></button>
-<button class="command" title="Adds 15px space to left of element
-"><pre><code> margin-left: 15px; </code></pre></button>
-<button class="command" title="Adds 15px space to right of element
-"><pre><code> margin-right: 15px; </code></pre></button>
-<button class="command" title="Centers element horizontally on page
-"><pre><code> margin: 0 auto; </code></pre></button>
-<button class="topic"> BORDERS </button>
-<button class="command" title="Adds thin black line around element
-"><pre><code> border: 1px solid black; </code></pre></button>
-<button class="command" title="Adds thick red line around element
-"><pre><code> border: 2px solid red; </code></pre></button>
-<button class="command" title="Makes border 3 pixels thick
-"><pre><code> border-width: 3px; </code></pre></button>
-<button class="command" title="Makes border a solid line
-"><pre><code> border-style: solid; </code></pre></button>
-<button class="command" title="Makes border a dashed line
-"><pre><code> border-style: dashed; </code></pre></button>
-<button class="command" title="Makes border a dotted line
-"><pre><code> border-style: dotted; </code></pre></button>
-<button class="command" title="Makes border blue color
-"><pre><code> border-color: blue; </code></pre></button>
-<button class="command" title="Makes corners rounded
-"><pre><code> border-radius: 10px; </code></pre></button>
-<button class="command" title="Adds border only to top edge
-"><pre><code> border-top: 2px solid green; </code></pre></button>
-<button class="topic"> DISPLAY TYPES </button>
-<button class="command" title="Element takes full width (like paragraphs)
-"><pre><code> display: block; </code></pre></button>
-<button class="command" title="Element takes only needed width (like links)
-"><pre><code> display: inline; </code></pre></button>
-<button class="command" title="Inline but can have width and height
-"><pre><code> display: inline-block; </code></pre></button>
-<button class="command" title="Completely hides element from page
-"><pre><code> display: none; </code></pre></button>
-<button class="command" title="Hides element but keeps its space
-"><pre><code> visibility: hidden; </code></pre></button>
-<button class="command" title="Shows element normally
-"><pre><code> visibility: visible; </code></pre></button>
-<button class="command" title="Makes element 50% transparent
-"><pre><code> opacity: 0.5; </code></pre></button>
-<button class="command" title="Makes element completely transparent
-"><pre><code> opacity: 0; </code></pre></button>
-<button class="command" title="Makes element completely solid
-"><pre><code> opacity: 1; </code></pre></button>
-<button class="topic"> POSITIONING </button>
-<button class="command" title="Normal positioning (default)
-"><pre><code> position: static; </code></pre></button>
-<button class="command" title="Can move from normal position
-"><pre><code> position: relative; </code></pre></button>
-<button class="command" title="Positioned relative to parent element
-"><pre><code> position: absolute; </code></pre></button>
-<button class="command" title="Stays in same place when scrolling
-"><pre><code> position: fixed; </code></pre></button>
-<button class="command" title="Moves element 10px from top
-"><pre><code> top: 10px; </code></pre></button>
-<button class="command" title="Moves element 20px from left
-"><pre><code> left: 20px; </code></pre></button>
-<button class="command" title="Moves element 15px from right
-"><pre><code> right: 15px; </code></pre></button>
-<button class="command" title="Moves element 5px from bottom
-"><pre><code> bottom: 5px; </code></pre></button>
-<button class="command" title="Controls which element appears on top
-"><pre><code> z-index: 10; </code></pre></button>
-<button class="topic"> FLEXBOX (EASY LAYOUTS) </button>
-<button class="command" title="Makes container arrange items in a row
-"><pre><code> display: flex; </code></pre></button>
-<button class="command" title="Arranges items left to right (default)
-"><pre><code> flex-direction: row; </code></pre></button>
-<button class="command" title="Arranges items top to bottom
-"><pre><code> flex-direction: column; </code></pre></button>
-<button class="command" title="Centers items horizontally
-"><pre><code> justify-content: center; </code></pre></button>
-<button class="command" title="Spreads items evenly with space between
-"><pre><code> justify-content: space-between; </code></pre></button>
-<button class="command" title="Centers items vertically
-"><pre><code> align-items: center; </code></pre></button>
-<button class="command" title="Items move to next line if needed
-"><pre><code> flex-wrap: wrap; </code></pre></button>
-<button class="command" title="Adds 10px space between items
-"><pre><code> gap: 10px; </code></pre></button>
-<button class="topic"> HOVER EFFECTS </button>
-<button class="command" title="Changes link color when hovering
-"><pre><code> a:hover { color: red; } </code></pre></button>
-<button class="command" title="Changes button background on hover
-"><pre><code> button:hover { background: blue; } </code></pre></button>
-<button class="command" title="Makes image slightly transparent on hover
-"><pre><code> img:hover { opacity: 0.8; } </code></pre></button>
-<button class="command" title="Adds border when hovering over div
-"><pre><code> div:hover { border: 2px solid green; } </code></pre></button>
-<button class="topic"> SIMPLE ANIMATIONS </button>
-<button class="command" title="Smooth change over 0.3 seconds for all properties
-"><pre><code> transition: all 0.3s; </code></pre></button>
-<button class="command" title="Smooth color change over 0.5 seconds
-"><pre><code> transition: color 0.5s; </code></pre></button>
-<button class="command" title="Makes element 10% bigger
-"><pre><code> transform: scale(1.1); </code></pre></button>
-<button class="command" title="Rotates element 45 degrees
-"><pre><code> transform: rotate(45deg); </code></pre></button>
-<button class="topic"> RESPONSIVE DESIGN </button>
-<button class="command" title="Styles for mobile phones (small screens)
-"><pre><code> @media (max-width: 768px) { </code></pre></button>
-<button class="command" title="Smaller heading on mobile
-"><pre><code> h1 { font-size: 24px; } </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title="Styles for desktop computers (large screens)
-"><pre><code> @media (min-width: 1024px) { </code></pre></button>
-<button class="command" title="Larger heading on desktop
-"><pre><code> h1 { font-size: 36px; } </code></pre></button>
-<button class="command" title=""><pre><code> } </code></pre></button>
-<button class="command" title="Images scale down to fit screen
-"><pre><code> img { max-width: 100%; } </code></pre></button>
-<button class="command" title="Element takes full width of container
-"><pre><code> width: 100%; </code></pre></button>
-<button class="topic"> LISTS </button>
-<button class="command" title="Removes bullet points from lists
-"><pre><code> list-style-type: none; </code></pre></button>
-<button class="command" title="Round bullet points (default)
-"><pre><code> list-style-type: disc; </code></pre></button>
-<button class="command" title="Numbered list (1, 2, 3...)
-"><pre><code> list-style-type: decimal; </code></pre></button>
-<button class="command" title="Square bullet points
-"><pre><code> list-style-type: square; </code></pre></button>
-<button class="command" title="Bullets inside the text area
-"><pre><code> list-style-position: inside; </code></pre></button>
-<button class="topic"> COMMON MEASUREMENTS </button>
-<button class="command" title="100 pixels wide (fixed size)
-"><pre><code> width: 100px; </code></pre></button>
-<button class="command" title="50% of parent element's width
-"><pre><code> width: 50%; </code></pre></button>
-<button class="command" title="Font size in pixels
-"><pre><code> font-size: 16px; </code></pre></button>
-<button class="command" title="2 times the current font size
-"><pre><code> margin: 2em; </code></pre></button>
-<button class="command" title="100% of screen height
-"><pre><code> height: 100vh; </code></pre></button>
-<button class="command" title="100% of screen width
-"><pre><code> width: 100vw; </code></pre></button>
-<button class="topic"> USEFUL PROPERTIES </button>
-<button class="command" title="Centers text horizontally
-"><pre><code> text-align: center; </code></pre></button>
-<button class="command" title="Aligns content vertically in cells
-"><pre><code> vertical-align: middle; </code></pre></button>
-<button class="command" title="Shows hand cursor on hover
-"><pre><code> cursor: pointer; </code></pre></button>
-<button class="command" title="Removes focus outline (like on buttons)
-"><pre><code> outline: none; </code></pre></button>
-<button class="command" title="Adds shadow around element
-"><pre><code> box-shadow: 2px 2px 5px gray; </code></pre></button>
-<button class="command" title="Hides content that goes outside element
-"><pre><code> overflow: hidden; </code></pre></button>
-<button class="command" title="Prevents text from wrapping to new line
-"><pre><code> white-space: nowrap; </code></pre></button>
-<button class="topic"> COMMENTS </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebDev_Ka_Adda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white" style="font-family: 'Fira Code', monospace;">
+<nav class="m-6">
+  <div class="bg-gray-800 w-full flex justify-between items-center px-6 py-4 rounded">
+    <a href="#">
+      <img src="logo.png" class="h-16 w-auto" alt="Logo">
+    </a>
+    <div class="flex gap-x-12">
+      <a href="#" class="font-semibold text-white text-lg">Introduction</a>
+      <a href="#" class="font-semibold text-white text-lg">About Me</a>
+      <a href="#" class="font-semibold text-white text-lg">Other Websites</a>
+      <a href="#" class="font-semibold text-white text-lg">Company</a>
+    </div>
+    <a href="#" class="font-semibold text-white text-lg">Welcome, User</a>
+  </div>
+</nav>
+
+<div class="text-center">
+  <h1 class="font-bold text-white text-6xl" style="font-family: 'Fira Code', 'JetBrains Mono', monospace;"> CSS </h1>
+</div>
+<BR>
+    
+    <p class="text-white text-center"> CSS (Cascading Style Sheets) controls presentation of HTML: colors, typography, spacing, layout and visual effects; use CSS to separate design from content so HTML stays semantic and accessible; where to put CSS: inline (style="..." on elements, quick, not recommended), internal (<style>...</style> inside an HTML file, useful for small pages or demos), external (<link rel="stylesheet" href="style.css">, best practice); basic syntax: selector { property: value; } e.g. p.intro { color: #333; font-size: 16px; margin-bottom: 1rem; }; key concepts: cascade (later rules can override earlier ones), specificity (inline > ID > class > element), inheritance (some properties inherit), !important (forces override, avoid using it); box model: content, padding, border, margin; use box-sizing: border-box; layout tools: Flexbox and Grid for modern layouts, float/position for older patterns (use sparingly), media queries for responsive design @media (max-width: 768px) { ... }; modern features & workflow: CSS variables (--main-color: #06f;), preprocessors (Sass, Less), post-processing (autoprefixer, minification, bundlers), use DevTools to inspect styles and debug; accessibility & performance: keep CSS small and specific, avoid unused rules, ensure sufficient color contrast and keyboard-focus styles, load critical CSS early and defer large stylesheets when appropriate; best practices: prefer external stylesheets and utility/class-based approach, use meaningful class names and keep selector specificity low, organize styles by component or feature and document patterns. </p>
+    
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">HOW TO ADD CSS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;style&gt; h1 { color: blue; } &lt;/style&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">CSS inside HTML file (internal CSS)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;link rel="stylesheet" href="style.css"&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Link to separate CSS file (best practice)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">&lt;h1 style="color: red;"&gt;Text&lt;/h1&gt;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">CSS directly on HTML element (inline CSS)</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">BASIC CSS STRUCTURE</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">h1 { color: blue; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Select element, give it a style property</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">p { font-size: 16px; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Select paragraph, set font size</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">.my-class { color: red; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Select by class name (starts with dot)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">#my-id { background: yellow; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Select by ID (starts with hash)</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">SELECTING ELEMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">h1{}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Selects all h1 heading elements</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">p{}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Selects all paragraph elements</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">.class-name{}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Selects elements with class="class-name"</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">#unique-id{}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Selects element with id="unique-id"</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">*{}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Selects all elements on the page</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">h1, h2, p{}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Selects multiple element types at once</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">div p{}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Selects paragraphs inside div elements</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">a:hover{}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Selects links when mouse hovers over them</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">COLORS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">color: red;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes text color to red</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">color: blue;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes text color to blue</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">color: #ff0000;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Red color using hex code</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">color: #00ff00;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Green color using hex code</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">color: #0000ff;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Blue color using hex code</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">color: rgb(255, 0, 0);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Red using RGB values (0-255)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-color: yellow;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes background color to yellow</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-color: #f0f0f0;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Light gray background using hex</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">TEXT STYLING</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-family: Arial;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes font to Arial</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-family: "Times New Roman";</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes font to Times New Roman</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-size: 16px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text 16 pixels big</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-size: 20px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text 20 pixels big</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-weight: bold;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text bold/thick</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-weight: normal;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text regular thickness</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-style: italic;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text slanted (italic)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-style: normal;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes text upright (not italic)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">text-align: left;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Aligns text to the left</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">text-align: center;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Centers text horizontally</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">text-align: right;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Aligns text to the right</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">text-decoration: underline;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds underline to text</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">text-decoration: none;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Removes underline from links</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">text-transform: uppercase;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes all text UPPERCASE</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">text-transform: lowercase;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes all text lowercase</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">line-height: 1.5;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds space between lines of text</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">BACKGROUNDS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-color: lightblue;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Sets background color to light blue</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-color: #f0f0f0;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Sets background to light gray</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-image: url("flower.jpg");</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Sets image as background</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-repeat: no-repeat;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows background image only once</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-repeat: repeat;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Repeats background image to fill area</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-position: center;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Centers background image</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">background-size: cover;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Scales image to cover entire area</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">SIZE AND SPACING</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">width: 200px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes element 200 pixels wide</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">height: 100px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes element 100 pixels tall</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">width: 50%;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes element half the width of parent</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">height: 300px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes element 300 pixels tall</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">max-width: 500px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Element won't get wider than 500px</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">min-height: 100px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Element won't get shorter than 100px</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">PADDING (INNER SPACE)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">padding: 10px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 10px space inside element on all sides</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">padding-top: 15px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 15px space at top inside element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">padding-bottom: 15px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 15px space at bottom inside element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">padding-left: 20px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 20px space at left inside element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">padding-right: 20px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 20px space at right inside element</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">MARGIN (OUTER SPACE)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">margin: 10px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 10px space outside element on all sides</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">margin-top: 20px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 20px space above element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">margin-bottom: 20px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 20px space below element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">margin-left: 15px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 15px space to left of element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">margin-right: 15px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 15px space to right of element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">margin: 0 auto;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Centers element horizontally on page</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">BORDERS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border: 1px solid black;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds thin black line around element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border: 2px solid red;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds thick red line around element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border-width: 3px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes border 3 pixels thick</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border-style: solid;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes border a solid line</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border-style: dashed;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes border a dashed line</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border-style: dotted;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes border a dotted line</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border-color: blue;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes border blue color</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border-radius: 10px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes corners rounded</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">border-top: 2px solid green;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds border only to top edge</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">DISPLAY TYPES</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">display: block;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Element takes full width (like paragraphs)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">display: inline;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Element takes only needed width (like links)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">display: inline-block;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Inline but can have width and height</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">display: none;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Completely hides element from page</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">visibility: hidden;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Hides element but keeps its space</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">visibility: visible;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows element normally</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">opacity: 0.5;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes element 50% transparent</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">opacity: 0;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes element completely transparent</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">opacity: 1;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes element completely solid</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">POSITIONING</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">position: static;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Normal positioning (default)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">position: relative;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Can move from normal position</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">position: absolute;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Positioned relative to parent element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">position: fixed;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Stays in same place when scrolling</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">top: 10px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Moves element 10px from top</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">left: 20px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Moves element 20px from left</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">right: 15px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Moves element 15px from right</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">bottom: 5px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Moves element 5px from bottom</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">z-index: 10;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Controls which element appears on top</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">FLEXBOX (EASY LAYOUTS)</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">display: flex;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes container arrange items in a row</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">flex-direction: row;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Arranges items left to right (default)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">flex-direction: column;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Arranges items top to bottom</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">justify-content: center;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Centers items horizontally</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">justify-content: space-between;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Spreads items evenly with space between</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">align-items: center;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Centers items vertically</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">flex-wrap: wrap;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Items move to next line if needed</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">gap: 10px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds 10px space between items</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">HOVER EFFECTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">a:hover { color: red; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes link color when hovering</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">button:hover { background: blue; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Changes button background on hover</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">img:hover { opacity: 0.8; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes image slightly transparent on hover</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">div:hover { border: 2px solid green; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds border when hovering over div</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">SIMPLE ANIMATIONS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">transition: all 0.3s;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Smooth change over 0.3 seconds for all properties</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">transition: color 0.5s;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Smooth color change over 0.5 seconds</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">transform: scale(1.1);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Makes element 10% bigger</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">transform: rotate(45deg);</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Rotates element 45 degrees</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">RESPONSIVE DESIGN</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">@media (max-width: 768px) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Styles for mobile phones (small screens)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">h1 { font-size: 24px; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Smaller heading on mobile</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">@media (min-width: 1024px) {</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Styles for desktop computers (large screens)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">h1 { font-size: 36px; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Larger heading on desktop</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">}</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4"></div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">img { max-width: 100%; }</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Images scale down to fit screen</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">width: 100%;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Element takes full width of container</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">LISTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">list-style-type: none;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Removes bullet points from lists</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">list-style-type: disc;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Round bullet points (default)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">list-style-type: decimal;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Numbered list (1, 2, 3...)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">list-style-type: square;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Square bullet points</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">list-style-position: inside;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Bullets inside the text area</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">COMMON MEASUREMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">width: 100px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">100 pixels wide (fixed size)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">width: 50%;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">50% of parent element's width</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">font-size: 16px;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Font size in pixels</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">margin: 2em;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">2 times the current font size</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">height: 100vh;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">100% of screen height</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">width: 100vw;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">100% of screen width</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">USEFUL PROPERTIES</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">text-align: center;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Centers text horizontally</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">vertical-align: middle;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Aligns content vertically in cells</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">cursor: pointer;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Shows hand cursor on hover</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">outline: none;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Removes focus outline (like on buttons)</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">box-shadow: 2px 2px 5px gray;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Adds shadow around element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">overflow: hidden;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Hides content that goes outside element</div> 
+    </div>
+
+    <div class="flex flex-row p-4 bg-gray-900 border border-gray-700 rounded-lg mb-2">
+        <div class="basis-1/3"><code class="bg-gray-800 p-2 rounded text-green-400 font-mono">white-space: nowrap;</code></div>
+        <div class="basis-2/3 text-gray-300 pl-4">Prevents text from wrapping to new line</div> 
+    </div>
+
+    <br><br>
+    <div class="flex items-center" role="separator" aria-hidden="true">
+      <span class="h-px flex-1 bg-gray-500"></span>
+      <span class="shrink-0 px-4 text-white font-semibold text-center">COMMENTS</span>
+      <span class="h-px flex-1 bg-gray-500"></span>    
+    </div>
+    <br><br>
+    
+<footer class="mt-8 w-full py-4 border-t border-gray-700 bg-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm text-gray-400">Generated from txt files | <a href="index.html" class="text-blue-400 hover:text-blue-300">Back to Home</a></p>
+    </div>
+</footer>
 </body></html>

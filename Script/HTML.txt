@@ -1,6 +1,4 @@
-
-HTML is the standard language for creating webpages. It uses tags to structure content like text, images, and links. HTML works with CSS for styling and JavaScript for interactivity. Every webpage starts with HTML - it's like the skeleton of a website that browsers can understand and display to users.
-===========================================================================
+HTML (HyperText Markup Language) is the standard markup language for building webpages: it uses nested tags and attributes to describe structure (headings, paragraphs, lists, links, images, tables, forms) and semantic sections (header, nav, main, section, article, footer) that improve accessibility and SEO; a valid document starts with <!DOCTYPE html> and an <html> root containing a <head> for metadata (charset, viewport, title, links to CSS/JS) and a <body> for visible content. HTML pairs with CSS to control presentation and with JavaScript to add interactivity; modern best practices include meaningful semantic elements, proper use of alt and ARIA attributes for screen readers, responsive design via the viewport meta and fluid layout techniques, progressive enhancement for broad compatibility, and validating markup to avoid rendering and accessibility issues.
 
 BASIC HTML STRUCTURE
 ====================
