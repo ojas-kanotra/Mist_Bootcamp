@@ -52,8 +52,9 @@ To modify or add content:
 
 ### Check out the website below: 
 
-https://ojas-kanotra.github.io/Mist_Bootcamp/HTML.html
+https://ojas-kanotra.github.io/Mist_Bootcamp
 
 ---
 
 ### Thanks you :>
+
