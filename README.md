@@ -49,6 +49,11 @@ To modify or add content:
 3. Refresh your browser to see changes
 
 ---
+
+### Check out the website below: 
+
+https://ojas-kanotra.github.io/Mist_Bootcamp/HTML.html
+
 ---
 
 ### Thanks you :>
